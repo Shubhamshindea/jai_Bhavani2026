@@ -1,0 +1,1725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#8f170b">
+    <meta name="description" content="Jai Bhavani Nave Yuvak Mandal, Bhalki — spiritual information, darshan, programs, gallery and location.">
+    <title>Jai Bhavani Nave Yuvak Mandal • Bhalki</title>
+    <style>
+.hero-orb {
+position:absolute;
+  z-index:2;
+  opacity:.75;
+  filter:drop-shadow(0 5px 12px #271a0d55);
+  animation:floatUp 4s ease-in-out infinite;
+  pointer-events:none
+}
+
+.orb1 {
+left:8%;
+  top:24%;
+  font-size:34px
+}
+
+.orb2 {
+right:10%;
+  top:32%;
+  font-size:38px;
+  animation-delay:1.2s
+}
+
+:root {
+--saffron:#a7562d;
+  --terracotta:#d73600;
+  --gold:#c99a42;
+  --cream:#fff8e9;
+  --ivory:#fffdf7;
+  --sand:#ead9bb;
+  --leaf:#65764a;
+  --ink:#3a2419;
+  --dark:#34251d;
+  --glass:#fffaf0e8
+}
+
+* {
+box-sizing:border-box
+}
+
+html {
+scroll-behavior:smooth
+}
+
+body {
+margin:0;
+  background:linear-gradient(180deg,
+#fffaf0 0,
+#f7eedc 48%,
+#49d018 100%);
+  color:var(--ink);
+  font-family:system-ui,
+-apple-system,
+Segoe UI,
+Roboto,
+Arial,
+sans-serif
+}
+
+body:before {
+content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.06;
+  background-image:radial-gradient(#e29b44 1px,
+transparent 1px);
+  background-size:42px 22px
+}
+
+a {
+color:inherit
+}
+
+.hero {
+position:relative;
+  min-height:690px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  border-bottom:2px solid #d57521
+}
+
+.hero img {
+position:absolute;
+  inset:0;
+  width:0%;
+  height:100%;
+  object-fit:cover;
+  filter:saturate(1.05) contrast(1.03)
+}
+
+.hero:after {
+content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,
+#3a1c0a20 0%,
+#3a1c0a18 35%,
+#3a1c0a9a 92%)
+}
+
+.topbar {
+position:absolute;
+  z-index:3;
+  top:0;
+  left:0;
+  right:0;
+  padding:14px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:linear-gradient(#160704b8,
+transparent)
+}
+
+.badge {
+border:1px solid #e5c77d;
+  background:#fffaf0d9;
+  color:#5b321d;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 6px 18px #5c35151c
+}
+
+.hero-content {
+position:relative;
+  z-index:2;
+  width:min(1100px,
+100%);
+  margin:auto;
+  padding:28px 20px 45px;
+  text-align:center
+}
+
+.om {
+font-size:44px;
+  color:#ffd66b;
+  text-shadow:0 0 22px #ffb31f
+}
+
+.hero h1 {
+font-family:Georgia,
+serif;
+  font-size:clamp(30px,
+6vw,
+66px);
+  line-height:1.03;
+  margin:8px auto 10px;
+  max-width:1000px;
+  text-shadow:0 3px 14px #2e160b99
+}
+
+.hero h2 {
+font-size:clamp(17px,
+3vw,
+28px);
+  font-weight:600;
+  color:#ffe1a1;
+  margin:0 0 14px
+}
+
+.hero p {
+margin:0 auto;
+  max-width:720px;
+  font-size:15px;
+  opacity:.92
+}
+
+.cta-row {
+display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:22px
+}
+
+.btn {
+display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  text-decoration:none;
+  padding:13px 18px;
+  border-radius:999px;
+  font-weight:750;
+  border:1px solid #ffdc78;
+  background:linear-gradient(135deg,
+#b72b0e,
+#771008);
+  box-shadow:0 8px 24px #0006
+}
+
+.btn.light {
+background:#fff2cf;
+  color:#641008;
+  border-color:#ffe2a0
+}
+
+.nav {
+position:sticky;
+  top:0;
+  z-index:10;
+  background:#fffaf0e8;
+  border-bottom:1px solid #d8bb86;
+  backdrop-filter:blur(14px);
+  overflow:auto;
+  box-shadow:0 5px 18px #6b431b12
+}
+
+.nav-inner {
+width:min(1100px,
+100%);
+  margin:auto;
+  display:flex;
+  gap:6px;
+  padding:8px 12px;
+  white-space:nowrap
+}
+
+.nav a {
+padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+  color:#6b3d25;
+  font-size:13px;
+  font-weight:650
+}
+
+.nav a:hover {
+background:#f0dfc0;
+  color:#8c321c
+}
+
+.wrap {
+width:min(1100px,
+100%);
+  margin:auto;
+  padding:18px
+}
+
+.grid {
+display:grid;
+  grid-template-columns:repeat(3,
+1fr);
+  gap:14px
+}
+
+main > section.grid:nth-of-type(2) {
+grid-template-columns:1fr minmax(300px,
+560px) 1fr
+}
+
+main > section.grid:nth-of-type(2) > article#aarti {
+grid-column:2;
+  justify-self:center;
+  width:min(100%,
+560px)
+}
+
+.card {
+background:linear-gradient(145deg,
+#fffdf7,
+#f9eed8);
+  color:var(--ink);
+  border:1px solid #ddc18d;
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 16px 45px #6c3b1818;
+  position:relative;
+  overflow:hidden
+}
+
+.card h2 {
+font-family:Georgia,
+serif;
+  color:#8f1e0b;
+  margin:0 0 10px;
+  font-size:25px
+}
+
+.card p {
+line-height:1.7;
+  margin:8px 0
+}
+
+.section-title {
+text-align:center;
+  padding:30px 0 12px
+}
+
+.section-title h2 {
+font:700 34px Georgia,
+serif;
+  color:#8d3b20;
+  margin:0 0 7px
+}
+
+.section-title p {
+color:#80634c;
+  margin:0
+}
+
+.highlight {
+margin:16px 0;
+  padding:16px;
+  border-left:4px solid var(--gold);
+  background:#f7ecd5;
+  border-radius:12px;
+  color:#5a3925;
+  line-height:1.7
+}
+
+.info-row {
+display:flex;
+  gap:12px;
+  align-items:flex-start;
+  margin:12px 0
+}
+
+.icon {
+font-size:25px;
+  min-width:34px
+}
+
+.gallery-tabs {
+display:flex;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin:14px 0
+}
+
+.tab {
+cursor:pointer;
+  border:1px solid #d5b16e;
+  background:#fffaf0;
+  color:#70442d;
+  border-radius:999px;
+  padding:9px 15px;
+  font-weight:700;
+  transition:.25s
+}
+
+.tab.active {
+background:linear-gradient(135deg,
+#d5a24c,
+#a9532e);
+  color:#fff;
+  border-color:#d8a85a;
+  box-shadow:0 7px 18px #8f3d1c26
+}
+
+.gallery {
+display:grid;
+  grid-template-columns:repeat(5,
+1fr);
+  gap:10px
+}
+
+.photo-card {
+border:1px solid #dec28f;
+  padding:0;
+  background:#fffaf0;
+  border-radius:16px;
+  overflow:hidden;
+  color:#6b3c25;
+  cursor:pointer;
+  box-shadow:0 8px 20px #6a3d1817;
+  transition:.3s
+}
+
+.photo-card img {
+width:100%;
+  height:190px;
+  object-fit:cover;
+  display:block;
+  transition:.3s
+}
+
+.photo-card:hover img {
+transform:scale(1.04)
+}
+
+.photo-card span {
+display:block;
+  padding:8px;
+  font-size:12px
+}
+
+.gallery-year {
+display:none
+}
+
+.gallery-year.show {
+display:grid
+}
+
+.socials {
+display:grid;
+  grid-template-columns:repeat(4,
+1fr);
+  gap:10px
+}
+
+.social {
+padding:16px;
+  border-radius:17px;
+  text-decoration:none;
+  text-align:center;
+  font-weight:800;
+  border:1px solid #dec59b;
+  background:#fffaf0;
+  box-shadow:0 8px 20px #6b3e1a12;
+  transition:.25s
+}
+
+.social small {
+display:block;
+  font-weight:500;
+  opacity:.7;
+  margin-top:4px
+}
+
+.event-list {
+display:grid;
+  gap:10px
+}
+
+.event {
+display:flex;
+  gap:12px;
+  align-items:center;
+  background:#fffdf7;
+  border:1px solid #e2c995;
+  border-radius:14px;
+  padding:12px;
+  color:#4b2b1b;
+  box-shadow:0 5px 16px #70401a0e
+}
+
+.date {
+min-width:72px;
+  text-align:center;
+  background:#941c0c;
+  color:white;
+  border-radius:12px;
+  padding:8px;
+  font-weight:800
+}
+
+.qr {
+text-align:center;
+  background:linear-gradient(135deg,
+#2a0e08,
+#5a170d);
+  border:1px solid #e5ad3d;
+  border-radius:22px;
+  padding:24px
+}
+
+.qr img {
+max-width:220px;
+  width:60%;
+  background:#fff;
+  padding:12px;
+  border-radius:12px
+}
+
+.footer {
+text-align:center;
+  padding:36px 20px;
+  color:#7c5a42
+}
+
+.lightbox {
+display:none;
+  position:fixed;
+  inset:0;
+  background:#000e;
+  z-index:50;
+  align-items:center;
+  justify-content:center;
+  padding:18px
+}
+
+.lightbox.show {
+display:flex
+}
+
+.lightbox img {
+max-width:96vw;
+  max-height:86vh;
+  border-radius:14px;
+  box-shadow:0 20px 70px #000
+}
+
+.close {
+position:absolute;
+  top:15px;
+  right:20px;
+  border:0;
+  background:#fff;
+  color:#611008;
+  border-radius:50%;
+  width:42px;
+  height:42px;
+  font-size:25px;
+  cursor:pointer
+}
+
+@keyframes floatUp {
+0%,
+100% {
+transform:translateY(0) rotate(-1deg)
+}
+
+50% {
+transform:translateY(-8px) rotate(1deg)
+}
+
+
+}
+
+@keyframes glow {
+0%,
+100% {
+box-shadow:0 0 0 #e5ad3d00
+}
+
+50% {
+box-shadow:0 0 30px #e5ad3d55
+}
+
+
+}
+
+@keyframes rise {
+from {
+opacity:0;
+  transform:translateY(22px)
+}
+
+to {
+opacity:1;
+  transform:translateY(0)
+}
+
+
+}
+
+@keyframes shimmer {
+0% {
+background-position:-200% 0
+}
+
+100% {
+background-position:200% 0
+}
+
+
+}
+
+.fade-in {
+animation:rise .75s ease both
+}
+
+.float {
+animation:floatUp 4s ease-in-out infinite
+}
+
+.glow {
+animation:glow 3s ease-in-out infinite
+}
+
+.hero .om {
+animation:floatUp 4s ease-in-out infinite
+}
+
+.btn {
+transition:.25s;
+  position:relative;
+  overflow:hidden
+}
+
+.btn:after {
+content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(100deg,
+transparent 25%,
+#ffffff55 50%,
+transparent 75%);
+  background-size:200% 100%;
+  animation:shimmer 4s linear infinite
+}
+
+.btn:hover {
+transform:translateY(-2px);
+  box-shadow:0 10px 25px #6b321c2b
+}
+
+.card:before {
+content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg,
+transparent,
+#d4a24b,
+transparent);
+  opacity:.8
+}
+
+.social:hover {
+transform:translateY(-4px);
+  box-shadow:0 14px 28px #6b3e1a20
+}
+
+.photo-card:hover {
+transform:translateY(-4px)
+}
+
+@media(max-width:850px) {
+.grid {
+grid-template-columns:1fr
+}
+
+.gallery {
+grid-template-columns:repeat(2,
+1fr)
+}
+
+.photo-card img {
+height:210px
+}
+
+.socials {
+grid-template-columns:repeat(2,
+1fr)
+}
+
+.hero {
+min-height:610px
+}
+
+
+}
+
+@media(max-width:480px) {
+.wrap {
+padding:12px
+}
+
+.gallery {
+gap:8px
+}
+
+.photo-card img {
+height:180px
+}
+
+.hero {
+min-height:570px
+}
+
+
+}
+
+/* --- Mandal identity + mobile-first quick actions --- */ .brandbar {
+position:absolute;
+  z-index:4;
+  top:14px;
+  left:18px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  text-decoration:none
+}
+
+.brandbar img {
+width:54px;
+  height:54px;
+  border-radius:12px;
+  object-fit:contain;
+  border:1px solid #e5ad68;
+  box-shadow:none;
+  background:#fff;
+  padding:4px;
+  display:block
+}
+
+.brandbar .brandtext {
+line-height:1.05;
+  text-shadow:0 2px 8px #000
+}
+
+.brandbar .brandtext strong {
+display:block;
+  font-size:13px;
+  letter-spacing:.2px
+}
+
+.brandbar .brandtext span {
+display:block;
+  font-size:11px;
+  opacity:.85;
+  margin-top:4px
+}
+
+.hero-logo {
+width:112px;
+  height:112px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #f7d889;
+  box-shadow:0 0 0 8px #fff2c622,
+0 15px 40px #0007;
+  animation:logoPulse 4s ease-in-out infinite;
+  background:#2a130a
+}
+
+.hero-kicker {
+display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 13px;
+  border:1px solid #f1cf83;
+  background:#32170ccc;
+  border-radius:999px;
+  color:#ffe6a8;
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:.7px;
+  margin-top:12px
+}
+
+.quick-actions {
+display:grid;
+  grid-template-columns:1.15fr 1fr 1fr;
+  gap:12px;
+  margin:18px 0 4px
+}
+
+.quick-card {
+display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  padding:16px 17px;
+  border-radius:18px;
+  border:1px solid #e1c38c;
+  background:linear-gradient(135deg,
+#fffdf8,
+#f5ead4);
+  box-shadow:0 12px 28px #6c3b1815;
+  transition:.28s;
+  position:relative;
+  overflow:hidden
+}
+
+.quick-card:after {
+content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(110deg,
+transparent 30%,
+#fff 48%,
+transparent 66%);
+  background-size:220% 100%;
+  opacity:.38;
+  animation:shimmer 5s linear infinite
+}
+
+.quick-card:hover {
+transform:translateY(-4px);
+  box-shadow:0 18px 32px #6c3b1830;
+  border-color:#c9984a
+}
+
+.quick-icon {
+width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:#f4e1bc;
+  color:#8f2e16;
+  font-size:23px;
+  flex:none;
+  position:relative;
+  z-index:1
+}
+
+.quick-card.instagram .quick-icon {
+background:linear-gradient(135deg,
+#f7e0bd,
+#e7b65f);
+  color:#7b2514
+}
+
+.quick-copy {
+position:relative;
+  z-index:1
+}
+
+.quick-copy strong {
+display:block;
+  font-size:15px;
+  color:#6f2c19
+}
+
+.quick-copy small {
+display:block;
+  margin-top:3px;
+  color:#866b52;
+  font-size:12px
+}
+
+.mini-arrow {
+margin-left:auto;
+  position:relative;
+  z-index:1;
+  font-size:19px;
+  color:#a15b2f
+}
+
+.mata-logo {
+width:64px;
+  height:64px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #d5a34e;
+  box-shadow:0 8px 18px #5b2d1720
+}
+
+.section-heading-icon {
+display:inline-grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  background:#f1dfbd;
+  border:1px solid #d8b575;
+  margin-right:8px;
+  vertical-align:middle
+}
+
+.brand-nav {
+display:flex;
+  align-items:center;
+  gap:9px;
+  margin-right:6px;
+  padding:5px 10px 5px 5px;
+  border-radius:14px;
+  text-decoration:none;
+  color:#6b3d25;
+  background:#f7ead2;
+  border:1px solid #e1c79c;
+  flex:none
+}
+
+.brand-nav img {
+width:34px;
+  height:34px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #c99543
+}
+
+.brand-nav b {
+font-size:12px
+}
+
+.nav-inner {
+align-items:center
+}
+
+@keyframes logoPulse {
+0%,
+100% {
+transform:translateY(0) scale(1);
+  filter:drop-shadow(0 0 0 #f0b83c00)
+}
+
+50% {
+transform:translateY(-5px) scale(1.025);
+  filter:drop-shadow(0 0 15px #f0b83c66)
+}
+
+
+}
+
+@media(max-width:760px) {
+.brandbar {
+left:12px;
+  top:10px
+}
+
+.brandbar .brandtext {
+display:none
+}
+
+.brandbar img {
+width:48px;
+  height:48px
+}
+
+.hero-logo {
+width:92px;
+  height:92px
+}
+
+.quick-actions {
+grid-template-columns:1fr
+}
+
+.quick-card {
+min-height:70px
+}
+
+.hero-content {
+padding-top:115px
+}
+
+.topbar {
+padding-left:72px
+}
+
+
+}
+</style>
+  <style id="modern-home-theme">
+:root {
+--orange:#ee9637;
+  --orange2:#f7b25f;
+  --orange-soft:#fff1df;
+  --cream:#fffaf4;
+  --ink:#4a3326;
+  --muted:#7c685b;
+  --line:#f1d5b5
+}
+
+body {
+background:linear-gradient(180deg,
+#fffaf4 0%,
+#fffdf9 50%,
+#fff5e9 100%)!important;
+  color:var(--ink)!important
+}
+
+body:before {
+display:none!important
+}
+
+.hero {
+min-height:620px!important;
+  display:flex!important;
+  align-items:center!important;
+  background:#fff5e8!important;
+  border-bottom:1px solid #f0c995!important;
+  padding:30px 20px!important
+}
+
+.hero>img {
+position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  filter:saturate(.92) brightness(1.04)!important
+}
+
+.hero:after {
+background:linear-gradient(90deg,
+rgba(255,
+249,
+241,
+.98) 0%,
+rgba(255,
+249,
+241,
+.92) 38%,
+rgba(255,
+249,
+241,
+.35) 66%,
+rgba(255,
+249,
+241,
+.08) 100%)!important
+}
+
+.topbar {
+background:transparent!important;
+  top:18px!important;
+  padding:0 22px!important
+}
+
+.badge {
+background:#fff8ef!important;
+  color:#9a5a20!important;
+  border:1px solid #f0c995!important;
+  border-radius:12px!important;
+  box-shadow:0 6px 18px rgba(190,
+120,
+50,
+.12)!important
+}
+
+.brandbar {
+top:18px!important;
+  left:22px!important;
+  color:#593a27!important;
+  text-shadow:none!important;
+  background:rgba(255,
+250,
+244,
+.9)!important;
+  border:1px solid #f0d5b5!important;
+  border-radius:16px!important;
+  padding:7px 12px 7px 7px!important;
+  box-shadow:0 8px 22px rgba(180,
+110,
+40,
+.12)!important
+}
+
+.brandbar img {
+width:52px!important;
+  height:52px!important;
+  border-radius:12px!important;
+  border:1px solid #e5ad68!important;
+  box-shadow:none!important;
+  background:#fff!important;
+  object-fit:contain!important;
+  padding:4px!important;
+  display:block!important
+}
+
+.brandbar .brandtext {
+text-shadow:none!important
+}
+
+.brandbar .brandtext strong {
+color:#7b471f!important
+}
+
+.brandbar .brandtext span {
+color:#98745b!important
+}
+
+.hero-content {
+z-index:3!important;
+  width:min(1120px,
+100%)!important;
+  text-align:left!important;
+  padding:80px 18px 35px!important;
+  margin:auto!important
+}
+
+.hero-logo {
+width:180px!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  border-radius:18px!important;
+  border:1px solid #edc48e!important;
+  box-shadow:0 14px 35px rgba(150,
+85,
+25,
+.16)!important;
+  background:#fff!important;
+  padding:6px!important;
+  display:block!important
+}
+
+.hero-kicker {
+display:inline-flex!important;
+  background:#fff3e2!important;
+  color:#a35b1d!important;
+  border:1px solid #efc58f!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+  margin-top:16px!important
+}
+
+.hero h1 {
+color:#5a3723!important;
+  text-shadow:none!important;
+  font-size:clamp(34px,
+5.6vw,
+64px)!important;
+  max-width:760px!important;
+  margin:12px 0 8px!important
+}
+
+.hero h2 {
+color:#b56722!important
+}
+
+.hero p {
+color:#705a4a!important;
+  max-width:680px!important;
+  font-size:16px!important
+}
+
+.cta-row {
+justify-content:flex-start!important
+}
+
+.btn {
+background:linear-gradient(135deg,
+#e98b2f,
+#f2aa53)!important;
+  color:#fff!important;
+  border:0!important;
+  border-radius:12px!important;
+  box-shadow:0 9px 24px rgba(190,
+105,
+28,
+.18)!important
+}
+
+.btn.light {
+background:#fff3e3!important;
+  color:#a65c1d!important;
+  border:1px solid #efc58f!important
+}
+
+.nav {
+background:rgba(255,
+250,
+244,
+.96)!important;
+  border-bottom:1px solid #efd8bd!important
+}
+
+.nav a {
+color:#7c542f!important
+}
+
+.nav a:hover {
+background:#fff0dd!important;
+  color:#b56520!important
+}
+
+.brand-nav {
+background:#fff3e4!important;
+  border-color:#efcfae!important;
+  color:#7c542f!important
+}
+
+.brand-nav img {
+border-radius:9px!important
+}
+
+.wrap {
+padding-top:22px!important
+}
+
+.quick-actions {
+margin:0 0 10px!important
+}
+
+.quick-card,
+.card,
+.social,
+.event,
+.photo-card {
+background:#fff!important;
+  border-color:var(--line)!important;
+  box-shadow:0 10px 28px rgba(180,
+105,
+35,
+.09)!important;
+  border-radius:16px!important
+}
+
+.quick-icon,
+.icon,
+.section-heading-icon {
+background:#fff0dd!important;
+  color:#df8128!important
+}
+
+.quick-copy strong,
+.card h2,
+.section-title h2 {
+color:#a65b1c!important
+}
+
+.quick-card:hover,
+.social:hover,
+.photo-card:hover {
+transform:translateY(-3px)!important;
+  box-shadow:0 14px 30px rgba(180,
+105,
+35,
+.14)!important
+}
+
+.card:before {
+background:linear-gradient(90deg,
+transparent,
+#f0a34a,
+transparent)!important
+}
+
+.highlight {
+background:#fff3e3!important;
+  border-left-color:#ee9637!important;
+  color:#76543d!important
+}
+
+.tab {
+background:#fff8ef!important;
+  border-color:#efc996!important;
+  color:#a05a1c!important
+}
+
+.tab.active {
+background:linear-gradient(135deg,
+#ed9638,
+#f3ad59)!important;
+  border-color:#ed9638!important
+}
+
+.date {
+background:#ed9638!important
+}
+
+.qr {
+background:#fff3e3!important;
+  border-color:#efc996!important;
+  color:#704d37!important
+}
+
+.footer {
+background:#fff5e8!important;
+  color:#806a58!important
+}
+
+@media(max-width:760px) {
+.hero {
+min-height:690px!important;
+  padding:20px 14px!important
+}
+
+.hero-content {
+padding-top:130px!important;
+  text-align:center!important
+}
+
+.hero-logo {
+width:150px!important;
+  margin:0 auto!important
+}
+
+.cta-row {
+justify-content:center!important
+}
+
+.hero:after {
+background:linear-gradient(180deg,
+rgba(255,
+249,
+241,
+.94) 0%,
+rgba(255,
+249,
+241,
+.85) 55%,
+rgba(255,
+249,
+241,
+.55) 100%)!important
+}
+
+.topbar {
+display:none!important
+}
+
+.brandbar {
+left:12px!important;
+  top:12px!important
+}
+
+.brandbar .brandtext {
+display:block!important
+}
+
+.brandbar img {
+width:44px!important;
+  height:44px!important
+}
+
+.hero h1 {
+font-size:clamp(32px,
+10vw,
+48px)!important
+}
+
+
+}
+</style>
+</head>
+<body>
+  <!-- ==================== HOME / HERO SECTION ==================== -->
+<!-- EDIT: hero image, logo, title, subtitle, description, and buttons -->
+<header class="hero" id="home">
+    <img src="images/bhavani_2.jpg" alt="Bhavani Mata">
+    <a class="brandbar" href="#home" aria-label="Jai Bhavani Home">
+      <img src="images/mandal_logo.png" alt="Jai Bhavani Nave Yuvak Mandal logo">
+      <span class="brandtext">
+        <strong>जय भवानी नवयुवक मंडळ</strong>
+        <span>Bhalki • Since 2013</span>
+      </span>
+  </a>
+<div class="topbar">
+  <span class="badge">🪔 जय भवानी • Bhalki</span>
+  <span class="badge">📍 Old Town</span>
+</div>
+<div class="hero-orb orb1">🪔</div>
+<div class="hero-orb orb2">✦</div>
+<div class="hero-content">
+  <div class="hero-kicker">🌺 श्री भवानी माता • जय माता दी</div>
+  <h1>Jai Bhavani Nave Yuvak Mandal</h1>
+  <h2>Bhalki • Since 2013</h2>
+  <p>Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.</p>
+  <div class="cta-row">
+    <a class="btn light" href="https://maps.app.goo.gl/zTXAsbW8NG1eoiNe9" target="_blank" rel="noopener">📍 Open Location</a>
+    <a class="btn" href="#gallery">📸 View Bhavani Photos</a>
+  </div>
+</div>
+</header>
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand-nav" href="#home">
+      <img src="images/mandal_logo.png" alt="">
+      <b>Jai Bhavani</b>
+    </a>
+  <a href="#home">⌂ Home</a>
+  <a href="#mata">🌺 Mata</a>
+  <a href="#mandal">🛕 Mandal</a>
+  <a href="#aarti">🪔 Aarti</a>
+  <a href="#programs">🗓️ Programs</a>
+  <a href="#gallery">📸 Photos</a>
+  <a href="#connect">🔗 Connect</a>
+  <a href="#contact">📞 Contact</a>
+</div>
+</nav>
+<main class="wrap">
+  <!-- ==================== QUICK ACTIONS ==================== -->
+<section class="quick-actions fade-in" aria-label="Quick actions">
+    <a class="quick-card" href="https://maps.app.goo.gl/zTXAsbW8NG1eoiNe9" target="_blank" rel="noopener">
+      <span class="quick-icon">📍</span>
+      <span class="quick-copy">
+        <strong>Visit Us</strong>
+        <small>Old Town • Near Hanuman Mandir</small>
+      </span>
+    <span class="mini-arrow">›</span>
+  </a>
+<a class="quick-card instagram" href="https://www.instagram.com/jai_bhavani_2026?stkn=YTkzd252YmlpbDM=" target="_blank" rel="noopener">
+  <span class="quick-icon">◎</span>
+  <span class="quick-copy">
+    <strong>Visit Instagram</strong>
+    <small>@jai_bhavani_2026</small>
+  </span>
+<span class="mini-arrow">↗</span>
+</a>
+<a class="quick-card" href="#gallery">
+  <span class="quick-icon">📸</span>
+  <span class="quick-copy">
+    <strong>View Our Photos</strong>
+    <small>Bhavani Mata • Memories</small>
+  </span>
+<span class="mini-arrow">›</span>
+</a>
+</section>
+<!-- ==================== DAILY AARTI ==================== -->
+<section class="grid fade-in">
+  <article id="aarti" class="card fade-in">
+    <h2>🪔 Daily Aarti</h2>
+    <div class="info-row">
+      <div class="icon">🌅</div>
+      <div>
+        <b>Morning</b>
+        <br>8:30 AM — Puja & Aarti</div>
+    </div>
+  <div class="info-row">
+    <div class="icon">🌙</div>
+    <div>
+      <b>Evening</b>
+      <br>8:30 PM — Puja & Aarti</div>
+  </div>
+<p>
+  <small>Festival-day timings can be updated later.</small>
+</p>
+</article>
+</section>
+<section class="section-title fade-in">
+  <h2>🕉️ Spiritual Corner</h2>
+  <p>A calm space for prayer, devotion and positive thought</p>
+</section>
+<section class="card fade-in" style="text-align:center">
+  <div class="float" style="font-size:42px">🪔</div>
+  <p style="font-family:Georgia,serif;font-size:25px;color:#8d3b20">ॐ श्री भवानी मातायै नमः</p>
+  <p>May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.</p>
+  <p style="color:#8e5a38;font-weight:700">🙏 जय भवानी • जय माता दी 🙏</p>
+</section>
+<section class="section-title fade-in">
+  <h2>🌺 Why We Celebrate 9 Days</h2>
+  <p>Navratri • Nine nights of Shakti</p>
+</section>
+<section class="card fade-in">
+  <p>
+    <b>Navratri</b> means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.</p>
+  <p>The nine days are traditionally associated with the <b>Navadurga</b> — Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.</p>
+  <div class="highlight">For <b>2026</b>, Sharad Navratri begins on <b>11 October</b>. Your Mandal's Aagman and daily program times can be updated here as you finalize them.</div>
+</section>
+<section class="card fade-in">
+  <div class="gallery-tabs">
+    <button class="tab active">Day 1 • Shailaputri</button>
+    <button class="tab">Day 2 • Brahmacharini</button>
+    <button class="tab">Day 3 • Chandraghanta</button>
+    <button class="tab">Day 4 • Kushmanda</button>
+    <button class="tab">Day 5 • Skandamata</button>
+    <button class="tab">Day 6 • Katyayani</button>
+    <button class="tab">Day 7 • Kalaratri</button>
+    <button class="tab">Day 8 • Mahagauri</button>
+    <button class="tab">Day 9 • Siddhidatri</button>
+  </div>
+<p style="text-align:center;color:#80634c">The Mandal can later replace this with the exact local worship tradition followed each day.</p>
+</section>
+<section id="mata" class="section-title fade-in">
+  <h2>🌺 About Bhavani Mata</h2>
+  <p>Shakti • Protection • Courage • Devotion</p>
+</section>
+<section class="grid">
+  <article class="card">
+    <h2>🙏 Maa Bhavani</h2>
+    <p>Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.</p>
+  </article>
+<article id="mandal" class="card">
+  <h2>📜 Our Mandal</h2>
+  <p>
+    <b>Jai Bhavani Nave Yuvak Mandal, Bhalki</b> was established in <b>2013</b>. This space is ready for your original history, founders, milestones and annual traditions.</p>
+</article>
+<article class="card">
+  <h2>🌼 Devotion & Community</h2>
+  <p>The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.</p>
+</article>
+</section>
+<!-- ==================== PROGRAMS / EVENTS ==================== -->
+<section id="programs" class="section-title">
+  <h2>🗓️ Aagman & Programs</h2>
+  <p>Dates and times can be edited by the Mandal</p>
+</section>
+<section class="card">
+  <div class="event-list">
+    <div class="event">
+      <div class="date">11<br>OCT</div>
+      <div>
+        <b>🌺 Bhavani Mata Aagman</b>
+        <br>Time: <i>To be updated</i>
+        <br>Venue: Old Town, near Hanuman Mandir</div>
+    </div>
+  <div class="event">
+    <div class="date">NAV<br>9 DAYS</div>
+    <div>
+      <b>🪔 Sharad Navratri</b>
+      <br>Daily Puja & Aarti • Special programs between festival days<br>Times: <i>To be updated</i>
+    </div>
+</div>
+<div class="event">
+  <div class="date">EDIT<br>ME</div>
+  <div>
+    <b>🎉 Other Mandal Events</b>
+    <br>Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.</div>
+</div>
+</div>
+</section>
+<!-- ==================== PHOTO GALLERY ==================== -->
+<section id="gallery" class="section-title">
+  <h2>📸 Memories Through the Years</h2>
+  <p>Bhavani Mata Darshan • Festival • Decoration • Aagman</p>
+</section>
+<section class="card">
+  <div class="gallery-tabs">
+    <button class="tab active" onclick="showYear('y2026',this)">2026</button>
+    <button class="tab" onclick="showYear('y2025',this)">2025</button>
+    <button class="tab" onclick="showYear('y2024',this)">2024</button>
+    <button class="tab" onclick="showYear('y2023',this)">2023</button>
+    <button class="tab" onclick="showYear('yall',this)">All</button>
+  </div>
+<div id="y2026" class="gallery gallery-year show">
+  <button class="photo-card" onclick="openLightbox('images/bhavani_1.jpg','Bhavani Mata Darshan • 2026')">
+    <img src="images/bhavani_1.jpg" alt="Bhavani Mata photo 1">
+    <span>Bhavani Mata Darshan • 2026</span>
+  </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_2.jpg','Bhavani Mata Darshan • 2026')">
+  <img src="images/bhavani_2.jpg" alt="Bhavani Mata photo 2">
+  <span>Bhavani Mata Darshan • 2026</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_3.jpg','Bhavani Mata Darshan • 2026')">
+  <img src="images/bhavani_3.jpg" alt="Bhavani Mata photo 3">
+  <span>Bhavani Mata Darshan • 2026</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_4.jpg','Bhavani Mata Darshan • 2026')">
+  <img src="images/bhavani_4.jpg" alt="Bhavani Mata photo 4">
+  <span>Bhavani Mata Darshan • 2026</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_5.jpg','Bhavani Mata Darshan • 2026')">
+  <img src="images/bhavani_5.jpg" alt="Bhavani Mata photo 5">
+  <span>Bhavani Mata Darshan • 2026</span>
+</button>
+</div>
+<div id="y2025" class="gallery gallery-year">
+  <button class="photo-card" onclick="openLightbox('images/bhavani_6.jpg','Demo photo • 2025')">
+    <img src="images/bhavani_6.jpg" alt="Bhavani Mata photo 1">
+    <span>Demo photo • 2025</span>
+  </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_7.jpg','Demo photo • 2025')">
+  <img src="images/bhavani_7.jpg" alt="Bhavani Mata photo 2">
+  <span>Demo photo • 2025</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_8.jpg','Demo photo • 2025')">
+  <img src="images/bhavani_8.jpg" alt="Bhavani Mata photo 3">
+  <span>Demo photo • 2025</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_9.jpg','Demo photo • 2025')">
+  <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 4">
+  <span>Demo photo • 2025</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_10.jpg','Demo photo • 2025')">
+  <img src="images/bhavani_10.jpg" alt="Bhavani Mata photo 5">
+  <span>Demo photo • 2025</span>
+</button>
+</div>
+<div id="y2024" class="gallery gallery-year">
+  <button class="photo-card" onclick="openLightbox('images/bhavani_1.jpg','Demo photo • 2024')">
+    <img src="images/bhavani_1.jpg" alt="Bhavani Mata photo 1">
+    <span>Demo photo • 2024</span>
+  </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_3.jpg','Demo photo • 2024')">
+  <img src="images/bhavani_3.jpg" alt="Bhavani Mata photo 2">
+  <span>Demo photo • 2024</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_5.jpg','Demo photo • 2024')">
+  <img src="images/bhavani_5.jpg" alt="Bhavani Mata photo 3">
+  <span>Demo photo • 2024</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_7.jpg','Demo photo • 2024')">
+  <img src="images/bhavani_7.jpg" alt="Bhavani Mata photo 4">
+  <span>Demo photo • 2024</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_9.jpg','Demo photo • 2024')">
+  <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 5">
+  <span>Demo photo • 2024</span>
+</button>
+</div>
+<div id="y2023" class="gallery gallery-year">
+  <button class="photo-card" onclick="openLightbox('images/bhavani_2.jpg','Demo photo • 2023')">
+    <img src="images/bhavani_2.jpg" alt="Bhavani Mata photo 1">
+    <span>Demo photo • 2023</span>
+  </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_4.jpg','Demo photo • 2023')">
+  <img src="images/bhavani_4.jpg" alt="Bhavani Mata photo 2">
+  <span>Demo photo • 2023</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_6.jpg','Demo photo • 2023')">
+  <img src="images/bhavani_6.jpg" alt="Bhavani Mata photo 3">
+  <span>Demo photo • 2023</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_8.jpg','Demo photo • 2023')">
+  <img src="images/bhavani_8.jpg" alt="Bhavani Mata photo 4">
+  <span>Demo photo • 2023</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_10.jpg','Demo photo • 2023')">
+  <img src="images/bhavani_10.jpg" alt="Bhavani Mata photo 5">
+  <span>Demo photo • 2023</span>
+</button>
+</div>
+<div id="yall" class="gallery gallery-year">
+  <button class="photo-card" onclick="openLightbox('images/bhavani_1.jpg','Bhavani Mata Darshan • All')">
+    <img src="images/bhavani_1.jpg" alt="Bhavani Mata photo 1">
+    <span>Bhavani Mata Darshan • All</span>
+  </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_2.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_2.jpg" alt="Bhavani Mata photo 2">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_3.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_3.jpg" alt="Bhavani Mata photo 3">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_4.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_4.jpg" alt="Bhavani Mata photo 4">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_5.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_5.jpg" alt="Bhavani Mata photo 5">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_6.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_6.jpg" alt="Bhavani Mata photo 6">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_7.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_7.jpg" alt="Bhavani Mata photo 7">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_8.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_8.jpg" alt="Bhavani Mata photo 8">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_9.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 9">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_10.jpg','Bhavani Mata Darshan • All')">
+  <img src="images/bhavani_10.jpg" alt="Bhavani Mata photo 10">
+  <span>Bhavani Mata Darshan • All</span>
+</button>
+</div>
+<p style="text-align:center;color:#7d3217;margin-top:15px">
+  <small>These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.</small>
+</p>
+</section>
+<!-- ==================== SOCIAL / CONNECT ==================== -->
+<section id="connect" class="section-title">
+  <h2>🔗 Connect With Us</h2>
+  <p>Follow the Mandal and see the latest Bhavani Mata photos</p>
+</section>
+<section class="socials">
+  <a class="social" href="#" onclick="alert('Facebook link will be added later.');return false">f Facebook<small>Link to be added</small>
+  </a>
+<a class="social" href="#" onclick="alert('YouTube link will be added later.');return false">▶️ YouTube<small>Link to be added</small>
+</a>
+<a class="social" href="https://wa.me/919999999999" target="_blank">💬 WhatsApp<small>Demo contact</small>
+</a>
+</section>
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="section-title">
+  <h2>📞 Contact</h2>
+  <p>Demo details — replace before publishing</p>
+</section>
+<section class="card">
+  <div class="grid">
+    <div>
+      <b>President</b>
+      <br>Mandal Member<br>📞 +91 99999 99999</div>
+    <div>
+      <b>Secretary</b>
+      <br>Mandal Member<br>📞 +91 88888 88888</div>
+    <div>
+      <b>Mandal Contact</b>
+      <br>Jai Bhavani Nave Yuvak Mandal<br>📍 Bhalki, Karnataka</div>
+  </div>
+</section>
+<section class="section-title">
+  <h2>🙏 Support / Donation</h2>
+  <p>UPI section ready for your official details</p>
+</section>
+<section class="qr">
+  <p>
+    <b>UPI QR CODE</b>
+  </p>
+<div style="font-size:55px">▦</div>
+<p>Official UPI ID and QR image will be added here later.</p>
+<p>
+  <small>Do not use this demo for payments.</small>
+</p>
+</section>
+</main>
+<footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br>Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2013</footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="close" aria-label="Close">×</button>
+  <div>
+    <img id="lbimg" src="" alt="">
+    <div id="lbcap" style="text-align:center;color:#ffe5a9;margin-top:8px">
+    </div>
+</div>
+</div>
+<script>
+function showYear(id,btn) {
+  document.querySelectorAll('.gallery-year').forEach(x=>x.classList.remove('show'));
+document.getElementById(id).classList.add('show');
+document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+btn.classList.add('active');
+}
+
+function openLightbox(src,cap) {
+  document.getElementById('lbimg').src=src;
+document.getElementById('lbcap').textContent=cap;
+document.getElementById('lightbox').classList.add('show');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('show')
+}
+
+document.addEventListener('keydown',e=> {
+  if(e.key==='Escape')closeLightbox()
+}
+
+);
+</script>
+</body>
+</html>
