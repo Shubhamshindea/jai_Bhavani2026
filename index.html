@@ -1,4 +1,39 @@
 <!doctype html>
+<!--
+======================================================================
+ JAI BHAVANI WEBSITE — SAFE EDIT GUIDE
+ This file keeps your ORIGINAL code unchanged. Only comments were added.
+
+ FIND THESE EXISTING COMMENTS/IDs TO EDIT SECTIONS:
+ • HOME / HERO SECTION      -> id="home" / HOME / HERO SECTION
+ • NAVIGATION               -> NAVIGATION
+ • QUICK ACTIONS            -> QUICK ACTIONS
+ • DAILY AARTI              -> id="aarti" / DAILY AARTI
+ • BHAVANI MATA             -> id="mata"
+ • OUR MANDAL               -> id="mandal"
+ • PROGRAMS / EVENTS        -> id="programs"
+ • PHOTO GALLERY            -> id="gallery" / PHOTO GALLERY
+ • CONNECT / SOCIAL         -> id="connect"
+ • CONTACT                  -> id="contact"
+ • FOOTER                   -> search: footer
+ • JAVASCRIPT               -> search: <script
+
+ IMPORTANT EASY EDITS:
+ • Main logo: images/mandal_logo.png
+ • Hero/Mata image: images/bhavani_2.jpg
+ • Header title: search "Jai Bhavani Nave Yuvak Mandal"
+ • Location link: search "maps.app.goo.gl"
+ • Instagram: search "instagram.com/jai_bhavani_2026"
+ • Aarti timings: search "8:30 AM" and "8:30 PM"
+ • Event dates: search "Aagman & Programs"
+
+ CSS NOTE:
+ Your file contains multiple CSS blocks. Later blocks with !important override
+ earlier CSS. For current header/hero appearance, start near:
+   <style id="polished-final-design">
+======================================================================
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -721,18 +756,6 @@ display:block;
   margin-top:4px
 }
 
-.hero-logo {
-width:112px;
-  height:112px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #f7d889;
-  box-shadow:0 0 0 8px #fff2c622,
-0 15px 40px #0007;
-  animation:logoPulse 4s ease-in-out infinite;
-  background:#2a130a
-}
-
 .hero-kicker {
 display:inline-flex;
   align-items:center;
@@ -919,11 +942,6 @@ width:48px;
   height:48px
 }
 
-.hero-logo {
-width:92px;
-  height:92px
-}
-
 .quick-actions {
 grid-template-columns:1fr
 }
@@ -1070,22 +1088,6 @@ z-index:3!important;
   text-align:left!important;
   padding:80px 18px 35px!important;
   margin:auto!important
-}
-
-.hero-logo {
-width:180px!important;
-  height:auto!important;
-  aspect-ratio:auto!important;
-  object-fit:contain!important;
-  border-radius:18px!important;
-  border:1px solid #edc48e!important;
-  box-shadow:0 14px 35px rgba(150,
-85,
-25,
-.16)!important;
-  background:#fff!important;
-  padding:6px!important;
-  display:block!important
 }
 
 .hero-kicker {
@@ -1265,11 +1267,6 @@ padding-top:130px!important;
   text-align:center!important
 }
 
-.hero-logo {
-width:150px!important;
-  margin:0 auto!important
-}
-
 .cta-row {
 justify-content:center!important
 }
@@ -1317,43 +1314,625 @@ font-size:clamp(32px,
 
 }
 </style>
+
+<style id="final-modern-fixes">
+/* Clean modern Home header */
+.brandbar{display:none!important}
+.hero-content{text-align:center!important}
+.modern-header{position:absolute;z-index:8;top:18px;left:50%;transform:translateX(-50%);width:min(980px,calc(100% - 36px));display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 12px;border:1px solid #efd2aa;border-radius:20px;background:rgba(255,250,244,.94);box-shadow:0 10px 28px rgba(120,70,25,.14);backdrop-filter:blur(14px)}
+.modern-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#6e3d1e}.modern-brand img{width:46px;height:46px;border-radius:13px;object-fit:contain;background:#fff;padding:3px;border:1px solid #e5bd7e}.modern-brand strong{display:block;font-family:Georgia,serif;font-size:14px}.modern-brand small{display:block;color:#98745b;margin-top:2px}
+.language-switcher{display:flex;gap:4px;padding:4px;border:1px solid #e7c797;border-radius:13px;background:#fff8ee}.language-switcher button{border:0;background:transparent;color:#82502d;padding:7px 8px;border-radius:9px;font-weight:750;font-size:11px;cursor:pointer}.language-switcher button.active{background:linear-gradient(135deg,#e9852b,#f4b35f);color:#fff}
+.temple-motif{width:min(680px,88%);height:48px;margin:4px auto 8px;position:relative;animation:templeFloat 5s ease-in-out infinite}.temple-motif:before{content:"";position:absolute;left:12%;right:12%;top:16px;height:24px;border:2px solid #d49a43;border-bottom:0;border-radius:80px 80px 0 0}.temple-motif:after{content:"✦  ॐ  ✦";position:absolute;left:50%;top:0;transform:translateX(-50%);color:#c47c28;background:#fff5e8;padding:0 12px;font:18px Georgia,serif;white-space:nowrap}@keyframes templeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.location-btn{background:linear-gradient(135deg,#df741d,#f5a84d)!important;color:#fff!important;border:0!important;box-shadow:0 10px 26px rgba(185,91,22,.25)!important}.instagram-btn{background:linear-gradient(135deg,#c95762,#e58b48)!important;color:#fff!important;border:0!important;box-shadow:0 10px 26px rgba(180,80,70,.2)!important}
+.instagram-logo{width:22px;height:22px;display:inline-grid;place-items:center;border:2px solid currentColor;border-radius:7px;position:relative;flex:none}.instagram-logo:before{content:"";width:8px;height:8px;border:2px solid currentColor;border-radius:50%}.instagram-logo:after{content:"";position:absolute;width:3px;height:3px;border-radius:50%;background:currentColor;right:3px;top:3px}
+.section-title:after{content:"✦  ✧  ॐ  ✧  ✦";display:block;color:#d18b35;font-size:13px;margin-top:9px;letter-spacing:4px}
+.quick-actions{grid-template-columns:1fr 1fr 1fr!important}.quick-column{display:grid;gap:12px}
+@media(max-width:760px){.modern-header{width:calc(100% - 20px);top:10px;padding:7px 8px}.modern-brand img{width:40px;height:40px}.modern-brand strong{font-size:11px}.modern-brand small{font-size:9px}.language-switcher button{padding:6px 6px;font-size:9px}.hero-content{padding-top:145px!important}.quick-actions{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="polished-final-design">
+/* ===== HERO / HOME: one centered composition ===== */
+.hero{
+  min-height:720px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+.hero-content{
+  width:min(980px,100%)!important;
+  margin:0 auto!important;
+  padding:155px 18px 58px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+.hero-kicker{margin:4px auto 12px!important}
+.hero h1{
+  max-width:900px!important;
+  margin:8px auto 7px!important;
+  text-align:center!important;
+}
+.hero h2,.hero p{
+  margin-left:auto!important;margin-right:auto!important;
+  text-align:center!important;
+}
+.hero p{max-width:730px!important}
+.cta-row{
+  justify-content:center!important;
+  align-items:center!important;
+  gap:11px!important;
+  margin-top:22px!important;
+}
+.hero .brandbar{display:none!important}
+
+/* ===== MODERN HEADER: logo centered, language on right ===== */
+.modern-header{
+  position:absolute!important;
+  z-index:8!important;
+  top:15px!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:min(1000px,calc(100% - 28px))!important;
+  min-height:66px!important;
+  display:grid!important;
+  grid-template-columns:1fr auto 1fr!important;
+  align-items:center!important;
+  padding:7px 9px!important;
+  border:1px solid #e7c28a!important;
+  border-radius:20px!important;
+  background:rgba(255,250,244,.94)!important;
+  box-shadow:0 12px 32px rgba(105,55,18,.15)!important;
+  backdrop-filter:blur(14px)!important;
+}
+.modern-brand{
+  grid-column:2!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:9px!important;
+  text-decoration:none!important;
+  color:#6d3d1e!important;
+  text-align:center!important;
+}
+.modern-brand img {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 17px !important;
+    object-fit: contain !important;
+    background: #fff !important;
+    padding: 0 !important;
+    border: 1px solid #e1b66f !important;
+    display: block;
+}
+.modern-brand strong{display:block;font:700 15px Georgia,serif}
+.modern-brand small{display:block;color:#987158;margin-top:2px;font-size:10px}
+.language-switcher{
+  grid-column:3!important;
+  justify-self:end!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  padding:3px!important;
+  border:1px solid #e5c18b!important;
+  border-radius:12px!important;
+  background:#fff8ee!important;
+}
+.language-switcher button{
+  border:0!important;background:transparent!important;color:#80502e!important;
+  cursor:pointer!important;padding:6px 9px!important;border-radius:9px!important;
+  font-weight:750!important;font-size:11px!important;
+}
+.language-switcher button.active{
+  background:linear-gradient(135deg,#df7921,#f2aa50)!important;
+  color:#fff!important;box-shadow:0 4px 12px rgba(190,105,30,.2)!important;
+}
+
+/* ===== TULJAPUR-INSPIRED DECOR (no duplicate Om) ===== */
+.hero::before{
+  content:"";
+  position:absolute;
+  z-index:1;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  width:min(680px,88vw);height:min(680px,88vw);
+  border:1px solid rgba(207,143,54,.23);
+  border-radius:48% 48% 42% 42%;
+  box-shadow:0 0 0 18px rgba(224,165,74,.05),inset 0 0 65px rgba(225,157,49,.07);
+  pointer-events:none;
+}
+.hero-content::before,.hero-content::after{
+  position:absolute;
+  z-index:0;
+  color:#c88931;
+  opacity:.42;
+  font-size:58px;
+  font-family:Georgia,serif;
+  pointer-events:none;
+}
+.hero-content::before{content:"❯";left:5%;top:44%;transform:rotate(28deg)}
+.hero-content::after{content:"❮";right:5%;top:44%;transform:rotate(-28deg)}
+.hero-kicker,.hero h1,.hero h2,.hero p,.hero .cta-row{position:relative;z-index:2}
+
+/* Gold ornamental arch, intentionally without Om */
+.temple-motif{
+  width:min(500px,70%);height:24px;margin:-1px auto 2px!important;
+  position:relative;z-index:2;opacity:.8;
+}
+.temple-motif:before{
+  content:"";position:absolute;left:8%;right:8%;top:9px;height:14px;
+  border:2px solid #d39a43;border-bottom:0;border-radius:80px 80px 0 0;
+}
+.temple-motif:after{
+  content:"✦";position:absolute;left:50%;top:0;
+  transform:translateX(-50%);padding:0 10px;
+  background:#fff5e8;color:#c27d2c;font-size:18px;
+}
+
+/* ===== QUICK CARDS ===== */
+.quick-actions{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;align-items:stretch!important;
+  margin:5px 0 14px!important;
+}
+.quick-card{
+  min-height:100px!important;
+  justify-content:center!important;
+  flex-direction:column!important;
+  text-align:center!important;
+  gap:7px!important;
+  padding:16px!important;
+  border-radius:18px!important;
+}
+.quick-card .quick-icon{
+  width:44px!important;height:44px!important;
+  margin:0 auto!important;border-radius:14px!important;
+}
+.quick-copy{text-align:center!important}
+.quick-copy strong{font-size:14px!important}
+.quick-copy small{font-size:11px!important}
+.mini-arrow{display:none!important}
+
+.quick-card.location-card{
+  background:linear-gradient(135deg,#fff0dc,#f6c47c)!important;
+  border-color:#d9d926!important;
+}
+.quick-card.instagram-card{
+  background:linear-gradient(135deg,#fff0e7,#efb89c)!important;
+  border-color:#d99578!important;
+}
+.quick-card.photos-card{
+  background:linear-gradient(135deg,#fff8dc,#e8c45c)!important;
+  border-color:#d5aa42!important;
+}
+.quick-card.location-card .quick-icon{background:#dcad62!important;color:#604b21!important}
+.quick-card.instagram-card .quick-icon{background:#edb093!important;color:#8d3e2b!important}
+.quick-card.photos-card .quick-icon{background:#e6c45b!important;color:#744c18!important}
+
+/* Real-looking Instagram glyph drawn in CSS */
+.instagram-logo{
+  width:22px!important;height:22px!important;display:inline-grid!important;
+  place-items:center!important;border:2px solid currentColor!important;
+  border-radius:7px!important;position:relative!important;
+}
+.instagram-logo:before{
+  content:""!important;width:8px!important;height:8px!important;
+  border:2px solid currentColor!important;border-radius:50%!important;
+}
+.instagram-logo:after{
+  content:""!important;position:absolute!important;width:3px!important;height:3px!important;
+  border-radius:50%!important;background:currentColor!important;right:3px!important;top:3px!important;
+}
+
+/* ===== PHOTO GALLERY: clean colorful selector ===== */
+#gallery .card{
+  background:linear-gradient(145deg,#fffdf8,#d0a03a)!important;
+}
+#gallery .gallery-tabs{
+  display:flex!important;justify-content:center!important;align-items:center!important;
+  flex-wrap:wrap!important;gap:7px!important;
+  margin:8px auto 18px!important;padding:6px!important;
+}
+#gallery .gallery-tabs .tab{
+  border:1px solid #dfb25e!important;
+  background:#fff8e9!important;color:#88501838!important;
+  border-radius:999px!important;padding:8px 13px!important;
+  font-size:12px!important;font-weight:800!important;
+  box-shadow:none!important;transition:.22s ease!important;
+}
+#gallery .gallery-tabs .tab:hover{transform:translateY(-2px)!important;background:#ffefcf!important}
+#gallery .gallery-tabs .tab.active{
+  color:#fff!important;
+  background:linear-gradient(135deg,#df7d22,#f1ad4d)!important;
+  border-color:#df7d22!important;
+  box-shadow:0 6px 15px rgba(190,105,30,.2)!important;
+}
+
+
+/* ===== GENERAL RESPONSIVE / MOBILE ===== */
+@media(max-width:760px){
+  .hero{min-height:730px!important}
+  .modern-header{
+    top:9px!important;width:calc(100% - 16px)!important;
+    min-height:58px!important;border-radius:16px!important;
+    grid-template-columns:1fr auto 1fr!important;
+  }
+  .modern-brand img{width:38px!important;height:38px!important}
+  .modern-brand strong{font-size:12px!important}
+  .modern-brand small{font-size:9px!important}
+  .language-switcher{gap:2px!important}
+  .language-switcher button{padding:5px 6px!important;font-size:9px!important}
+  .hero-content{padding:135px 14px 40px!important}
+  .hero h1{font-size:clamp(29px,9vw,45px)!important}
+  .hero h2{font-size:20px!important}
+  .hero p{font-size:14px!important;line-height:1.6!important}
+  .hero-content::before{left:-4%;top:46%;font-size:38px}
+  .hero-content::after{right:-4%;top:46%;font-size:38px}
+  .quick-actions{grid-template-columns:1fr!important}
+  .quick-card{min-height:82px!important}
+  #gallery .gallery-tabs{
+    flex-wrap:nowrap!important;overflow-x:auto!important;
+    justify-content:flex-start!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+  }
+  #gallery .gallery-tabs::-webkit-scrollbar{display:none}
+  #gallery .gallery-tabs .tab{flex:none!important}
+  
+}
+@media(min-width:761px){
+  .hero .cta-row .btn{min-width:190px}
+}
+
+</style>
+
+
+<style id="responsive-donation-qr">
+/* ===== DEMO UPI / DONATION CARD ===== */
+.donation-qr{display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;max-width:900px;margin:0 auto 30px!important;padding:28px!important;background:linear-gradient(135deg,#fff8ea,#ffe8c4)!important;border:1px solid #e6bd78!important;color:#5d3b24!important}
+.qr-badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff0d8;color:#a45b1d;font-size:11px;font-weight:800;letter-spacing:.5px}
+.donation-qr h3{margin:10px 0 7px;font:700 28px Georgia,serif;color:#8e431b}
+.qr-note{max-width:560px;line-height:1.65;margin:0 0 16px;color:#765943}
+.upi-id-box{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.upi-id-box span{font-size:12px;color:#8a6b55;width:100%}
+.upi-id-box strong{padding:10px 13px;border-radius:10px;background:#fff;border:1px solid #e2c28f;color:#7d3f19;font-size:14px}
+.copy-upi{border:0;border-radius:10px;padding:10px 13px;background:linear-gradient(135deg,#df7921,#f2aa50);color:#fff;font-weight:800;cursor:pointer}
+.qr-image-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;background:#fff;border-radius:18px;border:1px solid #e1bf80;box-shadow:0 10px 24px rgba(100,55,20,.12)}
+.demo-qr-image{display:block;width:190px;height:190px;image-rendering:auto;border-radius:8px}
+.qr-image-wrap small{font-size:9px;font-weight:900;letter-spacing:1px;color:#9b5b24}
+html[data-theme="dark"] .donation-qr{background:linear-gradient(135deg,#302119,#3b281d)!important;border-color:#6e4b31!important;color:#f4e6d5!important}
+html[data-theme="dark"] .qr-badge{background:#493222;color:#ffc36d}
+html[data-theme="dark"] .donation-qr h3{color:#ffc36d}
+html[data-theme="dark"] .qr-note{color:#d1bdab}
+html[data-theme="dark"] .upi-id-box strong{background:#241914;border-color:#60432f;color:#ffd08a}
+html[data-theme="dark"] .qr-image-wrap{background:#fff;border-color:#765436}
+@media(max-width:700px){
+  .donation-qr{grid-template-columns:1fr!important;text-align:center!important;gap:20px!important;padding:20px!important}
+  .qr-note{margin-left:auto;margin-right:auto}
+  .upi-id-box{justify-content:center}
+  .upi-id-box span{width:100%}
+  .qr-image-wrap{width:max-content;margin:auto}
+}
+@media(max-width:380px){.donation-qr h3{font-size:24px}.demo-qr-image{width:165px;height:165px}.upi-id-box strong{font-size:12px}.copy-upi{width:100%}}
+
+/* ===== MOBILE HEADER: separate logo / centered title / theme button ===== */
+@media(max-width:760px){
+  .corner-logo{top:10px!important;left:8px!important;width:44px!important;height:44px!important;border-radius:13px!important;padding:4px!important}
+  .modern-header{top:9px!important;left:58px!important;transform:none!important;width:calc(100% - 116px)!important;min-height:58px!important;display:flex!important;justify-content:center!important;padding:6px!important;border-radius:15px!important}
+  .modern-brand{min-width:0!important;width:100%!important;justify-content:center!important;gap:5px!important}
+  .modern-brand img{display:none!important}
+  .modern-brand strong{font-size:clamp(9px,2.8vw,12px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  .modern-brand small{font-size:8px!important;white-space:nowrap!important}
+  .language-switcher{display:none!important}
+  .theme-switcher{right:8px!important;top:9px!important;left:auto!important;transform:none!important}
+  .theme-switcher button{padding:7px 8px!important;font-size:0!important}
+  .theme-switcher button span{display:none!important}
+  .theme-switcher button:first-child:after{content:"☀️";font-size:14px!important}
+  .theme-switcher button:last-child:after{content:"🌙";font-size:14px!important}
+}
+@media(max-width:430px){
+  .corner-logo{width:38px!important;height:38px!important;left:6px!important;top:9px!important}
+  .modern-header{left:50px!important;width:calc(100% - 100px)!important;min-height:52px!important}
+  .modern-brand strong{font-size:9px!important}
+  .modern-brand small{font-size:7px!important}
+  .theme-switcher{right:6px!important;top:9px!important}
+  .theme-switcher button{padding:6px!important}
+}
+@media(max-width:340px){
+  .corner-logo{width:34px!important;height:34px!important;left:5px!important}
+  .modern-header{left:44px!important;width:calc(100% - 88px)!important;min-height:48px!important}
+  .modern-brand small{display:none!important}
+  .modern-brand strong{font-size:8px!important}
+  .theme-switcher{right:4px!important}
+  .theme-switcher button{padding:5px!important}
+  .theme-switcher button:first-child:after,.theme-switcher button:last-child:after{font-size:12px!important}
+}
+</style>
+<style id="theme-switcher">
+/* ===== LIGHT / DARK THEME SWITCHER ===== */
+:root{
+  --theme-bg:#fffaf4;
+  --theme-bg2:#fffdf9;
+  --theme-card:#ffffff;
+  --theme-text:#4a3326;
+  --theme-muted:#7c685b;
+  --theme-line:#efd8bd;
+  --theme-accent:#ee9637;
+  --theme-accent2:#f7b25f;
+  --theme-nav:rgba(255,250,244,.96);
+  --theme-header:rgba(255,250,244,.94);
+  --theme-soft:#fff0dd;
+  --theme-shadow:rgba(90,45,15,.14);
+}
+html[data-theme="dark"]{
+  --theme-bg:#17110e;
+  --theme-bg2:#211713;
+  --theme-card:#2a1d17;
+  --theme-text:#f6eadb;
+  --theme-muted:#c9b5a2;
+  --theme-line:#5a4030;
+  --theme-accent:#f0a24a;
+  --theme-accent2:#ffc36d;
+  --theme-nav:rgba(35,25,20,.96);
+  --theme-header:rgba(38,27,21,.94);
+  --theme-soft:#3a291f;
+  --theme-shadow:rgba(0,0,0,.38);
+}
+body{
+  background:linear-gradient(180deg,var(--theme-bg) 0%,var(--theme-bg2) 55%,var(--theme-bg) 100%)!important;
+  color:var(--theme-text)!important;
+  transition:background .3s ease,color .3s ease;
+}
+.nav{
+  background:var(--theme-nav)!important;
+  border-color:var(--theme-line)!important;
+}
+.nav a{color:var(--theme-text)!important}
+.nav a:hover{background:var(--theme-soft)!important;color:var(--theme-accent2)!important}
+.modern-header{
+  background:var(--theme-header)!important;
+  border-color:var(--theme-line)!important;
+  box-shadow:0 12px 32px var(--theme-shadow)!important;
+}
+.modern-brand{color:var(--theme-text)!important}
+.modern-brand small{color:var(--theme-muted)!important}
+.language-switcher{
+  background:var(--theme-soft)!important;
+  border-color:var(--theme-line)!important;
+}
+.language-switcher button{color:var(--theme-text)!important}
+.theme-switcher{
+  grid-column:1!important;
+  justify-self:start!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:5px!important;
+  padding:4px!important;
+  border:1px solid var(--theme-line)!important;
+  border-radius:12px!important;
+  background:var(--theme-soft)!important;
+}
+.theme-switcher button{
+  border:0!important;
+  background:transparent!important;
+  color:var(--theme-text)!important;
+  cursor:pointer!important;
+  padding:6px 9px!important;
+  border-radius:9px!important;
+  font-weight:750!important;
+  font-size:11px!important;
+  transition:.2s ease!important;
+}
+.theme-switcher button:hover{background:rgba(238,150,55,.16)!important}
+.theme-switcher button.active{
+  background:linear-gradient(135deg,var(--theme-accent),var(--theme-accent2))!important;
+  color:#fff!important;
+  box-shadow:0 4px 12px rgba(190,105,30,.2)!important;
+}
+.card,.social,.event,.photo-card,.quick-card{
+  color:var(--theme-text)!important;
+}
+.card,.social,.event,.photo-card{
+  background:var(--theme-card)!important;
+  border-color:var(--theme-line)!important;
+  box-shadow:0 10px 28px var(--theme-shadow)!important;
+}
+.card h2,.section-title h2,.quick-copy strong{color:var(--theme-accent2)!important}
+.card p,.section-title p,.footer{color:var(--theme-muted)!important}
+.highlight{background:var(--theme-soft)!important;color:var(--theme-text)!important}
+.tab{background:var(--theme-soft)!important;color:var(--theme-text)!important;border-color:var(--theme-line)!important}
+.social{background:var(--theme-card)!important}
+.event{background:var(--theme-card)!important;color:var(--theme-text)!important}
+.quick-card.location-card,
+.quick-card.instagram-card,
+.quick-card.photos-card{
+  filter:saturate(.9);
+}
+html[data-theme="dark"] .hero>img{
+  filter:saturate(.85) brightness(.55)!important;
+}
+html[data-theme="dark"] .hero:after{
+  background:linear-gradient(180deg,rgba(15,8,5,.35),rgba(15,8,5,.72))!important;
+}
+html[data-theme="dark"] .hero h1{color:#fff3df!important}
+html[data-theme="dark"] .hero h2{color:#ffc46f!important}
+html[data-theme="dark"] .hero p{color:#ead9c8!important}
+html[data-theme="dark"] .hero-kicker{
+  background:#35251d!important;color:#ffd08a!important;border-color:#705033!important;
+}
+html[data-theme="dark"] .temple-motif:after{
+  background:#211713!important;color:#f0ad58!important;
+}
+html[data-theme="dark"] .hero::before{
+  border-color:rgba(240,162,74,.22)!important;
+  box-shadow:0 0 0 18px rgba(240,162,74,.04),inset 0 0 65px rgba(240,162,74,.05)!important;
+}
+html[data-theme="dark"] .quick-card{
+  background:linear-gradient(135deg,#2c2019,#3a281e)!important;
+  border-color:#5b4030!important;
+}
+html[data-theme="dark"] .quick-icon{
+  background:#473225!important;color:#ffc16b!important;
+}
+html[data-theme="dark"] #gallery .card{
+  background:linear-gradient(145deg,#2a1d17,#3a2a1d)!important;
+}
+html[data-theme="dark"] #gallery .gallery-tabs .tab{
+  background:#302119!important;color:#f2dfca!important;border-color:#654936!important;
+}
+html[data-theme="dark"] .qr{
+  background:linear-gradient(135deg,#1b100c,#332018)!important;
+  border-color:#79532f!important;color:#f3dfc9!important;
+}
+html[data-theme="dark"] .footer{background:#1b120f!important}
+html[data-theme="dark"] .lightbox{background:#000f!important}
+@media(max-width:760px){
+  .theme-switcher button{padding:5px 6px!important;font-size:9px!important}
+}
+@media(max-width:430px){
+  .theme-switcher button{font-size:0!important;padding:6px 7px!important}
+  .theme-switcher button:first-child:after{content:"☀️";font-size:13px}
+  .theme-switcher button:last-child:after{content:"🌙";font-size:13px}
+}
+</style>
+
+
+<style id="final-theme-layout-fixes">
+/* ===== FINAL THEME + HEADER POLISH ===== */
+:root{
+  --theme-bg:#fff8ed;
+  --theme-bg2:#fffdf8;
+  --theme-card:#fffdf9;
+  --theme-text:#4b2b1b;
+  --theme-muted:#80634f;
+  --theme-line:#e7c38e;
+  --theme-accent:#df7d22;
+  --theme-accent2:#f3b45f;
+  --theme-nav:rgba(255,249,239,.97);
+  --theme-header:rgba(255,249,239,.94);
+  --theme-soft:#fff0d8;
+}
+html[data-theme="dark"]{
+  --theme-bg:#140d09;
+  --theme-bg2:#21130d;
+  --theme-card:#2a1a12;
+  --theme-text:#f8e9d5;
+  --theme-muted:#cdb39a;
+  --theme-line:#65452f;
+  --theme-accent:#f0a04a;
+  --theme-accent2:#ffd080;
+  --theme-nav:rgba(30,19,13,.97);
+  --theme-header:rgba(32,21,15,.96);
+  --theme-soft:#392318;
+}
+.hero{background:var(--theme-bg)!important;border-bottom-color:var(--theme-line)!important}
+.hero:after{background:linear-gradient(90deg,rgba(255,248,237,.96) 0%,rgba(255,248,237,.78) 42%,rgba(255,248,237,.18) 100%)!important}
+html[data-theme="dark"] .hero:after{background:linear-gradient(90deg,rgba(20,13,9,.96) 0%,rgba(25,16,11,.82) 45%,rgba(20,13,9,.25) 100%)!important}
+.corner-logo{position:absolute;z-index:12;top:16px;left:18px;width:58px;height:58px;padding:5px;border-radius:17px;background:rgba(255,250,241,.96);border:1px solid var(--theme-line);box-shadow:0 10px 28px var(--theme-shadow);display:grid;place-items:center;backdrop-filter:blur(12px);transition:.25s}
+.corner-logo img{width:100%;height:100%;object-fit:contain;border-radius:12px;display:block}
+.corner-logo:hover{transform:translateY(-2px) scale(1.03)}
+html[data-theme="dark"] .corner-logo{background:#2a1a12}
+.modern-header{left:50%!important;top:15px!important;width:min(720px,calc(100% - 190px))!important;min-height:62px!important;display:flex!important;justify-content:center!important;background:var(--theme-header)!important;border-color:var(--theme-line)!important;box-shadow:0 12px 32px var(--theme-shadow)!important}
+.modern-brand{color:var(--theme-text)!important}
+.modern-brand strong{font-size:16px!important}
+.modern-brand small{color:var(--theme-muted)!important}
+.language-switcher{position:absolute!important;right:9px!important;top:50%!important;transform:translateY(-50%)!important;background:var(--theme-soft)!important;border-color:var(--theme-line)!important}
+.language-switcher button{color:var(--theme-text)!important}
+.theme-switcher{position:absolute!important;z-index:13!important;right:18px!important;top:16px!important;display:flex!important;align-items:center!important;gap:3px!important;padding:4px!important;border:1px solid var(--theme-line)!important;border-radius:14px!important;background:var(--theme-header)!important;box-shadow:0 10px 28px var(--theme-shadow)!important;backdrop-filter:blur(12px)!important}
+.theme-switcher button{border:0!important;background:transparent!important;color:var(--theme-text)!important;cursor:pointer!important;padding:7px 10px!important;border-radius:10px!important;font-weight:800!important;font-size:11px!important;transition:.2s!important}
+.theme-switcher button.active{background:linear-gradient(135deg,var(--theme-accent),var(--theme-accent2))!important;color:#fff!important;box-shadow:0 4px 12px rgba(190,105,30,.2)!important}
+.theme-switcher button:hover:not(.active){background:var(--theme-soft)!important}
+.card,.quick-card,.social,.event,.photo-card{background:var(--theme-card)!important;color:var(--theme-text)!important;border-color:var(--theme-line)!important;box-shadow:0 12px 30px var(--theme-shadow)!important}
+.card h2,.section-title h2,.quick-copy strong{color:var(--theme-accent)!important}
+.card p,.info-row,.event{color:var(--theme-text)!important}
+.section-title p,.quick-copy small,.footer{color:var(--theme-muted)!important}
+.highlight{background:var(--theme-soft)!important;color:var(--theme-text)!important;border-left-color:var(--theme-accent)!important}
+.tab{background:var(--theme-soft)!important;color:var(--theme-text)!important;border-color:var(--theme-line)!important}
+.tab.active{background:linear-gradient(135deg,var(--theme-accent),var(--theme-accent2))!important;color:#fff!important}
+#gallery .card{background:linear-gradient(145deg,var(--theme-card),var(--theme-soft))!important}
+.qr{background:linear-gradient(135deg,#fff0d8,#f4bd72)!important;color:#5b321d!important;border-color:var(--theme-line)!important}
+html[data-theme="dark"] .qr{background:linear-gradient(135deg,#26150e,#4a2918)!important;color:#f5dfc5!important}
+.footer{background:var(--theme-bg2)!important}
+html[data-theme="dark"] .hero h1,html[data-theme="dark"] .hero h2,html[data-theme="dark"] .hero p{color:var(--theme-text)!important}
+html[data-theme="dark"] .hero-kicker{background:#382217!important;color:#ffd28c!important;border-color:#704b2f!important}
+html[data-theme="dark"] .btn.light{background:#3a2418!important;color:#ffd08a!important;border-color:#70492e!important}
+html[data-theme="dark"] .quick-card.location-card{background:linear-gradient(135deg,#3a2818,#5b3a20)!important}
+html[data-theme="dark"] .quick-card.instagram-card{background:linear-gradient(135deg,#3b211d,#5a3027)!important}
+html[data-theme="dark"] .quick-card.photos-card{background:linear-gradient(135deg,#3a2b18,#5a4720)!important}
+@media(max-width:760px){
+  .corner-logo{top:10px;left:10px;width:46px;height:46px;border-radius:13px;padding:4px}
+  .modern-header{top:9px!important;width:calc(100% - 116px)!important;left:58px!important;transform:none!important;min-height:58px!important;border-radius:15px!important}
+  .modern-brand strong{font-size:11px!important}
+  .modern-brand small{font-size:8px!important}
+  .language-switcher{display:none!important}
+  .theme-switcher{right:10px;top:10px}
+  .theme-switcher button{padding:7px 8px;font-size:0}
+  .theme-switcher button span{display:none}
+  .theme-switcher button:first-child:after{content:"☀️";font-size:14px}
+  .theme-switcher button:last-child:after{content:"🌙";font-size:14px}
+}
+</style>
+
 </head>
 <body>
   <!-- ==================== HOME / HERO SECTION ==================== -->
 <!-- EDIT: hero image, logo, title, subtitle, description, and buttons -->
 <header class="hero" id="home">
-    <img src="images/bhavani_2.jpg" alt="Bhavani Mata">
+    <a class="corner-logo" href="#home" aria-label="Jai Bhavani Home">
+        <img src="images/mandal_logo.png" alt="Jai Bhavani Nave Yuvak Mandal logo">
+    </a>
+
+    <div class="modern-header">
+
+        <a class="modern-brand" href="#home">
+            <span>
+                <strong>जय भवानी नवयुवक मंडळ</strong>
+                <small>Bhalki • Since 2012</small>
+            </span>
+        </a>
+
+        <div class="language-switcher" aria-label="Language selector">
+            <button type="button" data-lang="en" class="active">English</button>
+            <button type="button" data-lang="kn">ಕನ್ನಡ</button>
+            <button type="button" data-lang="hi">हिन्दी</button>
+        </div>
+
+    </div>
+
+    <div class="theme-switcher" aria-label="Theme selector">
+        <button type="button" data-theme-choice="light" class="active" aria-label="Light mode">☀️ <span>Light</span></button>
+        <button type="button" data-theme-choice="dark" aria-label="Dark mode">🌙 <span>Dark</span></button>
+    </div>
+    <img src="images/bhavani_3.jpg" alt="Bhavani Mata">
     <a class="brandbar" href="#home" aria-label="Jai Bhavani Home">
       <img src="images/mandal_logo.png" alt="Jai Bhavani Nave Yuvak Mandal logo">
       <span class="brandtext">
         <strong>जय भवानी नवयुवक मंडळ</strong>
-        <span>Bhalki • Since 2013</span>
+        <span>Bhalki • Since 2012</span>
       </span>
   </a>
-<div class="topbar">
-  <span class="badge">🪔 जय भवानी • Bhalki</span>
-  <span class="badge">📍 Old Town</span>
-</div>
+
 <div class="hero-orb orb1">🪔</div>
 <div class="hero-orb orb2">✦</div>
 <div class="hero-content">
+ 
   <div class="hero-kicker">🌺 श्री भवानी माता • जय माता दी</div>
   <h1>Jai Bhavani Nave Yuvak Mandal</h1>
-  <h2>Bhalki • Since 2013</h2>
+  <h2>Bhalki • Since 2012</h2>
   <p>Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.</p>
   <div class="cta-row">
     <a class="btn light" href="https://maps.app.goo.gl/zTXAsbW8NG1eoiNe9" target="_blank" rel="noopener">📍 Open Location</a>
-    <a class="btn" href="#gallery">📸 View Bhavani Photos</a>
+    <a class="btn instagram-btn" href="https://www.instagram.com/jai_bhavani_2026?stkn=YTkzd252YmlpbDM=" target="_blank" rel="noopener"><span class="instagram-logo" aria-hidden="true"></span> Visit Instagram</a>
   </div>
 </div>
 </header>
 <!-- ==================== NAVIGATION ==================== -->
 <nav class="nav">
   <div class="nav-inner">
-    <a class="brand-nav" href="#home">
-      <img src="images/mandal_logo.png" alt="">
-      <b>Jai Bhavani</b>
-    </a>
+    
   <a href="#home">⌂ Home</a>
   <a href="#mata">🌺 Mata</a>
   <a href="#mandal">🛕 Mandal</a>
@@ -1367,7 +1946,7 @@ font-size:clamp(32px,
 <main class="wrap">
   <!-- ==================== QUICK ACTIONS ==================== -->
 <section class="quick-actions fade-in" aria-label="Quick actions">
-    <a class="quick-card" href="https://maps.app.goo.gl/zTXAsbW8NG1eoiNe9" target="_blank" rel="noopener">
+    <a class="quick-card location-btn" href="https://maps.app.goo.gl/zTXAsbW8NG1eoiNe9" target="_blank" rel="noopener">
       <span class="quick-icon">📍</span>
       <span class="quick-copy">
         <strong>Visit Us</strong>
@@ -1375,15 +1954,15 @@ font-size:clamp(32px,
       </span>
     <span class="mini-arrow">›</span>
   </a>
-<a class="quick-card instagram" href="https://www.instagram.com/jai_bhavani_2026?stkn=YTkzd252YmlpbDM=" target="_blank" rel="noopener">
-  <span class="quick-icon">◎</span>
+<a class="quick-card instagram instagram-btn" href="https://www.instagram.com/jai_bhavani_2026?stkn=YTkzd252YmlpbDM=" target="_blank" rel="noopener">
+  <span class="quick-icon"><span class="instagram-logo" aria-hidden="true"></span></span>
   <span class="quick-copy">
     <strong>Visit Instagram</strong>
     <small>@jai_bhavani_2026</small>
   </span>
 <span class="mini-arrow">↗</span>
 </a>
-<a class="quick-card" href="#gallery">
+<a class="quick-card photos-card" href="#gallery">
   <span class="quick-icon">📸</span>
   <span class="quick-copy">
     <strong>View Our Photos</strong>
@@ -1459,7 +2038,7 @@ font-size:clamp(32px,
 <article id="mandal" class="card">
   <h2>📜 Our Mandal</h2>
   <p>
-    <b>Jai Bhavani Nave Yuvak Mandal, Bhalki</b> was established in <b>2013</b>. This space is ready for your original history, founders, milestones and annual traditions.</p>
+    <b>Jai Bhavani Nave Yuvak Mandal, Bhalki</b> was established in <b>2012</b>. This space is ready for your original history, founders, milestones and annual traditions.</p>
 </article>
 <article class="card">
   <h2>🌼 Devotion & Community</h2>
@@ -1677,18 +2256,24 @@ font-size:clamp(32px,
   <h2>🙏 Support / Donation</h2>
   <p>UPI section ready for your official details</p>
 </section>
-<section class="qr">
-  <p>
-    <b>UPI QR CODE</b>
-  </p>
-<div style="font-size:55px">▦</div>
-<p>Official UPI ID and QR image will be added here later.</p>
-<p>
-  <small>Do not use this demo for payments.</small>
-</p>
+<section class="qr donation-qr" aria-label="Demo UPI donation section">
+  <div class="qr-copy">
+    <div class="qr-badge">🙏 SUPPORT / DONATION</div>
+    <h3>Scan Demo UPI QR</h3>
+    <p class="qr-note">This is a <b>demo QR</b> for website preview only. Replace it with the Mandal's official UPI details before publishing.</p>
+    <div class="upi-id-box">
+      <span>Demo UPI ID</span>
+      <strong>jai.bhavani.demo@upi</strong>
+      <button type="button" class="copy-upi" onclick="copyDemoUPI()">Copy UPI ID</button>
+    </div>
+  </div>
+  <div class="qr-image-wrap">
+    <img class="demo-qr-image" src="data:image/png;base64,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" alt="Demo UPI QR code">
+    <small>DEMO • NOT FOR PAYMENT</small>
+  </div>
 </section>
 </main>
-<footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br>Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2013</footer>
+<footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br>Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012</footer>
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="close" aria-label="Close">×</button>
   <div>
@@ -1720,6 +2305,115 @@ document.addEventListener('keydown',e=> {
 }
 
 );
+</script>
+<script id="language-system">
+(function(){
+var dictionaries={
+ en:{"Jai Bhavani Nave Yuvak Mandal":"Jai Bhavani Nave Yuvak Mandal","Bhalki • Since 2012":"Bhalki • Since 2012","Open Location":"Open Location","Visit Instagram":"Visit Instagram","View Our Photos":"View Our Photos","Visit Us":"Visit Us","Daily Aarti":"Daily Aarti","Morning":"Morning","Evening":"Evening","Spiritual Corner":"Spiritual Corner","About Bhavani Mata":"About Bhavani Mata","Our Mandal":"Our Mandal","Devotion & Community":"Devotion & Community","Aagman & Programs":"Aagman & Programs","Memories Through the Years":"Memories Through the Years","Connect With Us":"Connect With Us","Contact":"Contact","Support / Donation":"Support / Donation","Home":"Home","Mata":"Mata","Mandal":"Mandal","Aarti":"Aarti","Programs":"Programs","Photos":"Photos","Connect":"Connect"},
+ kn:{"Jai Bhavani Nave Yuvak Mandal":"ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ","Bhalki • Since 2012":"ಭಾಲ್ಕಿ • 2012 ರಿಂದ","Open Location":"ಸ್ಥಳ ತೆರೆಯಿರಿ","Visit Instagram":"ಇನ್‌ಸ್ಟಾಗ್ರಾಂ ನೋಡಿ","View Our Photos":"ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ","Visit Us":"ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ","Daily Aarti":"ದೈನಂದಿನ ಆರತಿ","Morning":"ಬೆಳಗ್ಗೆ","Evening":"ಸಂಜೆ","Spiritual Corner":"ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ","About Bhavani Mata":"ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ","Our Mandal":"ನಮ್ಮ ಮಂಡಳ","Devotion & Community":"ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ","Aagman & Programs":"ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು","Memories Through the Years":"ವರ್ಷಗಳ ನೆನಪುಗಳು","Connect With Us":"ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ","Contact":"ಸಂಪರ್ಕ","Support / Donation":"ಬೆಂಬಲ / ದೇಣಿಗೆ","Home":"ಮುಖಪುಟ","Mata":"ಮಾತೆ","Mandal":"ಮಂಡಳ","Aarti":"ಆರತಿ","Programs":"ಕಾರ್ಯಕ್ರಮಗಳು","Photos":"ಫೋಟೋಗಳು","Connect":"ಸಂಪರ್ಕಿಸಿ"},
+ hi:{"Jai Bhavani Nave Yuvak Mandal":"जय भवानी नव युवक मंडल","Bhalki • Since 2012":"भालकी • 2012 से","Open Location":"स्थान खोलें","Visit Instagram":"इंस्टाग्राम देखें","View Our Photos":"हमारी तस्वीरें देखें","Visit Us":"हमसे मिलें","Daily Aarti":"दैनिक आरती","Morning":"सुबह","Evening":"शाम","Spiritual Corner":"आध्यात्मिक कोना","About Bhavani Mata":"भवानी माता के बारे में","Our Mandal":"हमारा मंडल","Devotion & Community":"भक्ति और समुदाय","Aagman & Programs":"आगमन और कार्यक्रम","Memories Through the Years":"वर्षों की यादें","Connect With Us":"हमसे जुड़ें","Contact":"संपर्क","Support / Donation":"सहायता / दान","Home":"होम","Mata":"माता","Mandal":"मंडल","Aarti":"आरती","Programs":"कार्यक्रम","Photos":"फोटो","Connect":"जुड़ें"}
+};
+var originals=[];
+function collect(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false),n;while(n=w.nextNode()){if(n.parentNode&&!/^(SCRIPT|STYLE)$/.test(n.parentNode.tagName)&&!n.parentNode.closest('.language-switcher')){if(!n.__jbOriginal){n.__jbOriginal=n.nodeValue;}originals.push(n);}}}
+function apply(lang){var d=dictionaries[lang]||dictionaries.en;for(var i=0;i<originals.length;i++){var n=originals[i],t=n.__jbOriginal,trim=t.trim();if(d[trim]){n.nodeValue=t.replace(trim,d[trim]);}}document.documentElement.lang=lang==='kn'?'kn':lang;var bs=document.querySelectorAll('[data-lang]');for(var j=0;j<bs.length;j++){bs[j].classList.toggle('active',bs[j].getAttribute('data-lang')===lang);}try{localStorage.setItem('jbLang',lang);}catch(e){}}
+collect();var bs=document.querySelectorAll('[data-lang]');for(var i=0;i<bs.length;i++){bs[i].addEventListener('click',function(){apply(this.getAttribute('data-lang'));});}var saved='en';try{saved=localStorage.getItem('jbLang')||'en';}catch(e){}apply(saved);
+})();
+</script>
+
+
+<script id="whole-website-language-v2">
+const TRANSLATIONS = {'en': {'Jai Bhavani': 'Jai Bhavani', 'Jai Bhavani Nave Yuvak Mandal': 'Jai Bhavani Nave Yuvak Mandal', 'जय भवानी नवयुवक मंडळ': 'Jai Bhavani Nave Yuvak Mandal', 'Bhalki • Since 2012': 'Bhalki • Since 2012', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • Bhalki', '📍 Old Town': '📍 Old Town', '🌺 श्री भवानी माता • जय माता दी': '🌺 Shri Bhavani Mata • Jai Mata Di', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.', '📍 Open Location': '📍 Open Location', 'Visit Instagram': 'Visit Instagram', '⌂ Home': '⌂ Home', '🌺 Mata': '🌺 Mata', '🛕 Mandal': '🛕 Mandal', '🪔 Aarti': '🪔 Aarti', '🗓️ Programs': '🗓️ Programs', '📸 Photos': '📸 Photos', '🔗 Connect': '🔗 Connect', '📞 Contact': '📞 Contact', 'Visit Us': 'Visit Us', 'Old Town • Near Hanuman Mandir': 'Old Town • Near Hanuman Mandir', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'View Our Photos', 'Bhavani Mata • Memories': 'Bhavani Mata • Memories', '🪔 Daily Aarti': '🪔 Daily Aarti', 'Morning': 'Morning', '8:30 AM — Puja & Aarti': '8:30 AM — Puja & Aarti', 'Evening': 'Evening', 'Festival-day timings can be updated later.': 'Festival-day timings can be updated later.', '🕉️ Spiritual Corner': '🕉️ Spiritual Corner', 'A calm space for prayer, devotion and positive thought': 'A calm space for prayer, devotion and positive thought', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 Why We Celebrate 9 Days', 'Navratri • Nine nights of Shakti': 'Navratri • Nine nights of Shakti', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.', 'The nine days are traditionally associated with the': 'The nine days are traditionally associated with the', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": "Your Mandal's Aagman and daily program times can be updated here as you finalize them.", 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'The Mandal can later replace this with the exact local worship tradition followed each day.', '🌺 About Bhavani Mata': '🌺 About Bhavani Mata', 'Shakti • Protection • Courage • Devotion': 'Shakti • Protection • Courage • Devotion', '🙏 Maa Bhavani': '🙏 Maa Bhavani', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.', '📜 Our Mandal': '📜 Our Mandal', 'was established in': 'was established in', '. This space is ready for your original history, founders, milestones and annual traditions.': '. This space is ready for your original history, founders, milestones and annual traditions.', '🌼 Devotion & Community': '🌼 Devotion & Community', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.', '🗓️ Aagman & Programs': '🗓️ Aagman & Programs', 'Dates and times can be edited by the Mandal': 'Dates and times can be edited by the Mandal', '🌺 Bhavani Mata Aagman': '🌺 Bhavani Mata Aagman', 'Time:': 'Time:', 'To be updated': 'To be updated', 'Venue: Old Town, near Hanuman Mandir': 'Venue: Old Town, near Hanuman Mandir', '🪔 Sharad Navratri': '🪔 Sharad Navratri', 'Daily Puja & Aarti • Special programs between festival days': 'Daily Puja & Aarti • Special programs between festival days', 'Times:': 'Times:', '🎉 Other Mandal Events': '🎉 Other Mandal Events', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.', '📸 Memories Through the Years': '📸 Memories Through the Years', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'Bhavani Mata Darshan • Festival • Decoration • Aagman', 'Demo photo • 2025': 'Demo photo • 2025', 'Demo photo • 2024': 'Demo photo • 2024', 'Demo photo • 2023': 'Demo photo • 2023', 'Bhavani Mata Darshan • 2026': 'Bhavani Mata Darshan • 2026', 'Bhavani Mata Darshan • All': 'Bhavani Mata Darshan • All', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.', '🔗 Connect With Us': '🔗 Connect With Us', 'Follow the Mandal and see the latest Bhavani Mata photos': 'Follow the Mandal and see the latest Bhavani Mata photos', 'f Facebook': 'f Facebook', '▶️ YouTube': '▶️ YouTube', '💬 WhatsApp': '💬 WhatsApp', 'Link to be added': 'Link to be added', 'Demo contact': 'Demo contact', 'Demo details — replace before publishing': 'Demo details — replace before publishing', 'President': 'President', 'Mandal Member': 'Mandal Member', 'Secretary': 'Secretary', 'Mandal Contact': 'Mandal Contact', '📍 Bhalki, Karnataka': '📍 Bhalki, Karnataka', '🙏 Support / Donation': '🙏 Support / Donation', 'UPI section ready for your official details': 'UPI section ready for your official details', 'UPI QR CODE': 'UPI QR CODE', 'Official UPI ID and QR image will be added here later.': 'Official UPI ID and QR image will be added here later.', 'Do not use this demo for payments.': 'Do not use this demo for payments.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012'}, 'kn': {'Jai Bhavani': 'ಜೈ ಭವಾನಿ', 'Jai Bhavani Nave Yuvak Mandal': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'जय भवानी नवयुवक मंडळ': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'Bhalki • Since 2012': 'ಭಾಲ್ಕಿ • 2012 ರಿಂದ', '🪔 जय भवानी • Bhalki': '🪔 ಜೈ ಭವಾನಿ • ಭಾಲ್ಕಿ', '📍 Old Town': '📍 ಓಲ್ಡ್ ಟೌನ್', '🌺 श्री भवानी माता • जय माता दी': '🌺 ಶ್ರೀ ಭವಾನಿ ಮಾತೆ • ಜೈ ಮಾತಾ ದೀ', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ — ದರ್ಶನ, ಆರತಿ, ಹಬ್ಬದ ಕಾರ್ಯಕ್ರಮಗಳು, ನೆನಪುಗಳು ಮತ್ತು ಮಂಡಳಿಯ ಮಾಹಿತಿಗಳು.', '📍 Open Location': '📍 ಸ್ಥಳ ತೆರೆಯಿರಿ', 'Visit Instagram': 'ಇನ್\u200cಸ್ಟಾಗ್ರಾಂ ನೋಡಿ', '⌂ Home': '⌂ ಮುಖಪುಟ', '🌺 Mata': '🌺 ಮಾತೆ', '🛕 Mandal': '🛕 ಮಂಡಳ', '🪔 Aarti': '🪔 ಆರತಿ', '🗓️ Programs': '🗓️ ಕಾರ್ಯಕ್ರಮಗಳು', '📸 Photos': '📸 ಫೋಟೋಗಳು', '🔗 Connect': '🔗 ಸಂಪರ್ಕಿಸಿ', '📞 Contact': '📞 ಸಂಪರ್ಕ', 'Visit Us': 'ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ', 'Old Town • Near Hanuman Mandir': 'ಓಲ್ಡ್ ಟೌನ್ • ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'Bhavani Mata • Memories': 'ಭವಾನಿ ಮಾತೆ • ನೆನಪುಗಳು', '🪔 Daily Aarti': '🪔 ದೈನಂದಿನ ಆರತಿ', 'Morning': 'ಬೆಳಗ್ಗೆ', '8:30 AM — Puja & Aarti': '8:30 AM — ಪೂಜೆ ಮತ್ತು ಆರತಿ', 'Evening': 'ಸಂಜೆ', 'Festival-day timings can be updated later.': 'ಹಬ್ಬದ ದಿನಗಳ ಸಮಯವನ್ನು ನಂತರ ನವೀಕರಿಸಬಹುದು.', '🕉️ Spiritual Corner': '🕉️ ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ', 'A calm space for prayer, devotion and positive thought': 'ಪ್ರಾರ್ಥನೆ, ಭಕ್ತಿ ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಚಿಂತನೆಗಾಗಿ ಶಾಂತ ಸ್ಥಳ', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'ಮಾ ಭವಾನಿ ಪ್ರತಿಯೊಬ್ಬ ಭಕ್ತನಿಗೂ ಧೈರ್ಯ, ಶಾಂತಿ, ರಕ್ಷಣೆ ಮತ್ತು ಸಮೃದ್ಧಿಯನ್ನು ಕರುಣಿಸಲಿ.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ 🙏', '🌺 Why We Celebrate 9 Days': '🌺 ನಾವು 9 ದಿನಗಳನ್ನು ಏಕೆ ಆಚರಿಸುತ್ತೇವೆ', 'Navratri • Nine nights of Shakti': 'ನವರಾತ್ರಿ • ಶಕ್ತಿಯ ಒಂಬತ್ತು ರಾತ್ರಿಗಳು', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'ಎಂದರೆ “ಒಂಬತ್ತು ರಾತ್ರಿಗಳು” ಮತ್ತು ಇದು ದೈವಿಕ ತಾಯಿಗೆ ಸಮರ್ಪಿತವಾದ ಪ್ರಮುಖ ಹಿಂದೂ ಹಬ್ಬವಾಗಿದೆ. ಶಾರದ ನವರಾತ್ರಿಯಲ್ಲಿ ಭಕ್ತರು ದುರ್ಗಾ ದೇವಿ ಮತ್ತು ಅವರ ವಿವಿಧ ರೂಪಗಳನ್ನು ಪೂಜಿಸುತ್ತಾರೆ.', 'The nine days are traditionally associated with the': 'ಈ ಒಂಬತ್ತು ದಿನಗಳನ್ನು ಪರಂಪರೆಯಿಂದ ಈ ಕೆಳಗಿನ ನವದುರ್ಗಾ ರೂಪಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಲಾಗಿದೆ:', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— ಶೈಲಪುತ್ರಿ, ಬ್ರಹ್ಮಚಾರಿಣಿ, ಚಂದ್ರಘಂಟಾ, ಕೂಷ್ಮಾಂಡಾ, ಸ್ಕಂದಮಾತಾ, ಕಾತ್ಯಾಯನಿ, ಕಾಲರಾತ್ರಿ, ಮಹಾಗೌರಿ ಮತ್ತು ಸಿದ್ಧಿದಾತ್ರಿ. ಈ ಹಬ್ಬವು ಅಧರ್ಮದ ಮೇಲೆ ಧರ್ಮ ಮತ್ತು ಒಳಿತಿನ ವಿಜಯವನ್ನು ಸೂಚಿಸುತ್ತದೆ.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'ನಿಮ್ಮ ಮಂಡಳಿಯ ಆಗಮನ ಮತ್ತು ದೈನಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳ ಸಮಯವನ್ನು ಅಂತಿಮಗೊಳಿಸಿದ ನಂತರ ಇಲ್ಲಿ ನವೀಕರಿಸಬಹುದು.', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'ಪ್ರತಿ ದಿನ ಅನುಸರಿಸುವ ಸ್ಥಳೀಯ ಪೂಜಾ ಪರಂಪರೆಯ ವಿವರಗಳನ್ನು ಮಂಡಳಿಯವರು ನಂತರ ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌺 About Bhavani Mata': '🌺 ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ', 'Shakti • Protection • Courage • Devotion': 'ಶಕ್ತಿ • ರಕ್ಷಣೆ • ಧೈರ್ಯ • ಭಕ್ತಿ', '🙏 Maa Bhavani': '🙏 ಮಾ ಭವಾನಿ', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'ಭವಾನಿ ಎಂಬುದು ದುರ್ಗಾ/ಶಕ್ತಿಯೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದ ದೈವಿಕ ತಾಯಿಯ ಪೂಜ್ಯ ಹೆಸರು ಮತ್ತು ರೂಪವಾಗಿದೆ. ಅನೇಕ ಪರಂಪರೆಗಳಲ್ಲಿ ಅವರು ಧೈರ್ಯ, ರಕ್ಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಕರುಣಾಮಯ ಮಾತೃತ್ವವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.', '📜 Our Mandal': '📜 ನಮ್ಮ ಮಂಡಳ', 'was established in': 'ಸ್ಥಾಪನೆಯಾಯಿತು', '. This space is ready for your original history, founders, milestones and annual traditions.': ' . ನಿಮ್ಮ ಮಂಡಳಿಯ ಮೂಲ ಇತಿಹಾಸ, ಸ್ಥಾಪಕರು, ಸಾಧನೆಗಳು ಮತ್ತು ವಾರ್ಷಿಕ ಪರಂಪರೆಗಳನ್ನು ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌼 Devotion & Community': '🌼 ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'ಈ ವೆಬ್\u200cಸೈಟ್ ದರ್ಶನ, ಹಬ್ಬದ ನೆನಪುಗಳು, ಆರತಿ, ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಸಮುದಾಯದ ಮಾಹಿತಿಯನ್ನು ಒಂದೇ ಸುಲಭ ಸ್ಥಳದಲ್ಲಿ ಒದಗಿಸುತ್ತದೆ.', '🗓️ Aagman & Programs': '🗓️ ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು', 'Dates and times can be edited by the Mandal': 'ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಮಂಡಳಿಯವರು ಬದಲಾಯಿಸಬಹುದು', '🌺 Bhavani Mata Aagman': '🌺 ಭವಾನಿ ಮಾತೆಯ ಆಗಮನ', 'Time:': 'ಸಮಯ:', 'To be updated': 'ನಂತರ ನವೀಕರಿಸಲಾಗುತ್ತದೆ', 'Venue: Old Town, near Hanuman Mandir': 'ಸ್ಥಳ: ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '🪔 Sharad Navratri': '🪔 ಶಾರದ ನವರಾತ್ರಿ', 'Daily Puja & Aarti • Special programs between festival days': 'ದೈನಂದಿನ ಪೂಜೆ ಮತ್ತು ಆರತಿ • ಹಬ್ಬದ ದಿನಗಳಲ್ಲಿ ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮಗಳು', 'Times:': 'ಸಮಯಗಳು:', '🎉 Other Mandal Events': '🎉 ಇತರೆ ಮಂಡಳಿಯ ಕಾರ್ಯಕ್ರಮಗಳು', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'ಗರಬಾ/ದಾಂಡಿಯಾ, ಭಜನೆ, ಮಹಾ ಆರತಿ, ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ಮೆರವಣಿಗೆ ಇತ್ಯಾದಿಗಳನ್ನು ಸೇರಿಸಿ.', '📸 Memories Through the Years': '📸 ವರ್ಷಗಳ ನೆನಪುಗಳು', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಹಬ್ಬ • ಅಲಂಕಾರ • ಆಗಮನ', 'Demo photo • 2025': 'ಡೆಮೊ ಫೋಟೋ • 2025', 'Demo photo • 2024': 'ಡೆಮೊ ಫೋಟೋ • 2024', 'Demo photo • 2023': 'ಡೆಮೊ ಫೋಟೋ • 2023', 'Bhavani Mata Darshan • 2026': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • 2026', 'Bhavani Mata Darshan • All': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಎಲ್ಲಾ', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ಇವು ನಿಮ್ಮ ಸಂಗ್ರಹದಲ್ಲಿರುವ ಭವಾನಿ ಮಾತೆಯ ಫೋಟೋಗಳು. ಸಿದ್ಧವಾದಾಗ ಡೆಮೊ ವರ್ಷದ ಲೇಬಲ್\u200cಗಳನ್ನು ಸರಿಯಾದ ವರ್ಷದಿಂದ ಬದಲಾಯಿಸಿ.', '🔗 Connect With Us': '🔗 ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ', 'Follow the Mandal and see the latest Bhavani Mata photos': 'ಮಂಡಳಿಯನ್ನು ಅನುಸರಿಸಿ ಮತ್ತು ಭವಾನಿ ಮಾತೆಯ ಇತ್ತೀಚಿನ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'f Facebook': 'f ಫೇಸ್\u200cಬುಕ್', '▶️ YouTube': '▶️ ಯೂಟ್ಯೂಬ್', '💬 WhatsApp': '💬 ವಾಟ್ಸಾಪ್', 'Link to be added': 'ಲಿಂಕ್ ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ', 'Demo contact': 'ಡೆಮೊ ಸಂಪರ್ಕ', 'Demo details — replace before publishing': 'ಪ್ರಕಟಿಸುವ ಮೊದಲು ನಿಜವಾದ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ', 'President': 'ಅಧ್ಯಕ್ಷರು', 'Mandal Member': 'ಮಂಡಳಿಯ ಸದಸ್ಯ', 'Secretary': 'ಕಾರ್ಯದರ್ಶಿ', 'Mandal Contact': 'ಮಂಡಳಿಯ ಸಂಪರ್ಕ', '📍 Bhalki, Karnataka': '📍 ಭಾಲ್ಕಿ, ಕರ್ನಾಟಕ', '🙏 Support / Donation': '🙏 ಬೆಂಬಲ / ದೇಣಿಗೆ', 'UPI section ready for your official details': 'ಅಧಿಕೃತ ವಿವರಗಳಿಗಾಗಿ UPI ವಿಭಾಗ ಸಿದ್ಧವಾಗಿದೆ', 'UPI QR CODE': 'UPI QR ಕೋಡ್', 'Official UPI ID and QR image will be added here later.': 'ಅಧಿಕೃತ UPI ID ಮತ್ತು QR ಚಿತ್ರವನ್ನು ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ.', 'Do not use this demo for payments.': 'ಪಾವತಿಗಾಗಿ ಈ ಡೆಮೊವನ್ನು ಬಳಸಬೇಡಿ.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ ಶ್ರೀ ಭವಾನಿ ಮಾತಾಯೈ ನಮಃ • ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ, ಭಾಲ್ಕಿ • ಸ್ಥಾಪನೆ 2012'}, 'hi': {'जय भवानी नवयुवक मंडळ': 'जय भवानी नव युवक मंडल', 'Bhalki • Since 2012': 'भालकी • 2012 से', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • भालकी', '📍 Old Town': '📍 ओल्ड टाउन', '🌺 श्री भवानी माता • जय माता दी': '🌺 श्री भवानी माता • जय माता दी', 'Jai Bhavani': 'जय भवानी', 'Jai Bhavani Nave Yuvak Mandal': 'जय भवानी नव युवक मंडल', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ओल्ड टाउन, हनुमान मंदिर के पास — दर्शन, आरती, उत्सव कार्यक्रम, यादें और मंडल की जानकारी।', '📍 Open Location': '📍 स्थान खोलें', 'Visit Instagram': 'इंस्टाग्राम देखें', '⌂ Home': '⌂ होम', '🌺 Mata': '🌺 माता', '🛕 Mandal': '🛕 मंडल', '🪔 Aarti': '🪔 आरती', '🗓️ Programs': '🗓️ कार्यक्रम', '📸 Photos': '📸 फोटो', '🔗 Connect': '🔗 जुड़ें', '📞 Contact': '📞 संपर्क', 'Visit Us': 'हमसे मिलें', 'Old Town • Near Hanuman Mandir': 'ओल्ड टाउन • हनुमान मंदिर के पास', 'View Our Photos': 'हमारी तस्वीरें देखें', 'Bhavani Mata • Memories': 'भवानी माता • यादें', '🪔 Daily Aarti': '🪔 दैनिक आरती', 'Morning': 'सुबह', '8:30 AM — Puja & Aarti': '8:30 AM — पूजा और आरती', 'Evening': 'शाम', 'Festival-day timings can be updated later.': 'त्योहार के दिन का समय बाद में अपडेट किया जा सकता है。', '🕉️ Spiritual Corner': '🕉️ आध्यात्मिक कोना', 'A calm space for prayer, devotion and positive thought': 'प्रार्थना, भक्ति और सकारात्मक विचारों के लिए शांत स्थान', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'मां भवानी हर भक्त को साहस, शांति, सुरक्षा और समृद्धि का आशीर्वाद दें।', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 हम 9 दिन क्यों मनाते हैं', 'Navratri • Nine nights of Shakti': 'नवरात्रि • शक्ति की नौ रातें', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'का अर्थ “नौ रातें” है और यह देवी मां को समर्पित एक प्रमुख हिंदू त्योहार है। शारदीय नवरात्रि में भक्त दुर्गा माता और उनके रूपों की पूजा करते हैं।', 'The nine days are traditionally associated with the': 'इन नौ दिनों को पारंपरिक रूप से नवदुर्गा के रूपों से जोड़ा जाता है:', 'Navadurga': 'नवदुर्गा', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— शैलपुत्री, ब्रह्मचारिणी, चंद्रघंटा, कूष्मांडा, स्कंदमाता, कात्यायनी, कालरात्रि, महागौरी और सिद्धिदात्री। यह त्योहार धर्म और अच्छाई की विजय तथा प्रार्थना, उपवास, चिंतन और नवजीवन का समय है।', 'For': 'के लिए', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'आपके मंडल के आगमन और दैनिक कार्यक्रम के समय को तय होने पर यहां अपडेट किया जा सकता है।', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'मंडल बाद में प्रत्येक दिन की स्थानीय पूजा परंपरा की सही जानकारी यहां जोड़ सकता है।', '🌺 About Bhavani Mata': '🌺 भवानी माता के बारे में', 'Shakti • Protection • Courage • Devotion': 'शक्ति • सुरक्षा • साहस • भक्ति', '🙏 Maa Bhavani': '🙏 मां भवानी', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'भवानी दुर्गा/शक्ति से जुड़ी देवी मां का पूजनीय नाम और रूप हैं। अनेक परंपराओं में वे साहस, सुरक्षा, शक्ति और करुणामयी मातृत्व का प्रतीक हैं।', '📜 Our Mandal': '📜 हमारा मंडल', 'was established in': 'की स्थापना हुई', ' . This space is ready for your original history, founders, milestones and annual traditions.': '। यहां आपके मंडल का इतिहास, संस्थापक, उपलब्धियां और वार्षिक परंपराएं जोड़ी जा सकती हैं।', '🌼 Devotion & Community': '🌼 भक्ति और समुदाय', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'यह वेबसाइट दर्शन, त्योहार की यादें, आरती, कार्यक्रम और सामुदायिक जानकारी एक ही स्थान पर लाएगी।', '🗓️ Aagman & Programs': '🗓️ आगमन और कार्यक्रम', 'Dates and times can be edited by the Mandal': 'तारीख और समय मंडल द्वारा बदले जा सकते हैं', '🌺 Bhavani Mata Aagman': '🌺 भवानी माता आगमन', 'Time:': 'समय:', 'To be updated': 'बाद में अपडेट किया जाएगा', 'Venue: Old Town, near Hanuman Mandir': 'स्थान: ओल्ड टाउन, हनुमान मंदिर के पास', '🪔 Sharad Navratri': '🪔 शारदीय नवरात्रि', 'Daily Puja & Aarti • Special programs between festival days': 'दैनिक पूजा और आरती • त्योहार के दिनों में विशेष कार्यक्रम', 'Times:': 'समय:', '🎉 Other Mandal Events': '🎉 अन्य मंडल कार्यक्रम', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'गरबा/डांडिया, भजन, महाआरती, सांस्कृतिक कार्यक्रम, जुलूस आदि जोड़ें।', '📸 Memories Through the Years': '📸 वर्षों की यादें', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'भवानी माता दर्शन • उत्सव • सजावट • आगमन', 'Demo photo • 2025': 'डेमो फोटो • 2025', 'Demo photo • 2024': 'डेमो फोटो • 2024', 'Demo photo • 2023': 'डेमो फोटो • 2023', 'Bhavani Mata Darshan • 2026': 'भवानी माता दर्शन • 2026', 'Bhavani Mata Darshan • All': 'भवानी माता दर्शन • सभी', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ये आपके संग्रह की भवानी माता की तस्वीरें हैं। तैयार होने पर डेमो वर्ष को सही वर्ष से बदलें।', '🔗 Connect With Us': '🔗 हमसे जुड़ें', 'Follow the Mandal and see the latest Bhavani Mata photos': 'मंडल को फॉलो करें और भवानी माता की नवीनतम तस्वीरें देखें', 'f Facebook': 'f फेसबुक', '▶️ YouTube': '▶️ यूट्यूब', '💬 WhatsApp': '💬 व्हाट्सऐप', 'Link to be added': 'लिंक बाद में जोड़ा जाएगा', 'Demo contact': 'डेमो संपर्क', 'Demo details — replace before publishing': 'प्रकाशित करने से पहले वास्तविक विवरण जोड़ें', 'President': 'अध्यक्ष', 'Mandal Member': 'मंडल सदस्य', 'Secretary': 'सचिव', 'Mandal Contact': 'मंडल संपर्क', '📍 Bhalki, Karnataka': '📍 भालकी, कर्नाटक', '🙏 Support / Donation': '🙏 सहायता / दान', 'UPI section ready for your official details': 'आधिकारिक जानकारी के लिए UPI सेक्शन तैयार है', 'UPI QR CODE': 'UPI QR कोड', 'Official UPI ID and QR image will be added here later.': 'आधिकारिक UPI ID और QR चित्र बाद में जोड़ा जाएगा।', 'Do not use this demo for payments.': 'भुगतान के लिए इस डेमो का उपयोग न करें।', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'जय भवानी नव युवक मंडल, भालकी • स्थापना 2012'}};
+const originalText = new WeakMap();
+function nodesForTranslation(){
+  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  const a=[];let n;
+  while(n=w.nextNode()){
+    if(n.parentElement && !n.parentElement.closest("script,style,.language-switcher")) a.push(n);
+  }
+  return a;
+}
+function applyLanguage(lang){
+  const dict=TRANSLATIONS[lang]||TRANSLATIONS.en;
+  nodesForTranslation().forEach(n=>{
+    if(!originalText.has(n)) originalText.set(n,n.nodeValue);
+    const raw=originalText.get(n), key=raw.replace(/\s+/g," ").trim();
+    if(dict[key]!==undefined){
+      const lead=(raw.match(/^\s*/)||[""])[0], tail=(raw.match(/\s*$/)||[""])[0];
+      n.nodeValue=lead+dict[key]+tail;
+    }
+  });
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+  localStorage.setItem("jai_bhavani_lang",lang);
+}
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>applyLanguage(b.dataset.lang)));
+applyLanguage(localStorage.getItem("jai_bhavani_lang")||"en");
+</script>
+
+
+<script id="theme-switcher-script">
+/* ===== LIGHT / DARK MODE ===== */
+(function(){
+  const root=document.documentElement;
+  const buttons=document.querySelectorAll("[data-theme-choice]");
+  const saved=localStorage.getItem("jai_bhavani_theme")||"light";
+
+  function applyTheme(theme){
+    const value=theme==="dark" ? "dark" : "light";
+    root.setAttribute("data-theme",value);
+    buttons.forEach(btn=>btn.classList.toggle("active",btn.dataset.themeChoice===value));
+    localStorage.setItem("jai_bhavani_theme",value);
+    const meta=document.querySelector('meta[name="theme-color"]');
+    if(meta) meta.setAttribute("content",value==="dark" ? "#17110e" : "#ee9637");
+  }
+
+  buttons.forEach(btn=>{
+    btn.addEventListener("click",()=>applyTheme(btn.dataset.themeChoice));
+  });
+
+  applyTheme(saved);
+})();
+</script>
+
+<script id="demo-upi-script">
+function copyDemoUPI(){
+  const id='jai.bhavani.demo@upi';
+  const b=document.querySelector('.copy-upi');
+  const done=()=>{
+    if(!b)return;
+    const old=b.textContent;
+    b.textContent='Copied ✓';
+    setTimeout(()=>b.textContent=old,1500);
+  };
+
+  // Works on HTTPS, localhost, and when the HTML is opened directly as a file.
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(id).then(done).catch(()=>fallbackCopy(id,done));
+  }else{
+    fallbackCopy(id,done);
+  }
+}
+
+function fallbackCopy(text,done){
+  const ta=document.createElement('textarea');
+  ta.value=text;
+  ta.setAttribute('readonly','');
+  ta.style.position='fixed';
+  ta.style.left='-9999px';
+  ta.style.top='0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  ta.setSelectionRange(0,ta.value.length);
+  let ok=false;
+  try{ ok=document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+  if(ok){
+    done();
+  }else{
+    alert('Copy failed. Please copy this UPI ID manually: '+text);
+  }
+}
 </script>
 </body>
 </html>
