@@ -21,7 +21,7 @@
  IMPORTANT EASY EDITS:
  • Main logo: images/mandal_logo.png
  • Hero/Mata image: images/bhavani_2.jpg
- • Header title: search "Jai Bhavani Nave Yuvak Mandal"
+ • Header title: search "Jai Bhavani Nav Yuvak Mandal"
  • Location link: search "maps.app.goo.gl"
  • Instagram: search "instagram.com/jai_bhavani_2026"
  • Aarti timings: search "8:30 AM" and "8:30 PM"
@@ -39,8 +39,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#8f170b">
-    <meta name="description" content="Jai Bhavani Nave Yuvak Mandal, Bhalki — spiritual information, darshan, programs, gallery and location.">
-    <title>Jai Bhavani Nave Yuvak Mandal • Bhalki</title>
+    <meta name="description" content="Jai Bhavani Nav Yuvak Mandal, Bhalki — spiritual information, darshan, programs, gallery and location.">
+    <title>Jai Bhavani Nav Yuvak Mandal • Bhalki</title>
     <style>
 .hero-orb {
 position:absolute;
@@ -1631,8 +1631,8 @@ html[data-theme="dark"] .qr-image-wrap{background:#fff;border-color:#765436}
   .modern-brand img{display:none!important}
   .modern-brand strong{font-size:clamp(9px,2.8vw,12px)!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
   .modern-brand small{font-size:8px!important;white-space:nowrap!important}
-  .language-switcher{display:none!important}
-  .theme-switcher{right:8px!important;top:9px!important;left:auto!important;transform:none!important}
+  .language-switcher{display:flex!important;position:fixed!important;right:10px!important;bottom:10px!important;top:auto!important;transform:none!important;z-index:100!important}
+  .theme-switcher{right:10px!important;bottom:62px!important;top:auto!important;left:auto!important;transform:none!important}
   .theme-switcher button{padding:7px 8px!important;font-size:0!important}
   .theme-switcher button span{display:none!important}
   .theme-switcher button:first-child:after{content:"☀️";font-size:14px!important}
@@ -1643,7 +1643,7 @@ html[data-theme="dark"] .qr-image-wrap{background:#fff;border-color:#765436}
   .modern-header{left:50px!important;width:calc(100% - 100px)!important;min-height:52px!important}
   .modern-brand strong{font-size:9px!important}
   .modern-brand small{font-size:7px!important}
-  .theme-switcher{right:6px!important;top:9px!important}
+  .theme-switcher{right:8px!important;bottom:62px!important;top:auto!important}
   .theme-switcher button{padding:6px!important}
 }
 @media(max-width:340px){
@@ -1651,7 +1651,7 @@ html[data-theme="dark"] .qr-image-wrap{background:#fff;border-color:#765436}
   .modern-header{left:44px!important;width:calc(100% - 88px)!important;min-height:48px!important}
   .modern-brand small{display:none!important}
   .modern-brand strong{font-size:8px!important}
-  .theme-switcher{right:4px!important}
+  .theme-switcher{right:6px!important}
   .theme-switcher button{padding:5px!important}
   .theme-switcher button:first-child:after,.theme-switcher button:last-child:after{font-size:12px!important}
 }
@@ -1872,7 +1872,7 @@ html[data-theme="dark"] .quick-card.photos-card{background:linear-gradient(135de
   .modern-header{top:9px!important;width:calc(100% - 116px)!important;left:58px!important;transform:none!important;min-height:58px!important;border-radius:15px!important}
   .modern-brand strong{font-size:11px!important}
   .modern-brand small{font-size:8px!important}
-  .language-switcher{display:none!important}
+  .language-switcher{display:flex!important;position:fixed!important;right:10px!important;bottom:10px!important;top:auto!important;transform:none!important;z-index:100!important}
   .theme-switcher{right:10px;top:10px}
   .theme-switcher button{padding:7px 8px;font-size:0}
   .theme-switcher button span{display:none}
@@ -1975,7 +1975,7 @@ html[data-theme="dark"] .quick-card.photos-card{background:linear-gradient(135de
     white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
   }
   .modern-brand small{font-size:8px!important;white-space:nowrap!important}
-  .language-switcher{display:none!important}
+  .language-switcher{display:flex!important;position:fixed!important;right:10px!important;bottom:10px!important;top:auto!important;transform:none!important;z-index:100!important}
   .theme-switcher{
     right:10px!important;bottom:14px!important;
     top:auto!important;left:auto!important;
@@ -2006,7 +2006,7 @@ html[data-theme="dark"] .quick-card.photos-card{background:linear-gradient(135de
   .modern-header{left:44px!important;width:calc(100% - 88px)!important;min-height:48px!important}
   .modern-brand small{display:none!important}
   .modern-brand strong{font-size:8px!important}
-  .theme-switcher{right:4px!important}
+  .theme-switcher{right:6px!important}
   .theme-switcher button{padding:5px!important}
   .theme-switcher button:first-child:after,
   .theme-switcher button:last-child:after{font-size:12px!important}
@@ -2143,16 +2143,20 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
   box-shadow:0 7px 16px var(--theme-shadow);
 }
 .upi-app-icon{
-  width:45px;height:45px;flex:0 0 27px;
-  display:grid;place-items:center;
-  border-radius:0px;
-  background:#fff;
-  font-weight:900;
-  font-size:15px;
+  width:34px!important;height:34px!important;
+  flex:0 0 34px!important;
+  display:block!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  padding:2px!important;
+  border:1px solid #ead8c1!important;
 }
-.gpay-icon{color:#1a73e8;border:1px solid #d7e5ff}
-.phonepe-icon{color:#5f259f;border:1px solid #e2d4f2;font-size:12px}
-.upi-icon{color:#df8128;border:1px solid #f1d5b5}.paytm-icon{color:#0066b3;border:1px solid #cfe3f5}
+.upi-fallback-icon{display:grid!important;place-items:center!important;width:34px!important;height:34px!important;border-radius:8px!important;background:#f1e4ff!important;color:#6f2dbd!important;font-weight:900!important;font-size:18px!important}
+.gpay-icon{border-color:#d7e5ff!important}
+.phonepe-icon{border-color:#e2d4f2!important}
+.paytm-icon{border-color:#cfe3f5!important}
 .upi-app-note{
   display:block;
   margin-top:9px;
@@ -2169,13 +2173,373 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 
 </style>
 
+<style id="final-mobile-language-and-upi-fix">
+/* ===== FINAL MOBILE HEADER + REAL UPI APP ICONS ===== */
+.upi-app-btn{min-height:58px!important;align-items:center!important}
+.upi-app-btn .upi-app-icon{width:34px!important;height:34px!important;flex:0 0 34px!important;object-fit:contain!important}
+@media(max-width:760px){
+  .modern-header{
+    top:9px!important;left:50%!important;right:auto!important;
+    transform:translateX(-50%)!important;
+    width:calc(100% - 104px)!important;
+    min-height:54px!important;
+    padding:6px 8px!important;
+  }
+  .modern-brand{width:100%!important;justify-content:center!important;padding-right:0!important}
+  .modern-brand strong{font-size:clamp(9px,2.8vw,12px)!important;white-space:nowrap!important}
+  .modern-brand small{font-size:8px!important;white-space:nowrap!important}
+  /* Keep language controls visible below the header, opposite the theme control. */
+  .language-switcher{
+    display:flex!important;position:absolute!important;
+    z-index:10001!important;right:8px!important;top:72px!important;
+    transform:none!important;gap:2px!important;padding:3px!important;
+    border-radius:11px!important;box-shadow:0 6px 16px rgba(90,45,15,.12)!important;
+  }
+  .language-switcher button{padding:6px 7px!important;font-size:9px!important;line-height:1!important;white-space:nowrap!important}
+  .theme-switcher{
+    right:auto!important;left:8px!important;bottom:auto!important;top:72px!important;
+    z-index:10001!important;padding:3px!important;border-radius:11px!important;
+  }
+  .theme-switcher button{padding:6px 7px!important}
+  .hero-content{padding-top:155px!important}
+}
+@media(max-width:430px){
+  .modern-header{width:calc(100% - 92px)!important;min-height:50px!important}
+  .modern-brand strong{font-size:9px!important}
+  .modern-brand small{font-size:7px!important}
+  .language-switcher{right:6px!important;top:67px!important}
+  .language-switcher button{padding:5px 6px!important;font-size:8px!important}
+  .theme-switcher{left:6px!important;top:67px!important}
+  .theme-switcher button{padding:5px 6px!important}
+  .hero-content{padding-top:148px!important}
+}
+@media(max-width:340px){
+  .modern-header{width:calc(100% - 78px)!important;min-height:46px!important}
+  .modern-brand strong{font-size:8px!important}
+  .modern-brand small{display:none!important}
+  .language-switcher{right:4px!important;top:62px!important}
+  .language-switcher button{padding:5px!important;font-size:7px!important}
+  .theme-switcher{left:4px!important;top:62px!important}
+  .theme-switcher button{padding:5px!important}
+  .hero-content{padding-top:140px!important}
+}
+</style>
+
+<style id="final-correct-mobile-controls">
+/* Restore original language-switcher design/position; move ONLY theme control. */
+@media(max-width:760px){
+  .modern-header{
+    top:9px!important;left:50%!important;right:auto!important;
+    transform:translateX(-50%)!important;
+    width:calc(100% - 104px)!important;
+    min-height:54px!important;
+    padding:6px 8px!important;
+    display:flex!important;align-items:center!important;justify-content:center!important;
+  }
+  .modern-brand{width:100%!important;justify-content:center!important}
+  /* SAME language design as the original header control */
+  .language-switcher{
+    display:flex!important;position:absolute!important;
+    right:8px!important;top:50%!important;bottom:auto!important;left:auto!important;
+    transform:translateY(-50%)!important;
+    gap:4px!important;padding:4px!important;
+    border:1px solid #e7c797!important;border-radius:13px!important;
+    background:#fff8ee!important;box-shadow:none!important;
+    z-index:10001!important;
+  }
+  .language-switcher button{
+    border:0!important;background:transparent!important;color:#82502d!important;
+    padding:7px 8px!important;border-radius:9px!important;font-weight:750!important;
+    font-size:11px!important;line-height:normal!important;white-space:nowrap!important;
+  }
+  .language-switcher button.active{
+    background:linear-gradient(135deg,#e9852b,#f4b35f)!important;color:#fff!important;
+  }
+  /* ONLY theme control moves to the old lower-right area */
+  .theme-switcher{
+    position:fixed!important;right:10px!important;bottom:12px!important;
+    left:auto!important;top:auto!important;transform:none!important;
+    z-index:10002!important;
+  }
+  .theme-switcher button{padding:7px 8px!important;font-size:0!important}
+  .theme-switcher button span{display:none!important}
+  .theme-switcher button:first-child:after{content:"☀️";font-size:14px!important}
+  .theme-switcher button:last-child:after{content:"🌙";font-size:14px!important}
+}
+@media(max-width:430px){
+  .modern-header{width:calc(100% - 92px)!important;min-height:50px!important}
+  .language-switcher{right:6px!important;top:50%!important}
+  .language-switcher button{padding:6px 7px!important;font-size:9px!important}
+  .theme-switcher{right:6px!important;bottom:10px!important}
+}
+@media(max-width:340px){
+  .modern-header{width:calc(100% - 78px)!important;min-height:46px!important}
+  .language-switcher{right:4px!important}
+  .language-switcher button{padding:5px 6px!important;font-size:8px!important}
+  .theme-switcher{right:5px!important;bottom:8px!important}
+}
+</style>
+
+
+<style id="final-mobile-title-center">
+@media(max-width:760px){
+  .modern-header{
+    left:0!important;right:0!important;top:9px!important;transform:none!important;
+    width:100%!important;max-width:none!important;min-height:54px!important;
+    padding:6px 96px 6px 72px!important;
+    box-sizing:border-box!important;
+    display:flex!important;align-items:center!important;justify-content:center!important;
+  }
+  .modern-brand{
+    width:auto!important;max-width:100%!important;
+    margin:0 auto!important;display:flex!important;justify-content:center!important;
+    text-align:center!important;
+  }
+  .modern-brand span{
+    display:block!important;text-align:center!important;
+    max-width:100%!important;
+  }
+  .modern-brand strong{
+    display:block!important;white-space:nowrap!important;
+    font-size:clamp(13px,3.7vw,18px)!important;
+    line-height:1.15!important;
+  }
+  .modern-brand small{display:block!important;text-align:center!important;font-size:9px!important}
+  .language-switcher{
+    right:8px!important;left:auto!important;top:50%!important;
+    transform:translateY(-50%)!important;
+  }
+}
+@media(max-width:430px){
+  .modern-header{padding-left:58px!important;padding-right:88px!important}
+  .modern-brand strong{font-size:12px!important}
+  .modern-brand small{font-size:8px!important}
+}
+@media(max-width:360px){
+  .modern-header{padding-left:50px!important;padding-right:80px!important}
+  .modern-brand strong{font-size:11px!important}
+}
+</style>
+
+<style id="top-donate-final">
+.top-donate-btn{position:fixed!important;top:76px!important;left:50%!important;transform:translateX(-50%)!important;z-index:10003!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;padding:9px 17px!important;border-radius:999px!important;background:linear-gradient(135deg,#d96d16,#f3a33e)!important;color:#fff!important;text-decoration:none!important;font-size:13px!important;font-weight:900!important;letter-spacing:.2px!important;box-shadow:0 7px 18px rgba(180,88,20,.28)!important;border:2px solid rgba(255,255,255,.85)!important;white-space:nowrap!important}
+.top-donate-btn:hover{transform:translateX(-50%) translateY(-2px)!important}
+@media(max-width:760px){.top-donate-btn{top:68px!important;padding:8px 15px!important;font-size:12px!important}}
+@media(max-width:430px){.top-donate-btn{top:64px!important;padding:7px 13px!important;font-size:11px!important}}
+</style>
+
+<style id="donate-bottom-left-final">
+/* Move Donate Now from the top center to the lower-left corner. */
+.top-donate-btn{
+  top:auto!important;
+  left:12px!important;
+  bottom:12px!important;
+  transform:none!important;
+}
+.top-donate-btn:hover{transform:translateY(-2px)!important}
+@media(max-width:760px){
+  .top-donate-btn{left:10px!important;bottom:12px!important;top:auto!important;padding:8px 14px!important;font-size:12px!important}
+}
+@media(max-width:430px){
+  .top-donate-btn{left:8px!important;bottom:10px!important;padding:7px 12px!important;font-size:11px!important}
+}
+</style>
+
+<style id="final-quick-actions-polish">
+/* ===== QUICK ACTIONS: light colors + dark text + subtle animation ===== */
+.quick-actions{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;
+  margin:10px 0 20px!important;
+}
+.quick-actions .quick-card{
+  position:relative!important;
+  overflow:hidden!important;
+  min-height:112px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-direction:column!important;
+  text-align:center!important;
+  gap:8px!important;
+  padding:18px!important;
+  border:1px solid rgba(90,60,25,.18)!important;
+  color:#34251c!important;
+  text-decoration:none!important;
+  box-shadow:0 10px 24px rgba(90,60,25,.10)!important;
+  transition:transform .28s ease,box-shadow .28s ease,filter .28s ease!important;
+  animation:quickCardFloat 4.5s ease-in-out infinite!important;
+}
+.quick-actions .quick-card:nth-child(2){animation-delay:.45s!important}
+.quick-actions .quick-card:nth-child(3){animation-delay:.9s!important}
+.quick-actions .quick-card::before{
+  content:""!important;
+  position:absolute!important;
+  top:-70%!important;
+  left:-35%!important;
+  width:55%!important;
+  height:240%!important;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.62),transparent)!important;
+  transform:rotate(18deg)!important;
+  animation:quickCardShine 5.5s ease-in-out infinite!important;
+  pointer-events:none!important;
+}
+.quick-actions .quick-card:hover{
+  transform:translateY(-7px) scale(1.02)!important;
+  box-shadow:0 18px 34px rgba(90,60,25,.18)!important;
+  filter:saturate(1.05)!important;
+}
+.quick-actions .quick-card .quick-icon{
+  position:relative!important;
+  z-index:1!important;
+  width:46px!important;height:46px!important;
+  display:grid!important;place-items:center!important;
+  border-radius:15px!important;
+  font-size:23px!important;
+  box-shadow:0 6px 14px rgba(70,45,20,.12)!important;
+}
+.quick-actions .quick-copy{position:relative!important;z-index:1!important}
+.quick-actions .quick-copy strong{
+  display:block!important;
+  color:#302018!important;
+  font-size:15px!important;
+  font-weight:900!important;
+  letter-spacing:.1px!important;
+}
+.quick-actions .quick-copy small{
+  display:block!important;
+  margin-top:3px!important;
+  color:#654b3a!important;
+  font-size:11px!important;
+  font-weight:650!important;
+}
+.quick-actions .location-card{
+  background:linear-gradient(135deg,#fff7df 0%,#ffd99a 100%)!important;
+}
+.quick-actions .location-card .quick-icon{
+  background:#f1c46f!important;color:#5a3a18!important;
+}
+.quick-actions .instagram-card,.quick-actions .instagram{
+  background:linear-gradient(135deg,#fff0e8 0%,#f6c2a9 100%)!important;
+}
+.quick-actions .instagram-card .quick-icon,.quick-actions .instagram .quick-icon{
+  background:#efaa91!important;color:#71372a!important;
+}
+.quick-actions .photos-card{
+  background:linear-gradient(135deg,#fffbe3 0%,#f3d57b 100%)!important;
+}
+.quick-actions .photos-card .quick-icon{
+  background:#eac765!important;color:#604717!important;
+}
+.quick-actions .instagram-logo{
+  width:22px!important;height:22px!important;
+}
+.quick-actions .mini-arrow{display:none!important}
+
+/* Keep the cards readable in dark mode: dark text becomes warm light text. */
+html[data-theme="dark"] .quick-actions .quick-card{
+  color:#fff3df!important;
+  border-color:#6f5037!important;
+  box-shadow:0 12px 28px rgba(0,0,0,.28)!important;
+}
+html[data-theme="dark"] .quick-actions .quick-copy strong{color:#fff3df!important}
+html[data-theme="dark"] .quick-actions .quick-copy small{color:#f1d7b8!important}
+html[data-theme="dark"] .quick-actions .location-card{background:linear-gradient(135deg,#4b351f,#6b4826)!important}
+html[data-theme="dark"] .quick-actions .instagram-card,html[data-theme="dark"] .quick-actions .instagram{background:linear-gradient(135deg,#4b2924,#713d31)!important}
+html[data-theme="dark"] .quick-actions .photos-card{background:linear-gradient(135deg,#4b3b1e,#705923)!important}
+html[data-theme="dark"] .quick-actions .location-card .quick-icon{background:#d1a85e!important;color:#402915!important}
+html[data-theme="dark"] .quick-actions .instagram-card .quick-icon,html[data-theme="dark"] .quick-actions .instagram .quick-icon{background:#d88f76!important;color:#4d2118!important}
+html[data-theme="dark"] .quick-actions .photos-card .quick-icon{background:#d0b052!important;color:#44300e!important}
+
+@keyframes quickCardFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-3px)}
+}
+@keyframes quickCardShine{
+  0%,55%{left:-55%;opacity:0}
+  65%{opacity:1}
+  82%,100%{left:125%;opacity:0}
+}
+@media(max-width:760px){
+  .quick-actions{grid-template-columns:1fr!important;gap:11px!important;margin-top:8px!important}
+  .quick-actions .quick-card{min-height:82px!important;flex-direction:row!important;justify-content:flex-start!important;text-align:left!important;padding:13px 15px!important;border-radius:16px!important}
+  .quick-actions .quick-card .quick-icon{margin:0!important;width:42px!important;height:42px!important;flex:none!important}
+  .quick-actions .quick-copy{text-align:left!important}
+  .quick-actions .quick-copy strong{font-size:14px!important}
+  .quick-actions .quick-copy small{font-size:10px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .quick-actions .quick-card,.quick-actions .quick-card::before{animation:none!important}
+  .quick-actions .quick-card{transition:none!important}
+}
+</style>
+
+
+<style id="members-toggle-and-location-final">
+/* ===== MEMBERS: reliable native View More / Show Less ===== */
+.members-more-details{
+  margin-top:18px!important;
+  width:100%!important;
+}
+.members-more-toggle{
+  list-style:none!important;
+  cursor:pointer!important;
+  width:max-content!important;
+  max-width:100%!important;
+  margin:0 auto!important;
+  padding:11px 18px!important;
+  border-radius:999px!important;
+  border:1px solid #e7b96e!important;
+  background:linear-gradient(135deg,#fff7df,#ffd78f)!important;
+  color:#4b301b!important;
+  font-weight:900!important;
+  font-size:13px!important;
+  box-shadow:0 8px 20px rgba(150,92,25,.14)!important;
+  transition:transform .22s ease,box-shadow .22s ease,filter .22s ease!important;
+  text-align:center!important;
+}
+.members-more-toggle::-webkit-details-marker{display:none!important}
+.members-more-toggle:hover{transform:translateY(-3px)!important;box-shadow:0 12px 25px rgba(150,92,25,.2)!important;filter:saturate(1.08)!important}
+.members-more-details:not([open]) .less-label{display:none!important}
+.members-more-details[open] .more-label{display:none!important}
+.members-more-details[open] .members-grid{animation:membersReveal .35s ease both!important}
+.more-members{margin-top:14px!important}
+@keyframes membersReveal{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ===== VISIT US: give the location card its own visible color ===== */
+.quick-actions .location-btn{
+  background:linear-gradient(135deg,#fff4cf 0%,#ffc766 100%)!important;
+  color:#3b2817!important;
+  border:1px solid #e6ad4d!important;
+}
+.quick-actions .location-btn .quick-icon{
+  background:#f0b94f!important;
+  color:#4b2f0d!important;
+}
+.quick-actions .location-btn .quick-copy strong{color:#342216!important}
+.quick-actions .location-btn .quick-copy small{color:#65472b!important}
+html[data-theme="dark"] .quick-actions .location-btn{
+  background:linear-gradient(135deg,#5b421f 0%,#80602b 100%)!important;
+  color:#fff3df!important;
+  border-color:#8f6d3b!important;
+}
+html[data-theme="dark"] .quick-actions .location-btn .quick-icon{background:#d7a84f!important;color:#40290e!important}
+html[data-theme="dark"] .quick-actions .location-btn .quick-copy strong{color:#fff3df!important}
+html[data-theme="dark"] .quick-actions .location-btn .quick-copy small{color:#f0d5a8!important}
+
+@media(max-width:760px){
+  .members-more-toggle{width:100%!important;padding:11px 14px!important}
+}
+</style>
+
 </head>
 <body>
   <!-- ==================== HOME / HERO SECTION ==================== -->
 <!-- EDIT: hero image, logo, title, subtitle, description, and buttons -->
 <header class="hero" id="home">
     <a class="corner-logo" href="#home" aria-label="Jai Bhavani Home">
-        <img src="images/mandal_logo.png" alt="Jai Bhavani Nave Yuvak Mandal logo">
+        <img src="images/mandal_logo.png" alt="Jai Bhavani Nav Yuvak Mandal logo">
     </a>
 
     <div class="modern-header">
@@ -2195,13 +2559,14 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 
     </div>
 
+    <a class="top-donate-btn" href="#upi-scanner" aria-label="Donate Now">💳 Donate Now</a>
     <div class="theme-switcher" aria-label="Theme selector">
         <button type="button" data-theme-choice="light" class="active" aria-label="Light mode">☀️ <span>Light</span></button>
         <button type="button" data-theme-choice="dark" aria-label="Dark mode">🌙 <span>Dark</span></button>
     </div>
     <img src="images/bhavani_3.jpg" alt="Bhavani Mata">
     <a class="brandbar" href="#home" aria-label="Jai Bhavani Home">
-      <img src="images/mandal_logo.png" alt="Jai Bhavani Nave Yuvak Mandal logo">
+      <img src="images/mandal_logo.png" alt="Jai Bhavani Nav Yuvak Mandal logo">
       <span class="brandtext">
         <strong>जय भवानी नवयुवक मंडळ</strong>
         <span>Bhalki • Since 2012</span>
@@ -2213,7 +2578,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 <div class="hero-content">
  
   <div class="hero-kicker">🌺 श्री भवानी माता • जय माता दी</div>
-  <h1>Jai Bhavani Nave Yuvak Mandal</h1>
+  <h1>Jai Bhavani Nav Yuvak Mandal</h1>
   <h2>Bhalki • Since 2012</h2>
   <p>Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.</p>
   <div class="cta-row">
@@ -2250,7 +2615,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 <a class="quick-card instagram instagram-btn" href="https://www.instagram.com/jai_bhavani_2026?stkn=YTkzd252YmlpbDM=" target="_blank" rel="noopener">
   <span class="quick-icon"><span class="instagram-logo" aria-hidden="true"></span></span>
   <span class="quick-copy">
-    <strong>Visit Instagram</strong
+    <strong>Visit Instagram</strong>
     <small>@jai_bhavani_2026</small>
   </span>
 <span class="mini-arrow">↗</span>
@@ -2331,7 +2696,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 <article id="mandal" class="card">
   <h2>📜 Our Mandal</h2>
   <p>
-    <b>Jai Bhavani Nave Yuvak Mandal, Bhalki</b> was established in <b>2012</b>. This space is ready for your original history, founders, milestones and annual traditions.</p>
+    <b>Jai Bhavani Nav Yuvak Mandal, Bhalki</b> was established in <b>2012</b>. This space is ready for your original history, founders, milestones and annual traditions.</p>
 </article>
 <article class="card">
   <h2>🌼 Devotion & Community</h2>
@@ -2341,7 +2706,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 <!-- ==================== PROGRAMS / EVENTS ==================== -->
 <section id="programs" class="section-title">
   <h2>🗓️ Aagman & Programs</h2>
-  <p>Dates and times can be edited by the Mandal</p>
+  <p>We Will Ubdate in future </p>
 </section>
 <section class="card">
   <div class="event-list">
@@ -2349,7 +2714,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
       <div class="date">11<br>OCT</div>
       <div>
         <b>🌺 Bhavani Mata Aagman</b>
-        <br>Time: <i>To be updated</i>
+        <br>Date: 11/10/2026  Time: 4 PM 
         <br>Venue: Old Town, near Hanuman Mandir</div>
     </div>
   <div class="event">
@@ -2401,6 +2766,10 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
   <img src="images/bhavani_5.jpg" alt="Bhavani Mata photo 5">
   <span>Bhavani Mata Darshan • 2026</span>
 </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_5.jpg','Bhavani Mata Darshan • 2026')">
+  <img src="images/bhavani_5.jpg" alt="Bhavani Mata photo 5">
+  <span>Bhavani Mata Darshan • 2026</span>
+</button>
 </div>
 <div id="y2025" class="gallery gallery-year">
   <button class="photo-card" onclick="openLightbox('images/bhavani_6.jpg','Demo photo • 2025')">
@@ -2417,6 +2786,10 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 </button>
 <button class="photo-card" onclick="openLightbox('images/bhavani_9.jpg','Demo photo • 2025')">
   <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 4">
+  <span>Demo photo • 2025</span>
+</button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_10.jpg','Demo photo • 2025')">
+  <img src="images/bhavani_10.jpg" alt="Bhavani Mata photo 5">
   <span>Demo photo • 2025</span>
 </button>
 <button class="photo-card" onclick="openLightbox('images/bhavani_10.jpg','Demo photo • 2025')">
@@ -2445,12 +2818,20 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
   <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 5">
   <span>Demo photo • 2024</span>
 </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_9.jpg','Demo photo • 2024')">
+  <img src="images/bhavani_9.jpg" alt="Bhavani Mata photo 5">
+  <span>Demo photo • 2024</span>
+</button>
 </div>
 <div id="y2023" class="gallery gallery-year">
   <button class="photo-card" onclick="openLightbox('images/bhavani_2.jpg','Demo photo • 2023')">
     <img src="images/bhavani_2.jpg" alt="Bhavani Mata photo 1">
     <span>Demo photo • 2023</span>
   </button>
+<button class="photo-card" onclick="openLightbox('images/bhavani_4.jpg','Demo photo • 2023')">
+  <img src="images/bhavani_4.jpg" alt="Bhavani Mata photo 2">
+  <span>Demo photo • 2023</span>
+</button>
 <button class="photo-card" onclick="openLightbox('images/bhavani_4.jpg','Demo photo • 2023')">
   <img src="images/bhavani_4.jpg" alt="Bhavani Mata photo 2">
   <span>Demo photo • 2023</span>
@@ -2529,12 +2910,13 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
 </section>
 <!-- ==================== CONTACT ==================== -->
 <section id="contact" class="section-title">
-  <h2>📞 Members</h2>
-  <p>Contact us for any help or enquiry.</p>
+  <h2>👥 Our Team</h2>
+  <p>Meet the people representing Jai Bhavani Nav Yuvak Mandal.</p>
 </section>
 
-<section class="card members-card" aria-label="Mandal members">
+<section class="card members-card" aria-label="Our Team">
   <div class="members-grid">
+    <!-- ORIGINAL 3 MEMBERS — kept exactly with their existing details -->
     <article class="member-card">
       <div class="member-avatar">👤</div>
       <div class="member-info">
@@ -2542,7 +2924,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
         <span>Jai Bhavani Member</span>
         <a href="tel:+917483132072">📞 +91 7483132072</a>
       </div>
-      <a class="member-call" href="tel:+917483132072" aria-label="Call Member 1">Call</a>
+      <a class="member-call" href="tel:+917483132072" aria-label="Call Niranjan Deshmukh">Call</a>
     </article>
 
     <article class="member-card">
@@ -2552,7 +2934,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
         <span>Jai Bhavani Member</span>
         <a href="tel:+918549824948">📞 +91 8549824948</a>
       </div>
-      <a class="member-call" href="tel:+918549824948" aria-label="Praveen Mahendrakar">Call</a>
+      <a class="member-call" href="tel:+918549824948" aria-label="Call Praveen Mahendrakar">Call</a>
     </article>
 
     <article class="member-card">
@@ -2562,9 +2944,27 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
         <span>Jai Bhavani Member</span>
         <a href="tel:+917353363362">📞 +91 7353363362</a>
       </div>
-      <a class="member-call" href="tel:+917353363362" aria-label="Vignesh Deshmukh">Call</a>
+      <a class="member-call" href="tel:+917353363362" aria-label="Call Vignesh Deshmukh">Call</a>
     </article>
   </div>
+
+  <!-- Additional members: native HTML toggle, so it works even if JavaScript is blocked. -->
+  <details class="members-more-details">
+    <summary class="members-more-toggle">
+      <span class="more-label">➕ View More Members</span>
+      <span class="less-label">➖ Show Less</span>
+    </summary>
+    <div class="members-grid more-members">
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Shubham Shinde</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Rohan Mahendrakar</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Paven Deshmukh</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Krishna Shinde</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Akash Topare</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Akash Mailare</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong>Balaji</strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+      <article class="member-card"><div class="member-avatar">👤</div><div class="member-info"><strong></strong><span>Mandal Member</span><small>Demo — details to be added</small></div></article>
+    </div>
+  </details>
 </section>
 
 <!-- ==================== UPI SCANNER ==================== -->
@@ -2609,7 +3009,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
         </a>
 
         <a class="upi-app-btn phonePe-btn" href="#" data-upi-app="phonepe" aria-label="Pay with PhonePe">
-          <img class="upi-app-icon" src="https://www.vhv.rs/dpng/d/411-4117619_phonepe-logo-png-phonepe-logo-transparent-background-png.png" alt="PhonePe">
+          <img class="upi-app-icon" src="https://cdn.simpleicons.org/phonepe" alt="PhonePe">
           <span>PhonePe</span>
         </a>
 
@@ -2627,7 +3027,7 @@ html[data-theme="dark"] .donation-heart{background:#241914;border-color:#60432f}
   </div>
 </section>
 </main>
-<footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br>Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012</footer>
+<footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br>Jai Bhavani Nav Yuvak Mandal, Bhalki • Established 2012</footer>
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <button class="close" aria-label="Close">×</button>
   <div>
@@ -2663,9 +3063,9 @@ document.addEventListener('keydown',e=> {
 <script id="language-system">
 (function(){
 var dictionaries={
- en:{"Jai Bhavani Nave Yuvak Mandal":"Jai Bhavani Nave Yuvak Mandal","Bhalki • Since 2012":"Bhalki • Since 2012","Open Location":"Open Location","Visit Instagram":"Visit Instagram","View Our Photos":"View Our Photos","Visit Us":"Visit Us","Daily Aarti":"Daily Aarti","Morning":"Morning","Evening":"Evening","Spiritual Corner":"Spiritual Corner","About Bhavani Mata":"About Bhavani Mata","Our Mandal":"Our Mandal","Devotion & Community":"Devotion & Community","Aagman & Programs":"Aagman & Programs","Memories Through the Years":"Memories Through the Years","Connect With Us":"Connect With Us","Contact":"Contact","Support / Donation":"Support / Donation","Home":"Home","Mata":"Mata","Mandal":"Mandal","Aarti":"Aarti","Programs":"Programs","Photos":"Photos","Connect":"Connect"},
- kn:{"Jai Bhavani Nave Yuvak Mandal":"ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ","Bhalki • Since 2012":"ಭಾಲ್ಕಿ • 2012 ರಿಂದ","Open Location":"ಸ್ಥಳ ತೆರೆಯಿರಿ","Visit Instagram":"ಇನ್‌ಸ್ಟಾಗ್ರಾಂ ನೋಡಿ","View Our Photos":"ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ","Visit Us":"ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ","Daily Aarti":"ದೈನಂದಿನ ಆರತಿ","Morning":"ಬೆಳಗ್ಗೆ","Evening":"ಸಂಜೆ","Spiritual Corner":"ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ","About Bhavani Mata":"ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ","Our Mandal":"ನಮ್ಮ ಮಂಡಳ","Devotion & Community":"ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ","Aagman & Programs":"ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು","Memories Through the Years":"ವರ್ಷಗಳ ನೆನಪುಗಳು","Connect With Us":"ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ","Contact":"ಸಂಪರ್ಕ","Support / Donation":"ಬೆಂಬಲ / ದೇಣಿಗೆ","Home":"ಮುಖಪುಟ","Mata":"ಮಾತೆ","Mandal":"ಮಂಡಳ","Aarti":"ಆರತಿ","Programs":"ಕಾರ್ಯಕ್ರಮಗಳು","Photos":"ಫೋಟೋಗಳು","Connect":"ಸಂಪರ್ಕಿಸಿ"},
- hi:{"Jai Bhavani Nave Yuvak Mandal":"जय भवानी नव युवक मंडल","Bhalki • Since 2012":"भालकी • 2012 से","Open Location":"स्थान खोलें","Visit Instagram":"इंस्टाग्राम देखें","View Our Photos":"हमारी तस्वीरें देखें","Visit Us":"हमसे मिलें","Daily Aarti":"दैनिक आरती","Morning":"सुबह","Evening":"शाम","Spiritual Corner":"आध्यात्मिक कोना","About Bhavani Mata":"भवानी माता के बारे में","Our Mandal":"हमारा मंडल","Devotion & Community":"भक्ति और समुदाय","Aagman & Programs":"आगमन और कार्यक्रम","Memories Through the Years":"वर्षों की यादें","Connect With Us":"हमसे जुड़ें","Contact":"संपर्क","Support / Donation":"सहायता / दान","Home":"होम","Mata":"माता","Mandal":"मंडल","Aarti":"आरती","Programs":"कार्यक्रम","Photos":"फोटो","Connect":"जुड़ें"}
+ en:{"Jai Bhavani Nav Yuvak Mandal":"Jai Bhavani Nav Yuvak Mandal","Bhalki • Since 2012":"Bhalki • Since 2012","Open Location":"Open Location","Visit Instagram":"Visit Instagram","View Our Photos":"View Our Photos","Visit Us":"Visit Us","Daily Aarti":"Daily Aarti","Morning":"Morning","Evening":"Evening","Spiritual Corner":"Spiritual Corner","About Bhavani Mata":"About Bhavani Mata","Our Mandal":"Our Mandal","Devotion & Community":"Devotion & Community","Aagman & Programs":"Aagman & Programs","Memories Through the Years":"Memories Through the Years","Connect With Us":"Connect With Us","Contact":"Contact","Support / Donation":"Support / Donation","Home":"Home","Mata":"Mata","Mandal":"Mandal","Aarti":"Aarti","Programs":"Programs","Photos":"Photos","Connect":"Connect"},
+ kn:{"Jai Bhavani Nav Yuvak Mandal":"ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ","Bhalki • Since 2012":"ಭಾಲ್ಕಿ • 2012 ರಿಂದ","Open Location":"ಸ್ಥಳ ತೆರೆಯಿರಿ","Visit Instagram":"ಇನ್‌ಸ್ಟಾಗ್ರಾಂ ನೋಡಿ","View Our Photos":"ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ","Visit Us":"ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ","Daily Aarti":"ದೈನಂದಿನ ಆರತಿ","Morning":"ಬೆಳಗ್ಗೆ","Evening":"ಸಂಜೆ","Spiritual Corner":"ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ","About Bhavani Mata":"ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ","Our Mandal":"ನಮ್ಮ ಮಂಡಳ","Devotion & Community":"ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ","Aagman & Programs":"ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು","Memories Through the Years":"ವರ್ಷಗಳ ನೆನಪುಗಳು","Connect With Us":"ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ","Contact":"ಸಂಪರ್ಕ","Support / Donation":"ಬೆಂಬಲ / ದೇಣಿಗೆ","Home":"ಮುಖಪುಟ","Mata":"ಮಾತೆ","Mandal":"ಮಂಡಳ","Aarti":"ಆರತಿ","Programs":"ಕಾರ್ಯಕ್ರಮಗಳು","Photos":"ಫೋಟೋಗಳು","Connect":"ಸಂಪರ್ಕಿಸಿ"},
+ hi:{"Jai Bhavani Nav Yuvak Mandal":"जय भवानी नव युवक मंडल","Bhalki • Since 2012":"भालकी • 2012 से","Open Location":"स्थान खोलें","Visit Instagram":"इंस्टाग्राम देखें","View Our Photos":"हमारी तस्वीरें देखें","Visit Us":"हमसे मिलें","Daily Aarti":"दैनिक आरती","Morning":"सुबह","Evening":"शाम","Spiritual Corner":"आध्यात्मिक कोना","About Bhavani Mata":"भवानी माता के बारे में","Our Mandal":"हमारा मंडल","Devotion & Community":"भक्ति और समुदाय","Aagman & Programs":"आगमन और कार्यक्रम","Memories Through the Years":"वर्षों की यादें","Connect With Us":"हमसे जुड़ें","Contact":"संपर्क","Support / Donation":"सहायता / दान","Home":"होम","Mata":"माता","Mandal":"मंडल","Aarti":"आरती","Programs":"कार्यक्रम","Photos":"फोटो","Connect":"जुड़ें"}
 };
 var originals=[];
 function collect(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false),n;while(n=w.nextNode()){if(n.parentNode&&!/^(SCRIPT|STYLE)$/.test(n.parentNode.tagName)&&!n.parentNode.closest('.language-switcher')){if(!n.__jbOriginal){n.__jbOriginal=n.nodeValue;}originals.push(n);}}}
@@ -2676,7 +3076,7 @@ collect();var bs=document.querySelectorAll('[data-lang]');for(var i=0;i<bs.lengt
 
 
 <script id="whole-website-language-v2">
-const TRANSLATIONS = {'en': {'Jai Bhavani': 'Jai Bhavani', 'Jai Bhavani Nave Yuvak Mandal': 'Jai Bhavani Nave Yuvak Mandal', 'जय भवानी नवयुवक मंडळ': 'Jai Bhavani Nave Yuvak Mandal', 'Bhalki • Since 2012': 'Bhalki • Since 2012', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • Bhalki', '📍 Old Town': '📍 Old Town', '🌺 श्री भवानी माता • जय माता दी': '🌺 Shri Bhavani Mata • Jai Mata Di', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.', '📍 Open Location': '📍 Open Location', 'Visit Instagram': 'Visit Instagram', '⌂ Home': '⌂ Home', '🌺 Mata': '🌺 Mata', '🛕 Mandal': '🛕 Mandal', '🪔 Aarti': '🪔 Aarti', '🗓️ Programs': '🗓️ Programs', '📸 Photos': '📸 Photos', '🔗 Connect': '🔗 Connect', '📞 Contact': '📞 Contact', 'Visit Us': 'Visit Us', 'Old Town • Near Hanuman Mandir': 'Old Town • Near Hanuman Mandir', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'View Our Photos', 'Bhavani Mata • Memories': 'Bhavani Mata • Memories', '🪔 Daily Aarti': '🪔 Daily Aarti', 'Morning': 'Morning', '8:30 AM — Puja & Aarti': '8:30 AM — Puja & Aarti', 'Evening': 'Evening', 'Festival-day timings can be updated later.': 'Festival-day timings can be updated later.', '🕉️ Spiritual Corner': '🕉️ Spiritual Corner', 'A calm space for prayer, devotion and positive thought': 'A calm space for prayer, devotion and positive thought', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 Why We Celebrate 9 Days', 'Navratri • Nine nights of Shakti': 'Navratri • Nine nights of Shakti', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.', 'The nine days are traditionally associated with the': 'The nine days are traditionally associated with the', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": "Your Mandal's Aagman and daily program times can be updated here as you finalize them.", 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'The Mandal can later replace this with the exact local worship tradition followed each day.', '🌺 About Bhavani Mata': '🌺 About Bhavani Mata', 'Shakti • Protection • Courage • Devotion': 'Shakti • Protection • Courage • Devotion', '🙏 Maa Bhavani': '🙏 Maa Bhavani', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.', '📜 Our Mandal': '📜 Our Mandal', 'was established in': 'was established in', '. This space is ready for your original history, founders, milestones and annual traditions.': '. This space is ready for your original history, founders, milestones and annual traditions.', '🌼 Devotion & Community': '🌼 Devotion & Community', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.', '🗓️ Aagman & Programs': '🗓️ Aagman & Programs', 'Dates and times can be edited by the Mandal': 'Dates and times can be edited by the Mandal', '🌺 Bhavani Mata Aagman': '🌺 Bhavani Mata Aagman', 'Time:': 'Time:', 'To be updated': 'To be updated', 'Venue: Old Town, near Hanuman Mandir': 'Venue: Old Town, near Hanuman Mandir', '🪔 Sharad Navratri': '🪔 Sharad Navratri', 'Daily Puja & Aarti • Special programs between festival days': 'Daily Puja & Aarti • Special programs between festival days', 'Times:': 'Times:', '🎉 Other Mandal Events': '🎉 Other Mandal Events', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.', '📸 Memories Through the Years': '📸 Memories Through the Years', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'Bhavani Mata Darshan • Festival • Decoration • Aagman', 'Demo photo • 2025': 'Demo photo • 2025', 'Demo photo • 2024': 'Demo photo • 2024', 'Demo photo • 2023': 'Demo photo • 2023', 'Bhavani Mata Darshan • 2026': 'Bhavani Mata Darshan • 2026', 'Bhavani Mata Darshan • All': 'Bhavani Mata Darshan • All', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.', '🔗 Connect With Us': '🔗 Connect With Us', 'Follow the Mandal and see the latest Bhavani Mata photos': 'Follow the Mandal and see the latest Bhavani Mata photos', 'f Facebook': 'f Facebook', '▶️ YouTube': '▶️ YouTube', '💬 WhatsApp': '💬 WhatsApp', 'Link to be added': 'Link to be added', 'Demo contact': 'Demo contact', 'Demo details — replace before publishing': 'Demo details — replace before publishing', '📍 Bhalki, Karnataka': '📍 Bhalki, Karnataka', '🙏 Support / Donation': '🙏 Support / Donation', 'UPI section ready for your official details': 'UPI section ready for your official details', 'UPI QR CODE': 'UPI QR CODE', 'Official UPI ID and QR image will be added here later.': 'Official UPI ID and QR image will be added here later.', 'Do not use this demo for payments.': 'Do not use this demo for payments.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012'}, 'kn': {'Jai Bhavani': 'ಜೈ ಭವಾನಿ', 'Jai Bhavani Nave Yuvak Mandal': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'जय भवानी नवयुवक मंडळ': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'Bhalki • Since 2012': 'ಭಾಲ್ಕಿ • 2012 ರಿಂದ', '🪔 जय भवानी • Bhalki': '🪔 ಜೈ ಭವಾನಿ • ಭಾಲ್ಕಿ', '📍 Old Town': '📍 ಓಲ್ಡ್ ಟೌನ್', '🌺 श्री भवानी माता • जय माता दी': '🌺 ಶ್ರೀ ಭವಾನಿ ಮಾತೆ • ಜೈ ಮಾತಾ ದೀ', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ — ದರ್ಶನ, ಆರತಿ, ಹಬ್ಬದ ಕಾರ್ಯಕ್ರಮಗಳು, ನೆನಪುಗಳು ಮತ್ತು ಮಂಡಳಿಯ ಮಾಹಿತಿಗಳು.', '📍 Open Location': '📍 ಸ್ಥಳ ತೆರೆಯಿರಿ', 'Visit Instagram': 'ಇನ್\u200cಸ್ಟಾಗ್ರಾಂ ನೋಡಿ', '⌂ Home': '⌂ ಮುಖಪುಟ', '🌺 Mata': '🌺 ಮಾತೆ', '🛕 Mandal': '🛕 ಮಂಡಳ', '🪔 Aarti': '🪔 ಆರತಿ', '🗓️ Programs': '🗓️ ಕಾರ್ಯಕ್ರಮಗಳು', '📸 Photos': '📸 ಫೋಟೋಗಳು', '🔗 Connect': '🔗 ಸಂಪರ್ಕಿಸಿ', '📞 Contact': '📞 ಸಂಪರ್ಕ', 'Visit Us': 'ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ', 'Old Town • Near Hanuman Mandir': 'ಓಲ್ಡ್ ಟೌನ್ • ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'Bhavani Mata • Memories': 'ಭವಾನಿ ಮಾತೆ • ನೆನಪುಗಳು', '🪔 Daily Aarti': '🪔 ದೈನಂದಿನ ಆರತಿ', 'Morning': 'ಬೆಳಗ್ಗೆ', '8:30 AM — Puja & Aarti': '8:30 AM — ಪೂಜೆ ಮತ್ತು ಆರತಿ', 'Evening': 'ಸಂಜೆ', 'Festival-day timings can be updated later.': 'ಹಬ್ಬದ ದಿನಗಳ ಸಮಯವನ್ನು ನಂತರ ನವೀಕರಿಸಬಹುದು.', '🕉️ Spiritual Corner': '🕉️ ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ', 'A calm space for prayer, devotion and positive thought': 'ಪ್ರಾರ್ಥನೆ, ಭಕ್ತಿ ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಚಿಂತನೆಗಾಗಿ ಶಾಂತ ಸ್ಥಳ', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'ಮಾ ಭವಾನಿ ಪ್ರತಿಯೊಬ್ಬ ಭಕ್ತನಿಗೂ ಧೈರ್ಯ, ಶಾಂತಿ, ರಕ್ಷಣೆ ಮತ್ತು ಸಮೃದ್ಧಿಯನ್ನು ಕರುಣಿಸಲಿ.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ 🙏', '🌺 Why We Celebrate 9 Days': '🌺 ನಾವು 9 ದಿನಗಳನ್ನು ಏಕೆ ಆಚರಿಸುತ್ತೇವೆ', 'Navratri • Nine nights of Shakti': 'ನವರಾತ್ರಿ • ಶಕ್ತಿಯ ಒಂಬತ್ತು ರಾತ್ರಿಗಳು', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'ಎಂದರೆ “ಒಂಬತ್ತು ರಾತ್ರಿಗಳು” ಮತ್ತು ಇದು ದೈವಿಕ ತಾಯಿಗೆ ಸಮರ್ಪಿತವಾದ ಪ್ರಮುಖ ಹಿಂದೂ ಹಬ್ಬವಾಗಿದೆ. ಶಾರದ ನವರಾತ್ರಿಯಲ್ಲಿ ಭಕ್ತರು ದುರ್ಗಾ ದೇವಿ ಮತ್ತು ಅವರ ವಿವಿಧ ರೂಪಗಳನ್ನು ಪೂಜಿಸುತ್ತಾರೆ.', 'The nine days are traditionally associated with the': 'ಈ ಒಂಬತ್ತು ದಿನಗಳನ್ನು ಪರಂಪರೆಯಿಂದ ಈ ಕೆಳಗಿನ ನವದುರ್ಗಾ ರೂಪಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಲಾಗಿದೆ:', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— ಶೈಲಪುತ್ರಿ, ಬ್ರಹ್ಮಚಾರಿಣಿ, ಚಂದ್ರಘಂಟಾ, ಕೂಷ್ಮಾಂಡಾ, ಸ್ಕಂದಮಾತಾ, ಕಾತ್ಯಾಯನಿ, ಕಾಲರಾತ್ರಿ, ಮಹಾಗೌರಿ ಮತ್ತು ಸಿದ್ಧಿದಾತ್ರಿ. ಈ ಹಬ್ಬವು ಅಧರ್ಮದ ಮೇಲೆ ಧರ್ಮ ಮತ್ತು ಒಳಿತಿನ ವಿಜಯವನ್ನು ಸೂಚಿಸುತ್ತದೆ.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'ನಿಮ್ಮ ಮಂಡಳಿಯ ಆಗಮನ ಮತ್ತು ದೈನಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳ ಸಮಯವನ್ನು ಅಂತಿಮಗೊಳಿಸಿದ ನಂತರ ಇಲ್ಲಿ ನವೀಕರಿಸಬಹುದು.', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'ಪ್ರತಿ ದಿನ ಅನುಸರಿಸುವ ಸ್ಥಳೀಯ ಪೂಜಾ ಪರಂಪರೆಯ ವಿವರಗಳನ್ನು ಮಂಡಳಿಯವರು ನಂತರ ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌺 About Bhavani Mata': '🌺 ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ', 'Shakti • Protection • Courage • Devotion': 'ಶಕ್ತಿ • ರಕ್ಷಣೆ • ಧೈರ್ಯ • ಭಕ್ತಿ', '🙏 Maa Bhavani': '🙏 ಮಾ ಭವಾನಿ', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'ಭವಾನಿ ಎಂಬುದು ದುರ್ಗಾ/ಶಕ್ತಿಯೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದ ದೈವಿಕ ತಾಯಿಯ ಪೂಜ್ಯ ಹೆಸರು ಮತ್ತು ರೂಪವಾಗಿದೆ. ಅನೇಕ ಪರಂಪರೆಗಳಲ್ಲಿ ಅವರು ಧೈರ್ಯ, ರಕ್ಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಕರುಣಾಮಯ ಮಾತೃತ್ವವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.', '📜 Our Mandal': '📜 ನಮ್ಮ ಮಂಡಳ', 'was established in': 'ಸ್ಥಾಪನೆಯಾಯಿತು', '. This space is ready for your original history, founders, milestones and annual traditions.': ' . ನಿಮ್ಮ ಮಂಡಳಿಯ ಮೂಲ ಇತಿಹಾಸ, ಸ್ಥಾಪಕರು, ಸಾಧನೆಗಳು ಮತ್ತು ವಾರ್ಷಿಕ ಪರಂಪರೆಗಳನ್ನು ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌼 Devotion & Community': '🌼 ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'ಈ ವೆಬ್\u200cಸೈಟ್ ದರ್ಶನ, ಹಬ್ಬದ ನೆನಪುಗಳು, ಆರತಿ, ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಸಮುದಾಯದ ಮಾಹಿತಿಯನ್ನು ಒಂದೇ ಸುಲಭ ಸ್ಥಳದಲ್ಲಿ ಒದಗಿಸುತ್ತದೆ.', '🗓️ Aagman & Programs': '🗓️ ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು', 'Dates and times can be edited by the Mandal': 'ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಮಂಡಳಿಯವರು ಬದಲಾಯಿಸಬಹುದು', '🌺 Bhavani Mata Aagman': '🌺 ಭವಾನಿ ಮಾತೆಯ ಆಗಮನ', 'Time:': 'ಸಮಯ:', 'To be updated': 'ನಂತರ ನವೀಕರಿಸಲಾಗುತ್ತದೆ', 'Venue: Old Town, near Hanuman Mandir': 'ಸ್ಥಳ: ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '🪔 Sharad Navratri': '🪔 ಶಾರದ ನವರಾತ್ರಿ', 'Daily Puja & Aarti • Special programs between festival days': 'ದೈನಂದಿನ ಪೂಜೆ ಮತ್ತು ಆರತಿ • ಹಬ್ಬದ ದಿನಗಳಲ್ಲಿ ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮಗಳು', 'Times:': 'ಸಮಯಗಳು:', '🎉 Other Mandal Events': '🎉 ಇತರೆ ಮಂಡಳಿಯ ಕಾರ್ಯಕ್ರಮಗಳು', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'ಗರಬಾ/ದಾಂಡಿಯಾ, ಭಜನೆ, ಮಹಾ ಆರತಿ, ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ಮೆರವಣಿಗೆ ಇತ್ಯಾದಿಗಳನ್ನು ಸೇರಿಸಿ.', '📸 Memories Through the Years': '📸 ವರ್ಷಗಳ ನೆನಪುಗಳು', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಹಬ್ಬ • ಅಲಂಕಾರ • ಆಗಮನ', 'Demo photo • 2025': 'ಡೆಮೊ ಫೋಟೋ • 2025', 'Demo photo • 2024': 'ಡೆಮೊ ಫೋಟೋ • 2024', 'Demo photo • 2023': 'ಡೆಮೊ ಫೋಟೋ • 2023', 'Bhavani Mata Darshan • 2026': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • 2026', 'Bhavani Mata Darshan • All': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಎಲ್ಲಾ', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ಇವು ನಿಮ್ಮ ಸಂಗ್ರಹದಲ್ಲಿರುವ ಭವಾನಿ ಮಾತೆಯ ಫೋಟೋಗಳು. ಸಿದ್ಧವಾದಾಗ ಡೆಮೊ ವರ್ಷದ ಲೇಬಲ್\u200cಗಳನ್ನು ಸರಿಯಾದ ವರ್ಷದಿಂದ ಬದಲಾಯಿಸಿ.', '🔗 Connect With Us': '🔗 ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ', 'Follow the Mandal and see the latest Bhavani Mata photos': 'ಮಂಡಳಿಯನ್ನು ಅನುಸರಿಸಿ ಮತ್ತು ಭವಾನಿ ಮಾತೆಯ ಇತ್ತೀಚಿನ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'f Facebook': 'f ಫೇಸ್\u200cಬುಕ್', '▶️ YouTube': '▶️ ಯೂಟ್ಯೂಬ್', '💬 WhatsApp': '💬 ವಾಟ್ಸಾಪ್', 'Link to be added': 'ಲಿಂಕ್ ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ', 'Demo contact': 'ಡೆಮೊ ಸಂಪರ್ಕ', 'Demo details — replace before publishing': 'ಪ್ರಕಟಿಸುವ ಮೊದಲು ನಿಜವಾದ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ', '📍 Bhalki, Karnataka': '📍 ಭಾಲ್ಕಿ, ಕರ್ನಾಟಕ', '🙏 Support / Donation': '🙏 ಬೆಂಬಲ / ದೇಣಿಗೆ', 'UPI section ready for your official details': 'ಅಧಿಕೃತ ವಿವರಗಳಿಗಾಗಿ UPI ವಿಭಾಗ ಸಿದ್ಧವಾಗಿದೆ', 'UPI QR CODE': 'UPI QR ಕೋಡ್', 'Official UPI ID and QR image will be added here later.': 'ಅಧಿಕೃತ UPI ID ಮತ್ತು QR ಚಿತ್ರವನ್ನು ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ.', 'Do not use this demo for payments.': 'ಪಾವತಿಗಾಗಿ ಈ ಡೆಮೊವನ್ನು ಬಳಸಬೇಡಿ.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ ಶ್ರೀ ಭವಾನಿ ಮಾತಾಯೈ ನಮಃ • ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ, ಭಾಲ್ಕಿ • ಸ್ಥಾಪನೆ 2012'}, 'hi': {'जय भवानी नवयुवक मंडळ': 'जय भवानी नव युवक मंडल', 'Bhalki • Since 2012': 'भालकी • 2012 से', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • भालकी', '📍 Old Town': '📍 ओल्ड टाउन', '🌺 श्री भवानी माता • जय माता दी': '🌺 श्री भवानी माता • जय माता दी', 'Jai Bhavani': 'जय भवानी', 'Jai Bhavani Nave Yuvak Mandal': 'जय भवानी नव युवक मंडल', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ओल्ड टाउन, हनुमान मंदिर के पास — दर्शन, आरती, उत्सव कार्यक्रम, यादें और मंडल की जानकारी।', '📍 Open Location': '📍 स्थान खोलें', 'Visit Instagram': 'इंस्टाग्राम देखें', '⌂ Home': '⌂ होम', '🌺 Mata': '🌺 माता', '🛕 Mandal': '🛕 मंडल', '🪔 Aarti': '🪔 आरती', '🗓️ Programs': '🗓️ कार्यक्रम', '📸 Photos': '📸 फोटो', '🔗 Connect': '🔗 जुड़ें', '📞 Contact': '📞 संपर्क', 'Visit Us': 'हमसे मिलें', 'Old Town • Near Hanuman Mandir': 'ओल्ड टाउन • हनुमान मंदिर के पास', 'View Our Photos': 'हमारी तस्वीरें देखें', 'Bhavani Mata • Memories': 'भवानी माता • यादें', '🪔 Daily Aarti': '🪔 दैनिक आरती', 'Morning': 'सुबह', '8:30 AM — Puja & Aarti': '8:30 AM — पूजा और आरती', 'Evening': 'शाम', 'Festival-day timings can be updated later.': 'त्योहार के दिन का समय बाद में अपडेट किया जा सकता है。', '🕉️ Spiritual Corner': '🕉️ आध्यात्मिक कोना', 'A calm space for prayer, devotion and positive thought': 'प्रार्थना, भक्ति और सकारात्मक विचारों के लिए शांत स्थान', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'मां भवानी हर भक्त को साहस, शांति, सुरक्षा और समृद्धि का आशीर्वाद दें।', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 हम 9 दिन क्यों मनाते हैं', 'Navratri • Nine nights of Shakti': 'नवरात्रि • शक्ति की नौ रातें', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'का अर्थ “नौ रातें” है और यह देवी मां को समर्पित एक प्रमुख हिंदू त्योहार है। शारदीय नवरात्रि में भक्त दुर्गा माता और उनके रूपों की पूजा करते हैं।', 'The nine days are traditionally associated with the': 'इन नौ दिनों को पारंपरिक रूप से नवदुर्गा के रूपों से जोड़ा जाता है:', 'Navadurga': 'नवदुर्गा', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— शैलपुत्री, ब्रह्मचारिणी, चंद्रघंटा, कूष्मांडा, स्कंदमाता, कात्यायनी, कालरात्रि, महागौरी और सिद्धिदात्री। यह त्योहार धर्म और अच्छाई की विजय तथा प्रार्थना, उपवास, चिंतन और नवजीवन का समय है।', 'For': 'के लिए', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'आपके मंडल के आगमन और दैनिक कार्यक्रम के समय को तय होने पर यहां अपडेट किया जा सकता है।', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'मंडल बाद में प्रत्येक दिन की स्थानीय पूजा परंपरा की सही जानकारी यहां जोड़ सकता है।', '🌺 About Bhavani Mata': '🌺 भवानी माता के बारे में', 'Shakti • Protection • Courage • Devotion': 'शक्ति • सुरक्षा • साहस • भक्ति', '🙏 Maa Bhavani': '🙏 मां भवानी', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'भवानी दुर्गा/शक्ति से जुड़ी देवी मां का पूजनीय नाम और रूप हैं। अनेक परंपराओं में वे साहस, सुरक्षा, शक्ति और करुणामयी मातृत्व का प्रतीक हैं।', '📜 Our Mandal': '📜 हमारा मंडल', 'was established in': 'की स्थापना हुई', ' . This space is ready for your original history, founders, milestones and annual traditions.': '। यहां आपके मंडल का इतिहास, संस्थापक, उपलब्धियां और वार्षिक परंपराएं जोड़ी जा सकती हैं।', '🌼 Devotion & Community': '🌼 भक्ति और समुदाय', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'यह वेबसाइट दर्शन, त्योहार की यादें, आरती, कार्यक्रम और सामुदायिक जानकारी एक ही स्थान पर लाएगी।', '🗓️ Aagman & Programs': '🗓️ आगमन और कार्यक्रम', 'Dates and times can be edited by the Mandal': 'तारीख और समय मंडल द्वारा बदले जा सकते हैं', '🌺 Bhavani Mata Aagman': '🌺 भवानी माता आगमन', 'Time:': 'समय:', 'To be updated': 'बाद में अपडेट किया जाएगा', 'Venue: Old Town, near Hanuman Mandir': 'स्थान: ओल्ड टाउन, हनुमान मंदिर के पास', '🪔 Sharad Navratri': '🪔 शारदीय नवरात्रि', 'Daily Puja & Aarti • Special programs between festival days': 'दैनिक पूजा और आरती • त्योहार के दिनों में विशेष कार्यक्रम', 'Times:': 'समय:', '🎉 Other Mandal Events': '🎉 अन्य मंडल कार्यक्रम', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'गरबा/डांडिया, भजन, महाआरती, सांस्कृतिक कार्यक्रम, जुलूस आदि जोड़ें।', '📸 Memories Through the Years': '📸 वर्षों की यादें', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'भवानी माता दर्शन • उत्सव • सजावट • आगमन', 'Demo photo • 2025': 'डेमो फोटो • 2025', 'Demo photo • 2024': 'डेमो फोटो • 2024', 'Demo photo • 2023': 'डेमो फोटो • 2023', 'Bhavani Mata Darshan • 2026': 'भवानी माता दर्शन • 2026', 'Bhavani Mata Darshan • All': 'भवानी माता दर्शन • सभी', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ये आपके संग्रह की भवानी माता की तस्वीरें हैं। तैयार होने पर डेमो वर्ष को सही वर्ष से बदलें।', '🔗 Connect With Us': '🔗 हमसे जुड़ें', 'Follow the Mandal and see the latest Bhavani Mata photos': 'मंडल को फॉलो करें और भवानी माता की नवीनतम तस्वीरें देखें', 'f Facebook': 'f फेसबुक', '▶️ YouTube': '▶️ यूट्यूब', '💬 WhatsApp': '💬 व्हाट्सऐप', 'Link to be added': 'लिंक बाद में जोड़ा जाएगा', 'Demo contact': 'डेमो संपर्क', 'Demo details — replace before publishing': 'प्रकाशित करने से पहले वास्तविक विवरण जोड़ें', '📍 Bhalki, Karnataka': '📍 भालकी, कर्नाटक', '🙏 Support / Donation': '🙏 सहायता / दान', 'UPI section ready for your official details': 'आधिकारिक जानकारी के लिए UPI सेक्शन तैयार है', 'UPI QR CODE': 'UPI QR कोड', 'Official UPI ID and QR image will be added here later.': 'आधिकारिक UPI ID और QR चित्र बाद में जोड़ा जाएगा।', 'Do not use this demo for payments.': 'भुगतान के लिए इस डेमो का उपयोग न करें।', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nave Yuvak Mandal, Bhalki • Established 2012': 'जय भवानी नव युवक मंडल, भालकी • स्थापना 2012'}};
+const TRANSLATIONS = {'en': {'Jai Bhavani': 'Jai Bhavani', 'Jai Bhavani Nav Yuvak Mandal': 'Jai Bhavani Nav Yuvak Mandal', 'जय भवानी नवयुवक मंडळ': 'Jai Bhavani Nav Yuvak Mandal', 'Bhalki • Since 2012': 'Bhalki • Since 2012', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • Bhalki', '📍 Old Town': '📍 Old Town', '🌺 श्री भवानी माता • जय माता दी': '🌺 Shri Bhavani Mata • Jai Mata Di', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.', '📍 Open Location': '📍 Open Location', 'Visit Instagram': 'Visit Instagram', '⌂ Home': '⌂ Home', '🌺 Mata': '🌺 Mata', '🛕 Mandal': '🛕 Mandal', '🪔 Aarti': '🪔 Aarti', '🗓️ Programs': '🗓️ Programs', '📸 Photos': '📸 Photos', '🔗 Connect': '🔗 Connect', '📞 Contact': '📞 Contact', 'Visit Us': 'Visit Us', 'Old Town • Near Hanuman Mandir': 'Old Town • Near Hanuman Mandir', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'View Our Photos', 'Bhavani Mata • Memories': 'Bhavani Mata • Memories', '🪔 Daily Aarti': '🪔 Daily Aarti', 'Morning': 'Morning', '8:30 AM — Puja & Aarti': '8:30 AM — Puja & Aarti', 'Evening': 'Evening', 'Festival-day timings can be updated later.': 'Festival-day timings can be updated later.', '🕉️ Spiritual Corner': '🕉️ Spiritual Corner', 'A calm space for prayer, devotion and positive thought': 'A calm space for prayer, devotion and positive thought', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 Why We Celebrate 9 Days', 'Navratri • Nine nights of Shakti': 'Navratri • Nine nights of Shakti', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.', 'The nine days are traditionally associated with the': 'The nine days are traditionally associated with the', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": "Your Mandal's Aagman and daily program times can be updated here as you finalize them.", 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'The Mandal can later replace this with the exact local worship tradition followed each day.', '🌺 About Bhavani Mata': '🌺 About Bhavani Mata', 'Shakti • Protection • Courage • Devotion': 'Shakti • Protection • Courage • Devotion', '🙏 Maa Bhavani': '🙏 Maa Bhavani', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.', '📜 Our Mandal': '📜 Our Mandal', 'was established in': 'was established in', '. This space is ready for your original history, founders, milestones and annual traditions.': '. This space is ready for your original history, founders, milestones and annual traditions.', '🌼 Devotion & Community': '🌼 Devotion & Community', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.', '🗓️ Aagman & Programs': '🗓️ Aagman & Programs', 'Dates and times can be edited by the Mandal': 'Dates and times can be edited by the Mandal', '🌺 Bhavani Mata Aagman': '🌺 Bhavani Mata Aagman', 'Time:': 'Time:', 'To be updated': 'To be updated', 'Venue: Old Town, near Hanuman Mandir': 'Venue: Old Town, near Hanuman Mandir', '🪔 Sharad Navratri': '🪔 Sharad Navratri', 'Daily Puja & Aarti • Special programs between festival days': 'Daily Puja & Aarti • Special programs between festival days', 'Times:': 'Times:', '🎉 Other Mandal Events': '🎉 Other Mandal Events', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.', '📸 Memories Through the Years': '📸 Memories Through the Years', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'Bhavani Mata Darshan • Festival • Decoration • Aagman', 'Demo photo • 2025': 'Demo photo • 2025', 'Demo photo • 2024': 'Demo photo • 2024', 'Demo photo • 2023': 'Demo photo • 2023', 'Bhavani Mata Darshan • 2026': 'Bhavani Mata Darshan • 2026', 'Bhavani Mata Darshan • All': 'Bhavani Mata Darshan • All', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.', '🔗 Connect With Us': '🔗 Connect With Us', 'Follow the Mandal and see the latest Bhavani Mata photos': 'Follow the Mandal and see the latest Bhavani Mata photos', 'f Facebook': 'f Facebook', '▶️ YouTube': '▶️ YouTube', '💬 WhatsApp': '💬 WhatsApp', 'Link to be added': 'Link to be added', 'Demo contact': 'Demo contact', 'Demo details — replace before publishing': 'Demo details — replace before publishing', '📍 Bhalki, Karnataka': '📍 Bhalki, Karnataka', '🙏 Support / Donation': '🙏 Support / Donation', 'UPI section ready for your official details': 'UPI section ready for your official details', 'UPI QR CODE': 'UPI QR CODE', 'Official UPI ID and QR image will be added here later.': 'Official UPI ID and QR image will be added here later.', 'Do not use this demo for payments.': 'Do not use this demo for payments.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nav Yuvak Mandal, Bhalki • Established 2012': 'Jai Bhavani Nav Yuvak Mandal, Bhalki • Established 2012'}, 'kn': {'Jai Bhavani': 'ಜೈ ಭವಾನಿ', 'Jai Bhavani Nav Yuvak Mandal': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'जय भवानी नवयुवक मंडळ': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ', 'Bhalki • Since 2012': 'ಭಾಲ್ಕಿ • 2012 ರಿಂದ', '🪔 जय भवानी • Bhalki': '🪔 ಜೈ ಭವಾನಿ • ಭಾಲ್ಕಿ', '📍 Old Town': '📍 ಓಲ್ಡ್ ಟೌನ್', '🌺 श्री भवानी माता • जय माता दी': '🌺 ಶ್ರೀ ಭವಾನಿ ಮಾತೆ • ಜೈ ಮಾತಾ ದೀ', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ — ದರ್ಶನ, ಆರತಿ, ಹಬ್ಬದ ಕಾರ್ಯಕ್ರಮಗಳು, ನೆನಪುಗಳು ಮತ್ತು ಮಂಡಳಿಯ ಮಾಹಿತಿಗಳು.', '📍 Open Location': '📍 ಸ್ಥಳ ತೆರೆಯಿರಿ', 'Visit Instagram': 'ಇನ್\u200cಸ್ಟಾಗ್ರಾಂ ನೋಡಿ', '⌂ Home': '⌂ ಮುಖಪುಟ', '🌺 Mata': '🌺 ಮಾತೆ', '🛕 Mandal': '🛕 ಮಂಡಳ', '🪔 Aarti': '🪔 ಆರತಿ', '🗓️ Programs': '🗓️ ಕಾರ್ಯಕ್ರಮಗಳು', '📸 Photos': '📸 ಫೋಟೋಗಳು', '🔗 Connect': '🔗 ಸಂಪರ್ಕಿಸಿ', '📞 Contact': '📞 ಸಂಪರ್ಕ', 'Visit Us': 'ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ', 'Old Town • Near Hanuman Mandir': 'ಓಲ್ಡ್ ಟೌನ್ • ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '@jai_bhavani_2026': '@jai_bhavani_2026', 'View Our Photos': 'ನಮ್ಮ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'Bhavani Mata • Memories': 'ಭವಾನಿ ಮಾತೆ • ನೆನಪುಗಳು', '🪔 Daily Aarti': '🪔 ದೈನಂದಿನ ಆರತಿ', 'Morning': 'ಬೆಳಗ್ಗೆ', '8:30 AM — Puja & Aarti': '8:30 AM — ಪೂಜೆ ಮತ್ತು ಆರತಿ', 'Evening': 'ಸಂಜೆ', 'Festival-day timings can be updated later.': 'ಹಬ್ಬದ ದಿನಗಳ ಸಮಯವನ್ನು ನಂತರ ನವೀಕರಿಸಬಹುದು.', '🕉️ Spiritual Corner': '🕉️ ಆಧ್ಯಾತ್ಮಿಕ ವಿಭಾಗ', 'A calm space for prayer, devotion and positive thought': 'ಪ್ರಾರ್ಥನೆ, ಭಕ್ತಿ ಮತ್ತು ಸಕಾರಾತ್ಮಕ ಚಿಂತನೆಗಾಗಿ ಶಾಂತ ಸ್ಥಳ', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'ಮಾ ಭವಾನಿ ಪ್ರತಿಯೊಬ್ಬ ಭಕ್ತನಿಗೂ ಧೈರ್ಯ, ಶಾಂತಿ, ರಕ್ಷಣೆ ಮತ್ತು ಸಮೃದ್ಧಿಯನ್ನು ಕರುಣಿಸಲಿ.', '🙏 जय भवानी • जय माता दी 🙏': '🙏 ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ 🙏', '🌺 Why We Celebrate 9 Days': '🌺 ನಾವು 9 ದಿನಗಳನ್ನು ಏಕೆ ಆಚರಿಸುತ್ತೇವೆ', 'Navratri • Nine nights of Shakti': 'ನವರಾತ್ರಿ • ಶಕ್ತಿಯ ಒಂಬತ್ತು ರಾತ್ರಿಗಳು', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'ಎಂದರೆ “ಒಂಬತ್ತು ರಾತ್ರಿಗಳು” ಮತ್ತು ಇದು ದೈವಿಕ ತಾಯಿಗೆ ಸಮರ್ಪಿತವಾದ ಪ್ರಮುಖ ಹಿಂದೂ ಹಬ್ಬವಾಗಿದೆ. ಶಾರದ ನವರಾತ್ರಿಯಲ್ಲಿ ಭಕ್ತರು ದುರ್ಗಾ ದೇವಿ ಮತ್ತು ಅವರ ವಿವಿಧ ರೂಪಗಳನ್ನು ಪೂಜಿಸುತ್ತಾರೆ.', 'The nine days are traditionally associated with the': 'ಈ ಒಂಬತ್ತು ದಿನಗಳನ್ನು ಪರಂಪರೆಯಿಂದ ಈ ಕೆಳಗಿನ ನವದುರ್ಗಾ ರೂಪಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಲಾಗಿದೆ:', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— ಶೈಲಪುತ್ರಿ, ಬ್ರಹ್ಮಚಾರಿಣಿ, ಚಂದ್ರಘಂಟಾ, ಕೂಷ್ಮಾಂಡಾ, ಸ್ಕಂದಮಾತಾ, ಕಾತ್ಯಾಯನಿ, ಕಾಲರಾತ್ರಿ, ಮಹಾಗೌರಿ ಮತ್ತು ಸಿದ್ಧಿದಾತ್ರಿ. ಈ ಹಬ್ಬವು ಅಧರ್ಮದ ಮೇಲೆ ಧರ್ಮ ಮತ್ತು ಒಳಿತಿನ ವಿಜಯವನ್ನು ಸೂಚಿಸುತ್ತದೆ.', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'ನಿಮ್ಮ ಮಂಡಳಿಯ ಆಗಮನ ಮತ್ತು ದೈನಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳ ಸಮಯವನ್ನು ಅಂತಿಮಗೊಳಿಸಿದ ನಂತರ ಇಲ್ಲಿ ನವೀಕರಿಸಬಹುದು.', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'ಪ್ರತಿ ದಿನ ಅನುಸರಿಸುವ ಸ್ಥಳೀಯ ಪೂಜಾ ಪರಂಪರೆಯ ವಿವರಗಳನ್ನು ಮಂಡಳಿಯವರು ನಂತರ ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌺 About Bhavani Mata': '🌺 ಭವಾನಿ ಮಾತೆಯ ಬಗ್ಗೆ', 'Shakti • Protection • Courage • Devotion': 'ಶಕ್ತಿ • ರಕ್ಷಣೆ • ಧೈರ್ಯ • ಭಕ್ತಿ', '🙏 Maa Bhavani': '🙏 ಮಾ ಭವಾನಿ', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'ಭವಾನಿ ಎಂಬುದು ದುರ್ಗಾ/ಶಕ್ತಿಯೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದ ದೈವಿಕ ತಾಯಿಯ ಪೂಜ್ಯ ಹೆಸರು ಮತ್ತು ರೂಪವಾಗಿದೆ. ಅನೇಕ ಪರಂಪರೆಗಳಲ್ಲಿ ಅವರು ಧೈರ್ಯ, ರಕ್ಷಣೆ, ಶಕ್ತಿ ಮತ್ತು ಕರುಣಾಮಯ ಮಾತೃತ್ವವನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.', '📜 Our Mandal': '📜 ನಮ್ಮ ಮಂಡಳ', 'was established in': 'ಸ್ಥಾಪನೆಯಾಯಿತು', '. This space is ready for your original history, founders, milestones and annual traditions.': ' . ನಿಮ್ಮ ಮಂಡಳಿಯ ಮೂಲ ಇತಿಹಾಸ, ಸ್ಥಾಪಕರು, ಸಾಧನೆಗಳು ಮತ್ತು ವಾರ್ಷಿಕ ಪರಂಪರೆಗಳನ್ನು ಇಲ್ಲಿ ಸೇರಿಸಬಹುದು.', '🌼 Devotion & Community': '🌼 ಭಕ್ತಿ ಮತ್ತು ಸಮುದಾಯ', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'ಈ ವೆಬ್\u200cಸೈಟ್ ದರ್ಶನ, ಹಬ್ಬದ ನೆನಪುಗಳು, ಆರತಿ, ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಸಮುದಾಯದ ಮಾಹಿತಿಯನ್ನು ಒಂದೇ ಸುಲಭ ಸ್ಥಳದಲ್ಲಿ ಒದಗಿಸುತ್ತದೆ.', '🗓️ Aagman & Programs': '🗓️ ಆಗಮನ ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು', 'Dates and times can be edited by the Mandal': 'ದಿನಾಂಕ ಮತ್ತು ಸಮಯವನ್ನು ಮಂಡಳಿಯವರು ಬದಲಾಯಿಸಬಹುದು', '🌺 Bhavani Mata Aagman': '🌺 ಭವಾನಿ ಮಾತೆಯ ಆಗಮನ', 'Time:': 'ಸಮಯ:', 'To be updated': 'ನಂತರ ನವೀಕರಿಸಲಾಗುತ್ತದೆ', 'Venue: Old Town, near Hanuman Mandir': 'ಸ್ಥಳ: ಓಲ್ಡ್ ಟೌನ್, ಹನುಮಾನ್ ಮಂದಿರದ ಹತ್ತಿರ', '🪔 Sharad Navratri': '🪔 ಶಾರದ ನವರಾತ್ರಿ', 'Daily Puja & Aarti • Special programs between festival days': 'ದೈನಂದಿನ ಪೂಜೆ ಮತ್ತು ಆರತಿ • ಹಬ್ಬದ ದಿನಗಳಲ್ಲಿ ವಿಶೇಷ ಕಾರ್ಯಕ್ರಮಗಳು', 'Times:': 'ಸಮಯಗಳು:', '🎉 Other Mandal Events': '🎉 ಇತರೆ ಮಂಡಳಿಯ ಕಾರ್ಯಕ್ರಮಗಳು', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'ಗರಬಾ/ದಾಂಡಿಯಾ, ಭಜನೆ, ಮಹಾ ಆರತಿ, ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು, ಮೆರವಣಿಗೆ ಇತ್ಯಾದಿಗಳನ್ನು ಸೇರಿಸಿ.', '📸 Memories Through the Years': '📸 ವರ್ಷಗಳ ನೆನಪುಗಳು', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಹಬ್ಬ • ಅಲಂಕಾರ • ಆಗಮನ', 'Demo photo • 2025': 'ಡೆಮೊ ಫೋಟೋ • 2025', 'Demo photo • 2024': 'ಡೆಮೊ ಫೋಟೋ • 2024', 'Demo photo • 2023': 'ಡೆಮೊ ಫೋಟೋ • 2023', 'Bhavani Mata Darshan • 2026': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • 2026', 'Bhavani Mata Darshan • All': 'ಭವಾನಿ ಮಾತೆ ದರ್ಶನ • ಎಲ್ಲಾ', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ಇವು ನಿಮ್ಮ ಸಂಗ್ರಹದಲ್ಲಿರುವ ಭವಾನಿ ಮಾತೆಯ ಫೋಟೋಗಳು. ಸಿದ್ಧವಾದಾಗ ಡೆಮೊ ವರ್ಷದ ಲೇಬಲ್\u200cಗಳನ್ನು ಸರಿಯಾದ ವರ್ಷದಿಂದ ಬದಲಾಯಿಸಿ.', '🔗 Connect With Us': '🔗 ನಮ್ಮೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಿ', 'Follow the Mandal and see the latest Bhavani Mata photos': 'ಮಂಡಳಿಯನ್ನು ಅನುಸರಿಸಿ ಮತ್ತು ಭವಾನಿ ಮಾತೆಯ ಇತ್ತೀಚಿನ ಫೋಟೋಗಳನ್ನು ನೋಡಿ', 'f Facebook': 'f ಫೇಸ್\u200cಬುಕ್', '▶️ YouTube': '▶️ ಯೂಟ್ಯೂಬ್', '💬 WhatsApp': '💬 ವಾಟ್ಸಾಪ್', 'Link to be added': 'ಲಿಂಕ್ ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ', 'Demo contact': 'ಡೆಮೊ ಸಂಪರ್ಕ', 'Demo details — replace before publishing': 'ಪ್ರಕಟಿಸುವ ಮೊದಲು ನಿಜವಾದ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ', '📍 Bhalki, Karnataka': '📍 ಭಾಲ್ಕಿ, ಕರ್ನಾಟಕ', '🙏 Support / Donation': '🙏 ಬೆಂಬಲ / ದೇಣಿಗೆ', 'UPI section ready for your official details': 'ಅಧಿಕೃತ ವಿವರಗಳಿಗಾಗಿ UPI ವಿಭಾಗ ಸಿದ್ಧವಾಗಿದೆ', 'UPI QR CODE': 'UPI QR ಕೋಡ್', 'Official UPI ID and QR image will be added here later.': 'ಅಧಿಕೃತ UPI ID ಮತ್ತು QR ಚಿತ್ರವನ್ನು ನಂತರ ಸೇರಿಸಲಾಗುತ್ತದೆ.', 'Do not use this demo for payments.': 'ಪಾವತಿಗಾಗಿ ಈ ಡೆಮೊವನ್ನು ಬಳಸಬೇಡಿ.', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ ಶ್ರೀ ಭವಾನಿ ಮಾತಾಯೈ ನಮಃ • ಜೈ ಭವಾನಿ • ಜೈ ಮಾತಾ ದೀ', 'Jai Bhavani Nav Yuvak Mandal, Bhalki • Established 2012': 'ಜೈ ಭವಾನಿ ನವ ಯುವಕ ಮಂಡಳ, ಭಾಲ್ಕಿ • ಸ್ಥಾಪನೆ 2012'}, 'hi': {'जय भवानी नवयुवक मंडळ': 'जय भवानी नव युवक मंडल', 'Bhalki • Since 2012': 'भालकी • 2012 से', '🪔 जय भवानी • Bhalki': '🪔 जय भवानी • भालकी', '📍 Old Town': '📍 ओल्ड टाउन', '🌺 श्री भवानी माता • जय माता दी': '🌺 श्री भवानी माता • जय माता दी', 'Jai Bhavani': 'जय भवानी', 'Jai Bhavani Nav Yuvak Mandal': 'जय भवानी नव युवक मंडल', 'Old Town, near Hanuman Mandir — Darshan, Aarti, festival programs, memories and community updates.': 'ओल्ड टाउन, हनुमान मंदिर के पास — दर्शन, आरती, उत्सव कार्यक्रम, यादें और मंडल की जानकारी।', '📍 Open Location': '📍 स्थान खोलें', 'Visit Instagram': 'इंस्टाग्राम देखें', '⌂ Home': '⌂ होम', '🌺 Mata': '🌺 माता', '🛕 Mandal': '🛕 मंडल', '🪔 Aarti': '🪔 आरती', '🗓️ Programs': '🗓️ कार्यक्रम', '📸 Photos': '📸 फोटो', '🔗 Connect': '🔗 जुड़ें', '📞 Contact': '📞 संपर्क', 'Visit Us': 'हमसे मिलें', 'Old Town • Near Hanuman Mandir': 'ओल्ड टाउन • हनुमान मंदिर के पास', 'View Our Photos': 'हमारी तस्वीरें देखें', 'Bhavani Mata • Memories': 'भवानी माता • यादें', '🪔 Daily Aarti': '🪔 दैनिक आरती', 'Morning': 'सुबह', '8:30 AM — Puja & Aarti': '8:30 AM — पूजा और आरती', 'Evening': 'शाम', 'Festival-day timings can be updated later.': 'त्योहार के दिन का समय बाद में अपडेट किया जा सकता है。', '🕉️ Spiritual Corner': '🕉️ आध्यात्मिक कोना', 'A calm space for prayer, devotion and positive thought': 'प्रार्थना, भक्ति और सकारात्मक विचारों के लिए शांत स्थान', 'May Maa Bhavani bless every devotee with courage, peace, protection and prosperity.': 'मां भवानी हर भक्त को साहस, शांति, सुरक्षा और समृद्धि का आशीर्वाद दें।', '🙏 जय भवानी • जय माता दी 🙏': '🙏 जय भवानी • जय माता दी 🙏', '🌺 Why We Celebrate 9 Days': '🌺 हम 9 दिन क्यों मनाते हैं', 'Navratri • Nine nights of Shakti': 'नवरात्रि • शक्ति की नौ रातें', 'means “nine nights” and is a major Hindu festival dedicated to the Divine Mother. During Sharad Navratri, devotees worship Goddess Durga and her forms, with traditions varying by region and community.': 'का अर्थ “नौ रातें” है और यह देवी मां को समर्पित एक प्रमुख हिंदू त्योहार है। शारदीय नवरात्रि में भक्त दुर्गा माता और उनके रूपों की पूजा करते हैं।', 'The nine days are traditionally associated with the': 'इन नौ दिनों को पारंपरिक रूप से नवदुर्गा के रूपों से जोड़ा जाता है:', 'Navadurga': 'नवदुर्गा', '— Shailaputri, Brahmacharini, Chandraghanta, Kushmanda, Skandamata, Katyayani, Kalaratri, Mahagauri and Siddhidatri. The festival expresses the victory of dharma and good over evil and is also a period of prayer, fasting, reflection and renewal.': '— शैलपुत्री, ब्रह्मचारिणी, चंद्रघंटा, कूष्मांडा, स्कंदमाता, कात्यायनी, कालरात्रि, महागौरी और सिद्धिदात्री। यह त्योहार धर्म और अच्छाई की विजय तथा प्रार्थना, उपवास, चिंतन और नवजीवन का समय है।', 'For': 'के लिए', "Your Mandal's Aagman and daily program times can be updated here as you finalize them.": 'आपके मंडल के आगमन और दैनिक कार्यक्रम के समय को तय होने पर यहां अपडेट किया जा सकता है।', 'The Mandal can later replace this with the exact local worship tradition followed each day.': 'मंडल बाद में प्रत्येक दिन की स्थानीय पूजा परंपरा की सही जानकारी यहां जोड़ सकता है।', '🌺 About Bhavani Mata': '🌺 भवानी माता के बारे में', 'Shakti • Protection • Courage • Devotion': 'शक्ति • सुरक्षा • साहस • भक्ति', '🙏 Maa Bhavani': '🙏 मां भवानी', 'Bhavani is a revered name and form of the Divine Mother associated with Durga/Shakti. In many traditions she represents courage, protection, strength and compassionate motherhood.': 'भवानी दुर्गा/शक्ति से जुड़ी देवी मां का पूजनीय नाम और रूप हैं। अनेक परंपराओं में वे साहस, सुरक्षा, शक्ति और करुणामयी मातृत्व का प्रतीक हैं।', '📜 Our Mandal': '📜 हमारा मंडल', 'was established in': 'की स्थापना हुई', ' . This space is ready for your original history, founders, milestones and annual traditions.': '। यहां आपके मंडल का इतिहास, संस्थापक, उपलब्धियां और वार्षिक परंपराएं जोड़ी जा सकती हैं।', '🌼 Devotion & Community': '🌼 भक्ति और समुदाय', 'The website will bring Darshan, festival memories, Aarti, programs and community information together in one easy place.': 'यह वेबसाइट दर्शन, त्योहार की यादें, आरती, कार्यक्रम और सामुदायिक जानकारी एक ही स्थान पर लाएगी।', '🗓️ Aagman & Programs': '🗓️ आगमन और कार्यक्रम', 'Dates and times can be edited by the Mandal': 'तारीख और समय मंडल द्वारा बदले जा सकते हैं', '🌺 Bhavani Mata Aagman': '🌺 भवानी माता आगमन', 'Time:': 'समय:', 'To be updated': 'बाद में अपडेट किया जाएगा', 'Venue: Old Town, near Hanuman Mandir': 'स्थान: ओल्ड टाउन, हनुमान मंदिर के पास', '🪔 Sharad Navratri': '🪔 शारदीय नवरात्रि', 'Daily Puja & Aarti • Special programs between festival days': 'दैनिक पूजा और आरती • त्योहार के दिनों में विशेष कार्यक्रम', 'Times:': 'समय:', '🎉 Other Mandal Events': '🎉 अन्य मंडल कार्यक्रम', 'Add Garba/Dandiya, Bhajan, Maha Aarti, cultural programs, procession, etc.': 'गरबा/डांडिया, भजन, महाआरती, सांस्कृतिक कार्यक्रम, जुलूस आदि जोड़ें।', '📸 Memories Through the Years': '📸 वर्षों की यादें', 'Bhavani Mata Darshan • Festival • Decoration • Aagman': 'भवानी माता दर्शन • उत्सव • सजावट • आगमन', 'Demo photo • 2025': 'डेमो फोटो • 2025', 'Demo photo • 2024': 'डेमो फोटो • 2024', 'Demo photo • 2023': 'डेमो फोटो • 2023', 'Bhavani Mata Darshan • 2026': 'भवानी माता दर्शन • 2026', 'Bhavani Mata Darshan • All': 'भवानी माता दर्शन • सभी', 'These are Bhavani Mata photos from your collection. Replace any demo year labels with the correct year when ready.': 'ये आपके संग्रह की भवानी माता की तस्वीरें हैं। तैयार होने पर डेमो वर्ष को सही वर्ष से बदलें।', '🔗 Connect With Us': '🔗 हमसे जुड़ें', 'Follow the Mandal and see the latest Bhavani Mata photos': 'मंडल को फॉलो करें और भवानी माता की नवीनतम तस्वीरें देखें', 'f Facebook': 'f फेसबुक', '▶️ YouTube': '▶️ यूट्यूब', '💬 WhatsApp': '💬 व्हाट्सऐप', 'Link to be added': 'लिंक बाद में जोड़ा जाएगा', 'Demo contact': 'डेमो संपर्क', 'Demo details — replace before publishing': 'प्रकाशित करने से पहले वास्तविक विवरण जोड़ें', '📍 Bhalki, Karnataka': '📍 भालकी, कर्नाटक', '🙏 Support / Donation': '🙏 सहायता / दान', 'UPI section ready for your official details': 'आधिकारिक जानकारी के लिए UPI सेक्शन तैयार है', 'UPI QR CODE': 'UPI QR कोड', 'Official UPI ID and QR image will be added here later.': 'आधिकारिक UPI ID और QR चित्र बाद में जोड़ा जाएगा।', 'Do not use this demo for payments.': 'भुगतान के लिए इस डेमो का उपयोग न करें।', 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी': 'ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी', 'Jai Bhavani Nav Yuvak Mandal, Bhalki • Established 2012': 'जय भवानी नव युवक मंडल, भालकी • स्थापना 2012'}};
 const originalText = new WeakMap();
 function nodesForTranslation(){
   const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
@@ -2773,26 +3173,28 @@ function fallbackCopy(text,done){
 <script id="upi-app-launcher">
 (function(){
   const upiId = "vignesh.0702@ptyes";
-  const payee = "Jai Bhavani Nave Yuvak Mandal";
+  const payee = "Jai Bhavani Nav Yuvak Mandal";
   const note = "Donation to Jai Bhavani Mandal";
-
-  function q(v){ return encodeURIComponent(v); }
-  const query = `pa=${q(upiId)}&pn=${q(payee)}&tn=${q(note)}&cu=INR`;
-
-  // Use standard UPI/app schemes only. No intent:// URLs, so the site
-  // does not trigger the browser's "content is blocked" page.
-  const links = {
-    gpay: `gpay://upi/pay?${query}`,
-    phonepe: `phonepe://pay?${query}`,
-    paytm: `paytmmp://pay?${query}`,
-    upi: `upi://pay?${query}`
+  const q=v=>encodeURIComponent(v);
+  const query=`pa=${q(upiId)}&pn=${q(payee)}&tn=${q(note)}&cu=INR`;
+  const standard=`upi://pay?${query}`;
+  const links={
+    gpay:`gpay://upi/pay?${query}`,
+    phonepe:`phonepe://pay?${query}`,
+    paytm:`paytmmp://pay?${query}`,
+    upi:standard
   };
-
-  document.querySelectorAll("[data-upi-app]").forEach(function(btn){
-    btn.addEventListener("click", function(e){
+  document.querySelectorAll('[data-upi-app]').forEach(btn=>{
+    btn.addEventListener('click',e=>{
       e.preventDefault();
-      const app = btn.getAttribute("data-upi-app");
-      window.location.href = links[app] || links.upi;
+      const app=btn.dataset.upiApp;
+      const target=links[app]||standard;
+      const fallback=()=>{ window.location.href=standard; };
+      let hidden=false;
+      const onVis=()=>{ if(document.hidden) hidden=true; };
+      document.addEventListener('visibilitychange',onVis,{once:true});
+      window.location.href=target;
+      setTimeout(()=>{ if(!hidden) fallback(); },1200);
     });
   });
 })();
