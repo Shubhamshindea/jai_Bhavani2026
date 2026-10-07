@@ -1,4 +1,4 @@
-﻿# Jai Bhavani Nave Yuvak Mandal • Bhalki
+﻿# Jai Bhavani Nava Yuvak Mandal • Bhalki
 
 A modern and responsive website for **Jai Bhavani Nave Yuvak Mandal, Bhalki, Karnataka**.
 
