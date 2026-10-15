@@ -3371,15 +3371,28 @@ html[data-theme="dark"] .today-event{background:linear-gradient(120deg,#392b1d,#
 </section>
 </main>
 <footer class="footer">ॐ श्री भवानी मातायै नमः • जय भवानी • जय माता दी<br/>Jai Bhavani Nava Yuvak Mandal, Bhalki • Established 2012</footer>
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-<button aria-label="Close" class="close">×</button>
-<div>
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+<button aria-label="Close photo" class="close" onclick="closeLightbox()" type="button">×</button>
+<button aria-label="Previous photo" class="lb-nav lb-prev" onclick="event.stopPropagation();changeLightboxPhoto(-1)" type="button">‹</button>
+<div class="lightbox-content">
 <img alt="" id="lbimg" src=""/>
 <div id="lbcap" style="text-align:center;color:#ffe5a9;margin-top:8px"></div>
 <div style="text-align:center;margin-top:12px"><a class="btn light" download="" href="#" id="lbdownload">⬇ Download Photo</a></div>
 </div>
+<button aria-label="Next photo" class="lb-nav lb-next" onclick="event.stopPropagation();changeLightboxPhoto(1)" type="button">›</button>
 </div>
+<style>
+.lightbox{gap:12px}
+.lightbox-content{display:flex;flex-direction:column;align-items:center;max-width:90vw;max-height:90vh}
+.lightbox-content img{max-width:min(78vw,1100px);max-height:78vh;object-fit:contain}
+.lb-nav{position:relative;z-index:52;flex:0 0 auto;width:48px;height:58px;border:1px solid #f3c36a;border-radius:14px;background:#fff8e9;color:#8f2c13;font-size:42px;line-height:1;cursor:pointer;box-shadow:0 6px 20px #0005}
+.lb-nav:hover{background:#f3bd5b;color:#fff}
+@media(max-width:600px){.lightbox{gap:5px;padding:8px!important}.lb-nav{width:36px;height:48px;font-size:32px;border-radius:10px}.lightbox-content{max-width:calc(100vw - 92px)}.lightbox-content img{max-width:calc(100vw - 100px);max-height:72vh}.close{top:8px!important;right:8px!important}}
+</style>
 <script>
+let lightboxPhotos = [];
+let lightboxIndex = -1;
+
 function showYear(id,btn) {
   document.querySelectorAll('#gallery ~ .gallery-card .gallery-year, .gallery-card .gallery-year').forEach(x=>x.classList.remove('show'));
   const selected=document.getElementById(id);
@@ -3388,24 +3401,60 @@ function showYear(id,btn) {
   btn.classList.add('active');
 }
 
+function collectLightboxPhotos() {
+  const seen = new Set();
+  lightboxPhotos = Array.from(document.querySelectorAll('.photo-card')).map(button => {
+    const img = button.querySelector('img');
+    if (!img) return null;
+    const src = img.getAttribute('src') || img.src;
+    const cap = button.querySelector('span')?.textContent?.trim() || img.alt || 'Bhavani Mata photo';
+    return {src, cap};
+  }).filter(photo => {
+    if (!photo || seen.has(photo.src)) return false;
+    seen.add(photo.src);
+    return true;
+  });
+}
+
 function openLightbox(src,cap) {
-  document.getElementById('lbimg').src=src;
-  document.getElementById('lbcap').textContent=cap;
-  const downloadLink=document.getElementById('lbdownload');
-  downloadLink.href=src;
-  downloadLink.setAttribute('download',src.split('/').pop() || 'bhavani-mata-photo.jpg');
+  collectLightboxPhotos();
+  lightboxIndex = lightboxPhotos.findIndex(photo => photo.src === src || new URL(photo.src, location.href).href === new URL(src, location.href).href);
+  if (lightboxIndex < 0) {
+    lightboxPhotos.unshift({src, cap});
+    lightboxIndex = 0;
+  }
+  renderLightboxPhoto();
   document.getElementById('lightbox').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function renderLightboxPhoto() {
+  if (!lightboxPhotos.length || lightboxIndex < 0) return;
+  const photo = lightboxPhotos[lightboxIndex];
+  document.getElementById('lbimg').src = photo.src;
+  document.getElementById('lbimg').alt = photo.cap;
+  document.getElementById('lbcap').textContent = photo.cap + '  •  ' + (lightboxIndex + 1) + ' / ' + lightboxPhotos.length;
+  const downloadLink = document.getElementById('lbdownload');
+  downloadLink.href = photo.src;
+  downloadLink.setAttribute('download', photo.src.split('/').pop() || 'bhavani-mata-photo.jpg');
+}
+
+function changeLightboxPhoto(direction) {
+  if (!lightboxPhotos.length) return;
+  lightboxIndex = (lightboxIndex + direction + lightboxPhotos.length) % lightboxPhotos.length;
+  renderLightboxPhoto();
 }
 
 function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('show')
+  document.getElementById('lightbox').classList.remove('show');
+  document.body.style.overflow = '';
 }
 
-document.addEventListener('keydown',e=> {
-  if(e.key==='Escape')closeLightbox()
-}
-
-);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+  else if (e.key === 'ArrowLeft' && document.getElementById('lightbox').classList.contains('show')) changeLightboxPhoto(-1);
+  else if (e.key === 'ArrowRight' && document.getElementById('lightbox').classList.contains('show')) changeLightboxPhoto(1);
+});
 </script>
 <script id="language-system">
 (function(){
